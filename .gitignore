@@ -16,5 +16,3 @@ Thumbs.db
 *.pkl
 *.joblib
 models/
-outputs/
-*.pkl
