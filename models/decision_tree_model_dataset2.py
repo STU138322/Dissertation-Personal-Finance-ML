@@ -6,6 +6,7 @@ from sklearn.tree import DecisionTreeRegressor
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 import matplotlib.pyplot as plt
 import seaborn as sns
+from joblib import dump
 
 sns.set_theme(style="whitegrid")
 
@@ -29,6 +30,11 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 # Initialize and train Decision Tree Regressor
 model = DecisionTreeRegressor(random_state=42)
 model.fit(X_train, y_train)
+
+# Save model
+model_dir = 'models/decision_tree'
+os.makedirs(model_dir, exist_ok=True)
+dump(model, os.path.join(model_dir, 'model.pkl'))
 
 # Predict
 y_pred = model.predict(X_test)
