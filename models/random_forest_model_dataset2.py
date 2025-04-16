@@ -1,31 +1,31 @@
 import pandas as pd
 import numpy as np
-import os
-from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 import matplotlib.pyplot as plt
 import seaborn as sns
 from joblib import dump
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+from db.db_connect import load_data, FEATURES, TARGET, TABLE_TRAIN
 
 sns.set_theme(style="whitegrid")
 
-# Load engineered dataset2
-file_path = 'data/engineered/engineered_dataset2.csv'
-df = pd.read_csv(file_path, parse_dates=['Date'])
+# Load and sort data
+df = load_data(TABLE_TRAIN).sort_values('Date')
 
-# Drop missing values
-df = df.dropna()
+# Time-based split
+X = df[FEATURES]
+y = df[TARGET]
+split_index = int(len(df) * 0.8)
+X_train, X_test = X.iloc[:split_index], X.iloc[split_index:]
+y_train, y_test = y.iloc[:split_index], y.iloc[split_index:]
 
-# Define features and target
-features = ['Income', 'Expense', 'Rolling_Income', 'Rolling_Expense', 'Rolling_Savings']
-target = 'Net_Savings'
-
-X = df[features]
-y = df[target]
-
-# Train-test split
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+print(f"\nTrain shape: {X_train.shape}, Test shape: {X_test.shape}")
+print(f"First train date: {df.iloc[0]['Date']}, Last train date: {df.iloc[split_index - 1]['Date']}")
+print(f"First test date: {df.iloc[split_index]['Date']}, Last test date: {df.iloc[-1]['Date']}")
 
 # Initialize and train Random Forest Regressor
 model = RandomForestRegressor(n_estimators=100, random_state=42)

@@ -1,29 +1,28 @@
 import pandas as pd
 import numpy as np
-import os
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 import matplotlib.pyplot as plt
 import seaborn as sns
 from joblib import dump
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+from db.db_connect import load_data, FEATURES, TARGET, TABLE_TRAIN
 
 sns.set_theme(style="whitegrid")
 
 # Load and sort data
-file_path = 'data/engineered/engineered_dataset2.csv'
-df = pd.read_csv(file_path, parse_dates=['Date']).dropna().sort_values('Date')
-
-# Define features + target
-features = ['Income', 'Expense', 'Rolling_Income', 'Rolling_Expense', 'Rolling_Savings']
-target = 'Net_Savings'
+df = load_data(TABLE_TRAIN).sort_values('Date')
 
 # Final feature set check
 print("=== Correlation Matrix ===")
-print(df[features + [target]].corr())
+print(df[FEATURES + [TARGET]].corr())
 
 # Time-based split
-X = df[features]
-y = df[target]
+X = df[FEATURES]
+y = df[TARGET]
 split_index = int(len(df) * 0.8)
 X_train, X_test = X.iloc[:split_index], X.iloc[split_index:]
 y_train, y_test = y.iloc[:split_index], y.iloc[split_index:]

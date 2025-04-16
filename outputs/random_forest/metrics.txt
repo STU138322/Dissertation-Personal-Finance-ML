@@ -1,7 +1,7 @@
 --- All Data ---
-MAE: 2573.37
-RMSE: 3455.79
-R2: 0.90
+MAE: 1800.58
+RMSE: 2417.68
+R2: 0.94
 
 --- Original Only ---
 MAE: N/A

@@ -1,23 +1,24 @@
 import pandas as pd
 import numpy as np
-import os
 from joblib import load
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 import matplotlib.pyplot as plt
 import seaborn as sns
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+from db.db_connect import load_data, FEATURES, TARGET, TABLE_BLINDTEST
 
 sns.set_theme(style="whitegrid")
 
 # Load trained model
 model = load('models/linear_regression/model.pkl')
 
-# Load test data
-df = pd.read_csv('data/engineered/engineered_dataset1.csv', parse_dates=['Date']).dropna()
-
-# Define features
-features = ['Income', 'Expense', 'Rolling_Income', 'Rolling_Expense', 'Rolling_Savings']
-X_test = df[features]
-y_test = df['Net_Savings']
+# Load blindtest data
+df = load_data(TABLE_BLINDTEST).sort_values('Date')
+X_test = df[FEATURES]
+y_test = df[TARGET]
 
 # Predict
 df['Predicted'] = model.predict(X_test)
