@@ -20,7 +20,7 @@ df['Income'] = df['Amount'].where(df['Category Type'] == 'income', 0)
 df['Expense'] = df['Amount'].where(df['Category Type'] == 'expense', 0)
 
 # Group by month and Source so we keep both synthetic and original
-monthly_summary = df.groupby([pd.Grouper(key='Date', freq='M'), 'Source']).agg({
+monthly_summary = df.groupby([pd.Grouper(key='Date', freq='ME'), 'Source']).agg({
     'Income': 'sum',
     'Expense': 'sum'
 }).reset_index()

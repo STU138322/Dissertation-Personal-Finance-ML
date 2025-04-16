@@ -20,6 +20,8 @@ monthly_summary = df.groupby([pd.Grouper(key='Date', freq='ME')]).agg({
 }).reset_index()
 
 monthly_summary['Net_Savings'] = monthly_summary['Income'] + monthly_summary['Expense']  # Expense is negative
+noise = np.random.normal(loc=0, scale=1000, size=len(monthly_summary))
+monthly_summary['Net_Savings'] += noise
 monthly_summary['Savings_Rate'] = monthly_summary['Net_Savings'] / monthly_summary['Income'].replace(0, np.nan)
 
 monthly_summary['Rolling_Income'] = monthly_summary['Income'].rolling(window=3).mean()
