@@ -1,42 +1,64 @@
-# Dissertation-Personal-Finance-ML
+# Dissertation – Personal Finance Forecasting with AI
 
-STU138322 – Dissertation Project – Personal Finance Forecasting Using Machine Learning
+STU138322 – Final Year BSc Computing Dissertation  
+Project Title: Leveraging AI and Databases for Predictive Analysis in Personal Finance
 
 ## Project Overview
-This project explores the use of machine learning models to forecast personal net savings using financial history (income, expenses, etc.). Models are trained and evaluated to determine which best predicts savings growth.
+
+This project demonstrates the use of AI models and databases to predict personal net savings growth based on individual financial history (income, expenses, and savings behavior). It features a full pipeline for data cleaning, augmentation, model training, benchmarking, and performance visualization.
 
 ## Project Structure
 
-- `/data` – Raw and cleaned datasets used for training and testing
-- `/models` – Trained ML models saved for reuse
-- `/notebooks` – Jupyter notebooks for EDA and experimentation
-- `/outputs` – Generated charts, predictions, evaluation metrics
-- `/scripts` – Python scripts for training, testing, and evaluation
-- `main.py` – Main orchestrator script
-- `requirements.txt` – List of Python dependencies
+.
+├── data/                  # Raw, cleaned, and engineered datasets
+├── db/                    # SQLite database with financial records
+├── models/                # Trained model files (pkl)
+├── notebooks/             # EDA charts for processed and engineered datasets
+├── outputs/               # Metrics, predictions, threshold charts
+├── benchmarks/            # Threshold summaries and visuals
+├── scripts/               # All modular Python scripts for pipeline stages
+├── submission_export/     # Final collected results for report appendices
+├── main.py                # Runs model training, testing, benchmarks, growth tracking
+├── data_pipeline.py       # Runs data prep: clean → augment → engineer → DB
+├── report_export.py       # Packages all outputs for submission
+├── requirements.txt
+└── README.md
 
-## Getting Started
+## Setup Instructions
 
-```bash
 pip install -r requirements.txt
-python main.py
 
-Models Used:
-Linear Regression
+# Run full data prep
+python data_pipeline.py --all
 
-Random Forest
+# Train, evaluate, benchmark and track
+python main.py --train --blindtest --benchmarks --growth --summary
 
-Decision Tree
+# Export results
+python report_export.py
 
-(Optional) XGBoost
+## Models Used
 
-Evaluation Metrics:
-MAE (Mean Absolute Error)
+- Linear Regression
+- Decision Tree
+- Random Forest
 
-RMSE (Root Mean Squared Error)
+## Evaluation Metrics
 
-R² (Coefficient of Determination)
+- MAE – Mean Absolute Error
+- RMSE – Root Mean Squared Error
+- R² – Coefficient of Determination
+- Savings Growth Threshold Accuracy (≥ 50%, ≥ 100%, ≥ 150%)
 
-Author:
-Sander (STU138322)
-Final Year BSc Computing, Arden University
+## Visualization Highlights
+
+- Benchmark thresholds (50/100/150%)
+- Time-based growth prediction tracking (per user)
+- Full performance comparison charts across models and datasets
+
+## Author
+
+Sander  
+Student ID: STU138322  
+Final Year BSc Computing  
+Arden University
