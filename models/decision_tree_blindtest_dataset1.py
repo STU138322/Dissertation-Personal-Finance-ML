@@ -9,11 +9,12 @@ import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from db.db_connect import load_data, FEATURES, TARGET, TABLE_BLINDTEST
+from scripts.benchmark_summary import summarize_thresholds
 
 sns.set_theme(style="whitegrid")
 
 # Load trained model
-model = load('models/decision_tree/model.pkl')
+model = load('models/linear_regression/model.pkl')
 
 # Load blindtest data
 df = load_data(TABLE_BLINDTEST).sort_values('Date')
@@ -21,10 +22,7 @@ X_test = df[FEATURES]
 y_test = df[TARGET]
 
 # Predict
-y_pred = model.predict(X_test)
-
-# Add predictions and thresholds
-df['Predicted'] = y_pred
+df['Predicted'] = model.predict(X_test)
 df['Threshold_50'] = df['Predicted'] >= (df['Net_Savings'] * 0.5)
 df['Threshold_100'] = df['Predicted'] >= df['Net_Savings']
 df['Threshold_150'] = df['Predicted'] >= (df['Net_Savings'] * 1.5)
@@ -64,6 +62,9 @@ with open(os.path.join(output_dir, "metrics.txt"), "w") as f:
 
 # Save predictions
 df.to_csv(os.path.join(output_dir, 'predictions_segmented.csv'), index=False)
+
+# Save benchmark summary
+summarize_thresholds(df, model_name='decision_tree_blindtest')
 
 # Plot full actual vs predicted
 plt.figure(figsize=(8, 5))

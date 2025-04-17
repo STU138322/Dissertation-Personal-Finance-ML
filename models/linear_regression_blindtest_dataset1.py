@@ -9,6 +9,7 @@ import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from db.db_connect import load_data, FEATURES, TARGET, TABLE_BLINDTEST
+from scripts.benchmark_summary import summarize_thresholds
 
 sns.set_theme(style="whitegrid")
 
@@ -58,6 +59,9 @@ with open(os.path.join(output_dir, "metrics.txt"), "w") as f:
         f.write(f"{k}: {v}\n")
 
 df.to_csv(os.path.join(output_dir, 'predictions_segmented.csv'), index=False)
+
+# Save benchmark summary
+summarize_thresholds(df, model_name='linear_regression_blindtest')
 
 plt.figure(figsize=(8, 5))
 sns.scatterplot(x=df['Net_Savings'], y=df['Predicted'], hue=df['Source'])

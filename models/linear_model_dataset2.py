@@ -10,6 +10,7 @@ import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from db.db_connect import load_data, FEATURES, TARGET, TABLE_TRAIN
+from scripts.benchmark_summary import summarize_thresholds
 
 sns.set_theme(style="whitegrid")
 
@@ -71,8 +72,20 @@ plt.savefig(os.path.join(output_dir, 'actual_vs_predicted.png'))
 plt.close()
 
 # Save predictions
-pd.DataFrame({'Actual': y_test.values, 'Predicted': y_pred}).to_csv(
-    os.path.join(output_dir, 'predictions.csv'), index=False)
+results = pd.DataFrame({
+    'Actual': y_test.values,
+    'Predicted': y_pred
+})
+results.to_csv(os.path.join(output_dir, 'predictions.csv'), index=False)
+
+# Add benchmark threshold flags
+results['Threshold_50'] = results['Predicted'] >= (results['Actual'] * 0.5)
+results['Threshold_100'] = results['Predicted'] >= results['Actual']
+results['Threshold_150'] = results['Predicted'] >= (results['Actual'] * 1.5)
+results['Source'] = 'original'  # All training data is assumed to be original
+
+# Save benchmark summary
+summarize_thresholds(results, model_name='linear_regression')
 
 # Save metrics
 with open(os.path.join(output_dir, "metrics.txt"), "w") as f:

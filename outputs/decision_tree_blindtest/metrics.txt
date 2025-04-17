@@ -1,14 +1,14 @@
 --- All Data ---
-MAE: 18662.73
-RMSE: 31446.55
-R2: -0.0
+MAE: 557.33
+RMSE: 1010.6
+R2: 1.0
 
 --- Original Only ---
-MAE: 32209.17
-RMSE: 65196.72
-R2: 0.17
+MAE: 804.47
+RMSE: 1237.15
+R2: 1.0
 
 --- Synthetic Only ---
-MAE: 15621.69
-RMSE: 16020.65
-R2: -6.24
+MAE: 501.85
+RMSE: 952.36
+R2: 0.97
