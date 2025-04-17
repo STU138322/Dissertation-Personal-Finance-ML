@@ -10,17 +10,17 @@ This project demonstrates the use of AI models and databases to predict personal
 ## Project Structure
 
 .
-├── data/                  # Raw, cleaned, and engineered datasets
-├── db/                    # SQLite database with financial records
-├── models/                # Trained model files (pkl)
-├── notebooks/             # EDA charts for processed and engineered datasets
-├── outputs/               # Metrics, predictions, threshold charts
-├── benchmarks/            # Threshold summaries and visuals
-├── scripts/               # All modular Python scripts for pipeline stages
-├── submission_export/     # Final collected results for report appendices
-├── main.py                # Runs model training, testing, benchmarks, growth tracking
-├── data_pipeline.py       # Runs data prep: clean → augment → engineer → DB
-├── report_export.py       # Packages all outputs for submission
+├── benchmarks/           # Threshold summaries and visuals
+├── data/                 # Raw, cleaned, and engineered datasets
+├── db/                   # SQLite database with financial records
+├── models/               # Trained model files (.pkl)
+├── notebooks/            # EDA charts for processed and engineered datasets
+├── outputs/              # Metrics, predictions, threshold charts
+├── scripts/              # All Python scripts for pipeline stages
+├── submission_export/    # Final collected results for report appendices
+├── data_pipeline.py      # Runs data prep: clean → augment → engineer → DB
+├── main.py               # Runs model training, testing, benchmarks, growth tracking
+├── report_export.py      # Packages all outputs for submission
 ├── requirements.txt
 └── README.md
 
