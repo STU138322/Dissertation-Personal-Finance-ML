@@ -9,20 +9,7 @@ This project demonstrates the use of AI models and databases to predict personal
 
 ## Project Structure
 
-.
-├── benchmarks/           # Threshold summaries and visuals
-├── data/                 # Raw, cleaned, and engineered datasets
-├── db/                   # SQLite database with financial records
-├── models/               # Trained model files (.pkl)
-├── notebooks/            # EDA charts for processed and engineered datasets
-├── outputs/              # Metrics, predictions, threshold charts
-├── scripts/              # All Python scripts for pipeline stages
-├── submission_export/    # Final collected results for report appendices
-├── data_pipeline.py      # Runs data prep: clean → augment → engineer → DB
-├── main.py               # Runs model training, testing, benchmarks, growth tracking
-├── report_export.py      # Packages all outputs for submission
-├── requirements.txt
-└── README.md
+<pre> ``` . ├── benchmarks/ # Threshold summaries and visuals │ ├── dataset1/ │ └── dataset2/ │ ├── data/ # Raw, cleaned, and engineered datasets │ ├── raw/ │ ├── cleaned/ │ └── engineered/ │ ├── db/ # SQLite database with financial records │ ├── models/ # Trained model files (.pkl) │ ├── linear_regression/ │ ├── decision_tree/ │ └── random_forest/ │ ├── notebooks/ # EDA charts for processed and engineered datasets │ ├── outputs/ # Metrics, predictions, threshold charts │ ├── linear_regression/ │ ├── decision_tree/ │ ├── random_forest/ │ └── linear_regression_blindtest/ │ ├── scripts/ # All modular Python scripts for pipeline stages │ ├── submission_export/ # Final collected results for report appendices │ ├── data_pipeline.py # Runs data prep: clean → augment → engineer → DB ├── main.py # Runs model training, testing, benchmarks, growth tracking ├── report_export.py # Packages all outputs for submission ├── requirements.txt └── README.md ``` </pre>
 
 ## Setup Instructions
 
