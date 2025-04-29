@@ -3,7 +3,6 @@ import numpy as np
 import os
 import matplotlib.pyplot as plt
 import seaborn as sns
-from scipy import stats
 from sklearn.preprocessing import LabelEncoder
 
 sns.set_theme(style="whitegrid")
@@ -12,6 +11,7 @@ sns.set_theme(style="whitegrid")
 RAW_DIR = 'data/processed'
 ENGINEERED_DIR = 'data/engineered'
 NOTEBOOKS_DIR = 'notebooks/phase1&2'
+
 os.makedirs(ENGINEERED_DIR, exist_ok=True)
 os.makedirs(f'{NOTEBOOKS_DIR}/dataset1', exist_ok=True)
 os.makedirs(f'{NOTEBOOKS_DIR}/dataset2', exist_ok=True)
@@ -30,33 +30,33 @@ for name, df in datasets.items():
     df['Category Type'] = df['Category Type'].str.title()
     df['Category'] = df['Category'].str.title()
 
-    # Safely handle Source column
+    # Fix Amount Sign Consistency for Dataset1
+    if name == 'dataset1':
+        df['Amount'] = df['Amount'].abs()
+
+    # Safely assign Source
     if 'Source' not in df.columns:
         if name == 'dataset1':
-            df['Source'] = 'original'  # Only dataset1 needs it
+            df['Source'] = 'original'
         else:
-            pass  # dataset2 has no Source, no need to add
+            df['Source'] = 'original'
     else:
         df['Source'] = df['Source'].fillna('original')
 
-    # Create Income and Expense fields based on dataset
-    if name == 'dataset1':
-        df['Income'] = df['Amount'].where(df['Amount'] > 0, 0)
-        df['Expense'] = df['Amount'].where(df['Amount'] < 0, 0)
-    else:
-        df['Income'] = df['Amount'].where(df['Category Type'] == 'Income', 0)
-        df['Expense'] = df['Amount'].where(df['Category Type'] == 'Expense', 0)
+    # --- Create Income and Expense Fields ---
+    df['Income'] = df['Amount'].where(df['Category Type'].isin(['Income', 'Savings']), 0)
+    df['Expense'] = df['Amount'].where(df['Category Type'] == 'Expense', 0)  # NEGATIVE values kept!
 
-    # Set index for resampling
+    # Set Date as index
     df = df.set_index('Date')
 
-    # Resample separately
+    # --- Resample to 3D ---
     resampled = df[['Income', 'Expense']].resample('3D').sum().reset_index()
 
-    # Drop periods with no financial activity (after resampling)
+    # Drop periods with no financial activity
     resampled = resampled[(resampled['Income'] != 0) | (resampled['Expense'] != 0)]
 
-    # Recreate Net Savings and features
+    # Feature Engineering
     resampled['Net_Savings'] = resampled['Income'] + resampled['Expense']
     resampled['Savings_Rate'] = resampled['Net_Savings'] / resampled['Income'].replace(0, np.nan)
 
@@ -64,54 +64,55 @@ for name, df in datasets.items():
     resampled['Rolling_Expense'] = resampled['Expense'].rolling(window=3, min_periods=1).mean()
     resampled['Rolling_Savings'] = resampled['Net_Savings'].rolling(window=3, min_periods=1).mean()
 
-    # Keep Source, Category, and Category Type
-    df['Category'] = df['Category'].fillna('Unknown')
-    df['Category Type'] = df['Category Type'].fillna('Unknown')
+    # --- Find Dominant Category per 3D Period ---
+    dominant_category = df['Category'].resample('3D').agg(lambda x: x.mode().iloc[0] if not x.mode().empty else 'Unknown').reset_index()
 
-    if 'Source' in df.columns:
-        df['Source'] = df['Source'].fillna('original')
+    # --- Resample Source per 3D Period ---
+    dominant_source = df['Source'].resample('3D').agg(lambda x: 'synthetic' if 'synthetic' in x.values else 'original').reset_index()
 
-    # Begin EDA
+    # Merge dominant Category and Source into resampled
+    resampled = pd.merge(resampled, dominant_category, on='Date', how='left')
+    resampled = pd.merge(resampled, dominant_source, on='Date', how='left')
+
+    # --- Label Encode Dominant Category ---
+    if 'Category' in resampled.columns:
+        le = LabelEncoder()
+        resampled['Category_Encoded'] = le.fit_transform(resampled['Category'].fillna('Unknown').astype(str))
+    else:
+        resampled['Category_Encoded'] = 0  # fallback
+
+    # --- EDA Visualizations ---
     os.makedirs(f'{NOTEBOOKS_DIR}/{name}', exist_ok=True)
 
     # Correlation Heatmap
     plt.figure(figsize=(10, 8))
     corr = resampled[['Income', 'Expense', 'Net_Savings', 'Rolling_Income', 'Rolling_Expense', 'Rolling_Savings']].corr()
-    sns.heatmap(
-    corr,
-    annot=True,
-    cmap='coolwarm',
-    vmin=-1, vmax=1,
-    fmt='.2f'
-    )
+    sns.heatmap(corr, annot=True, cmap="coolwarm", vmin=-1, vmax=1, fmt=".2f")
     plt.title(f'Correlation Heatmap - {name}')
     plt.tight_layout()
     plt.savefig(f'{NOTEBOOKS_DIR}/{name}/correlation_heatmap.png')
     plt.close()
 
-    # Distribution Plots
+    # Feature Distributions
     for col in ['Income', 'Expense', 'Net_Savings', 'Savings_Rate']:
         plt.figure(figsize=(8, 4))
-        sns.histplot(resampled[col], kde=True)
+        sns.histplot(resampled[col].dropna(), kde=True)
         plt.title(f'{col} Distribution - {name}')
         plt.tight_layout()
         plt.savefig(f'{NOTEBOOKS_DIR}/{name}/{col}_distribution.png')
         plt.close()
 
-    # Skewness Visualization
-    skewness = resampled[['Income', 'Expense', 'Net_Savings']].skew()
-    print(f"Skewness for {name}:\n{skewness}\n")
-
-    # Log1p plots for positive fields
+    # Log1p Transformations
     for col in ['Income', 'Net_Savings']:
         plt.figure(figsize=(8, 4))
-        sns.histplot(np.log1p(resampled[col]), kde=True)
+        safe_col = resampled[col].where(resampled[col] >= 0)
+        sns.histplot(np.log1p(safe_col.dropna()), kde=True)
         plt.title(f'Log1p {col} Distribution - {name}')
         plt.tight_layout()
         plt.savefig(f'{NOTEBOOKS_DIR}/{name}/log1p_{col}_distribution.png')
         plt.close()
 
-    # Special handling for Expense (take abs before log1p)
+    # Log1p for Absolute Expense
     plt.figure(figsize=(8, 4))
     sns.histplot(np.log1p(np.abs(resampled['Expense'])), kde=True)
     plt.title(f'Log1p Absolute Expense Distribution - {name}')
@@ -119,8 +120,8 @@ for name, df in datasets.items():
     plt.savefig(f'{NOTEBOOKS_DIR}/{name}/log1p_Expense_distribution.png')
     plt.close()
 
-    # Save engineered dataset only once after full processing
+    # --- Save Final Engineered Dataset ---
     resampled.to_csv(f'{ENGINEERED_DIR}/engineered_{name}.csv', index=False)
-    print(f"Updated and saved: engineered_{name}.csv")
+    print(f"Saved: engineered_{name}.csv")
 
 print("\nFeature Engineering + EDA complete for Phase 1&2.")

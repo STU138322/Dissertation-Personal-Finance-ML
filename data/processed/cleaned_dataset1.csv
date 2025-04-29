@@ -1,1501 +1,1501 @@
 Date,Description,Debit,Credit,Amount,sub-category,Category,Category Type,Unnamed: 8,Unnamed: 9,Data validation,Unnamed: 11,Unnamed: 12,Source
-2022-01-06,recharge,15.0,0.0,-15.0,mobile phones,Living Expenses,Expenses,,,,,,original
-2022-01-07,petrol,500.0,0.0,-500.0,petrol,Transport,Expenses,,,,,,original
-2022-01-09,travel,1706.0,0.0,-1706.0,travelling,Transport,Expenses,,,,,,original
-2022-01-11,fixed deposit,0.0,13500.0,13500.0,fixed deposit,Savings,Income,,,,,,original
+2022-01-06,recharge,15.0,0.0,-15.0,mobile phones,Mobile Phones,Expenses,,,,,,original
+2022-01-07,petrol,500.0,0.0,-500.0,petrol,Petrol,Expenses,,,,,,original
+2022-01-09,travel,1706.0,0.0,-1706.0,travelling,Travelling,Expenses,,,,,,original
+2022-01-11,fixed deposit,0.0,13500.0,13500.0,fixed deposit,Fixed Deposit,Income,,,,,,original
 2022-02-01,salary,0.0,20900.0,20900.0,salary,Salary,Income,,,Sub category,Category,Category type,original
 2022-02-02,salary,0.0,20900.0,20900.0,salary,Salary,Income,,,petrol,transport,expenses,original
-2022-02-03,food,500.0,0.0,-500.0,groceries & foods,Living Expenses,Expenses,,,,,,original
 2022-02-03,salary,0.0,20900.0,20900.0,salary,Salary,Income,,,,,,original
+2022-02-03,food,500.0,0.0,-500.0,groceries & foods,Groceries & Foods,Expenses,,,,,,original
 2022-02-04,salary,0.0,20900.0,20900.0,salary,Salary,Income,,,,,,original
-2022-02-05,gas,1000.0,0.0,-1000.0,gas,Living Expenses,Expenses,,,,,,original
 2022-02-05,salary,0.0,20900.0,20900.0,salary,Salary,Income,,,,,,original
+2022-02-05,gas,1000.0,0.0,-1000.0,gas,Gas,Expenses,,,,,,original
 2022-02-06,salary,0.0,20900.0,20900.0,salary,Salary,Income,,,,,,original
-2022-02-07,travel,2550.0,0.0,-2550.0,travelling,Transport,Expenses,,,,,,original
+2022-02-07,electricity bill,93.0,0.0,-93.0,electricity bill,Electricity Bill,Expenses,,,,,,original
 2022-02-07,salary,0.0,20900.0,20900.0,salary,Salary,Income,,,,,,original
-2022-02-07,electricity bill,93.0,0.0,-93.0,electricity bill,Living Expenses,Expenses,,,,,,original
+2022-02-07,travel,2550.0,0.0,-2550.0,travelling,Travelling,Expenses,,,,,,original
 2022-02-08,salary,0.0,20900.0,20900.0,salary,Salary,Income,,,,,,original
 2022-02-09,salary,0.0,20900.0,20900.0,salary,Salary,Income,,,,,,original
 2022-02-10,salary,0.0,20900.0,20900.0,salary,Salary,Income,,,,,,original
 2022-02-11,salary,0.0,20900.0,20900.0,salary,Salary,Income,,,,,,original
 2022-02-12,salary,0.0,20900.0,20900.0,salary,Salary,Income,,,,,,original
-2022-03-02,recharge,151.0,0.0,-151.0,mobile phones,Living Expenses,Expenses,,,Donation,charity,expenses,original
-2022-03-03,petrol,1000.0,0.0,-1000.0,petrol,Transport,Expenses,,,,,,original
-2022-04-03,other,1150.0,0.0,-1150.0,other ,Other Expenses,Expenses,,,,,,original
-2022-04-09,gas,1000.0,0.0,-1000.0,gas,Living Expenses,Expenses,,,,,,original
-2022-04-10,travel,1676.0,0.0,-1676.0,travelling,Transport,Expenses,,,,,,original
-2022-04-12,medical,43.0,0.0,-43.0,health,Medical,Expenses,,,,,,original
-2022-04-12,medical,3500.0,0.0,-3500.0,health,Medical,Expenses,,,,,,original
-2022-04-27,,,,1115.76,,Fashion,Income,,,,,,synthetic
-2022-04-28,,,,-1834.44,,Salary,Saving,,,,,,synthetic
-2022-04-28,,,,3151.09,,Transport,Income,,,,,,synthetic
-2022-04-30,,,,2818.83,,Fashion,Income,,,,,,synthetic
-2022-04-30,,,,-194.6,,Medical,Expenses,,,,,,synthetic
-2022-05-01,,,,-1335.27,,Salary,Saving,,,,,,synthetic
-2022-05-01,,,,-2310.42,,Medical,Expenses,,,,,,synthetic
-2022-05-01,,,,-2490.3,,Fashion,Saving,,,,,,synthetic
-2022-05-01,,,,-1154.58,,Living Expenses,Saving,,,,,,synthetic
-2022-05-02,,,,-1294.51,,Savings,Saving,,,,,,synthetic
-2022-05-02,,,,-1061.98,,Medical,Expenses,,,,,,synthetic
-2022-05-02,,,,-200.44,,Fashion,Expenses,,,,,,synthetic
-2022-05-03,,,,-804.9,,Fashion,Saving,,,,,,synthetic
-2022-05-04,,,,-1955.69,,Transport,Expenses,,,,,,synthetic
-2022-05-04,,,,3424.11,,Transport,Income,,,,,,synthetic
-2022-05-04,,,,-1387.81,,Transport,Expenses,,,,,,synthetic
-2022-05-05,,,,-717.33,,Medical,Expenses,,,,,,synthetic
-2022-05-05,,,,2517.3,,Other Expenses,Income,,,,,,synthetic
-2022-05-05,,,,-2795.48,,Living Expenses,Expenses,,,,,,synthetic
-2022-05-06,,,,-2982.49,,Salary,Saving,,,,,,synthetic
-2022-05-07,,,,2774.67,,Medical,Income,,,,,,synthetic
-2022-05-07,,,,-656.97,,Transport,Expenses,,,,,,synthetic
-2022-05-09,,,,4263.11,,Living Expenses,Income,,,,,,synthetic
-2022-05-12,,,,-154.82,,Transport,Expenses,,,,,,synthetic
-2022-05-13,,,,-1279.39,,Living Expenses,Saving,,,,,,synthetic
-2022-05-15,,,,-2283.57,,Medical,Saving,,,,,,synthetic
-2022-05-15,,,,2676.77,,Fashion,Income,,,,,,synthetic
-2022-05-16,,,,-798.22,,Medical,Expenses,,,,,,synthetic
-2022-05-18,,,,-2302.19,,Salary,Saving,,,,,,synthetic
-2022-05-19,,,,-899.79,,Other Expenses,Saving,,,,,,synthetic
-2022-05-21,,,,-2014.38,,Salary,Expenses,,,,,,synthetic
-2022-05-22,,,,280.11,,Medical,Income,,,,,,synthetic
-2022-05-22,,,,-2266.19,,Living Expenses,Expenses,,,,,,synthetic
-2022-05-23,,,,-2341.77,,Living Expenses,Expenses,,,,,,synthetic
-2022-05-24,,,,-2528.01,,Transport,Expenses,,,,,,synthetic
-2022-05-24,,,,-2745.04,,Medical,Expenses,,,,,,synthetic
-2022-05-24,,,,-241.09,,Other Expenses,Saving,,,,,,synthetic
-2022-05-26,,,,-2292.28,,Living Expenses,Expenses,,,,,,synthetic
-2022-05-26,,,,-2439.07,,Fashion,Expenses,,,,,,synthetic
-2022-05-26,,,,-2368.12,,Salary,Expenses,,,,,,synthetic
-2022-05-28,,,,366.32,,Transport,Income,,,,,,synthetic
-2022-05-29,,,,-1502.62,,Transport,Saving,,,,,,synthetic
-2022-05-29,,,,-744.76,,Transport,Saving,,,,,,synthetic
-2022-05-30,,,,-1826.5,,Other Expenses,Expenses,,,,,,synthetic
-2022-05-31,,,,-1547.07,,Savings,Saving,,,,,,synthetic
-2022-06-01,,,,238.7,,Transport,Income,,,,,,synthetic
-2022-06-01,,,,3157.53,,Transport,Income,,,,,,synthetic
-2022-06-01,,,,-185.21,,Savings,Expenses,,,,,,synthetic
-2022-06-01,,,,-1219.48,,Other Expenses,Saving,,,,,,synthetic
-2022-06-02,,,,945.97,,Savings,Income,,,,,,synthetic
-2022-06-02,,,,3469.64,,Fashion,Income,,,,,,synthetic
-2022-06-02,,,,-46.52,,Salary,Saving,,,,,,synthetic
-2022-06-03,,,,-602.73,,Savings,Saving,,,,,,synthetic
-2022-06-03,other,1000.0,0.0,-1000.0,other ,Other Expenses,Expenses,,,,,,original
-2022-06-04,,,,2447.99,,Medical,Income,,,,,,synthetic
-2022-06-04,electricity bill,93.0,0.0,-93.0,electricity bill,Living Expenses,Expenses,,,,,,original
-2022-06-05,,,,-2117.23,,Fashion,Saving,,,,,,synthetic
-2022-06-05,,,,-428.96,,Other Expenses,Expenses,,,,,,synthetic
-2022-06-05,,,,2722.43,,Savings,Income,,,,,,synthetic
-2022-06-06,,,,-195.44,,Fashion,Saving,,,,,,synthetic
-2022-06-06,,,,-1682.34,,Medical,Expenses,,,,,,synthetic
-2022-06-06,,,,-1476.05,,Savings,Expenses,,,,,,synthetic
-2022-06-07,,,,-324.59,,Medical,Expenses,,,,,,synthetic
-2022-06-08,,,,3270.3,,Savings,Income,,,,,,synthetic
-2022-06-09,,,,4183.13,,Living Expenses,Income,,,,,,synthetic
-2022-06-10,clothes,250.0,0.0,-250.0,clothes,Fashion,Expenses,,,,,,original
-2022-06-11,,,,-1356.87,,Living Expenses,Saving,,,,,,synthetic
-2022-06-12,,,,-522.53,,Savings,Saving,,,,,,synthetic
-2022-06-14,,,,1787.28,,Living Expenses,Income,,,,,,synthetic
-2022-06-15,,,,2850.81,,Savings,Income,,,,,,synthetic
-2022-06-16,,,,3735.51,,Salary,Income,,,,,,synthetic
-2022-06-16,,,,720.33,,Other Expenses,Income,,,,,,synthetic
-2022-06-18,,,,-1981.0,,Fashion,Saving,,,,,,synthetic
-2022-06-18,,,,2183.85,,Salary,Income,,,,,,synthetic
-2022-06-19,,,,-1337.78,,Salary,Expenses,,,,,,synthetic
-2022-06-19,,,,3416.84,,Other Expenses,Income,,,,,,synthetic
-2022-06-19,,,,-530.72,,Salary,Saving,,,,,,synthetic
-2022-06-20,,,,-2897.48,,Living Expenses,Expenses,,,,,,synthetic
-2022-06-21,,,,-873.73,,Transport,Saving,,,,,,synthetic
-2022-06-21,,,,3750.35,,Fashion,Income,,,,,,synthetic
-2022-06-22,,,,4076.47,,Salary,Income,,,,,,synthetic
-2022-06-23,,,,-301.63,,Salary,Expenses,,,,,,synthetic
-2022-06-23,,,,-1238.13,,Other Expenses,Expenses,,,,,,synthetic
-2022-06-24,,,,-786.83,,Fashion,Expenses,,,,,,synthetic
-2022-06-24,,,,-1526.12,,Fashion,Expenses,,,,,,synthetic
-2022-06-25,,,,3065.17,,Fashion,Income,,,,,,synthetic
-2022-06-27,,,,-1389.52,,Fashion,Expenses,,,,,,synthetic
-2022-06-27,,,,1177.08,,Medical,Income,,,,,,synthetic
-2022-06-28,,,,-475.36,,Transport,Saving,,,,,,synthetic
-2022-06-30,,,,4286.44,,Savings,Income,,,,,,synthetic
-2022-07-01,,,,-2480.3,,Medical,Saving,,,,,,synthetic
-2022-07-02,electricity bill,93.0,0.0,-93.0,electricity bill,Living Expenses,Expenses,,,Gas,living expenses,expenses,original
-2022-07-02,,,,1621.98,,Salary,Income,,,,,,synthetic
-2022-07-02,,,,617.73,,Fashion,Income,,,,,,synthetic
-2022-07-02,,,,4698.37,,Salary,Income,,,,,,synthetic
-2022-07-03,electricity bill,93.0,0.0,-93.0,electricity bill,Living Expenses,Expenses,,,,,,original
-2022-07-04,recharge,211.0,0.0,-211.0,mobile phones,Living Expenses,Expenses,,,,,,original
-2022-07-04,,,,-2507.48,,Other Expenses,Expenses,,,,,,synthetic
-2022-07-04,,,,1970.81,,Transport,Income,,,,,,synthetic
-2022-07-05,,,,-1150.24,,Transport,Saving,,,,,,synthetic
-2022-07-06,recharge,30.0,0.0,-30.0,mobile phones,Living Expenses,Expenses,,,,,,original
-2022-07-06,,,,-772.15,,Salary,Expenses,,,,,,synthetic
-2022-07-07,,,,-208.39,,Living Expenses,Saving,,,,,,synthetic
-2022-07-07,,,,2048.94,,Savings,Income,,,,,,synthetic
-2022-07-08,,,,3448.16,,Fashion,Income,,,,,,synthetic
-2022-07-09,,,,-561.55,,Medical,Expenses,,,,,,synthetic
-2022-07-09,,,,-240.76,,Transport,Expenses,,,,,,synthetic
-2022-07-09,,,,-1115.28,,Fashion,Expenses,,,,,,synthetic
-2022-07-11,,,,2491.78,,Living Expenses,Income,,,,,,synthetic
-2022-07-11,,,,1521.99,,Salary,Income,,,,,,synthetic
-2022-07-11,,,,4293.41,,Fashion,Income,,,,,,synthetic
-2022-07-11,,,,-325.71,,Medical,Expenses,,,,,,synthetic
-2022-07-12,,,,-337.52,,Other Expenses,Expenses,,,,,,synthetic
-2022-07-12,,,,-489.08,,Transport,Expenses,,,,,,synthetic
-2022-07-13,,,,-366.04,,Other Expenses,Expenses,,,,,,synthetic
-2022-07-16,,,,4359.12,,Medical,Income,,,,,,synthetic
-2022-07-19,,,,3722.22,,Transport,Income,,,,,,synthetic
-2022-07-19,,,,1984.85,,Other Expenses,Income,,,,,,synthetic
-2022-07-21,,,,-2942.84,,Fashion,Saving,,,,,,synthetic
-2022-07-24,,,,1999.58,,Transport,Income,,,,,,synthetic
-2022-07-24,,,,-1110.01,,Transport,Saving,,,,,,synthetic
-2022-07-25,,,,-1190.25,,Medical,Saving,,,,,,synthetic
-2022-07-27,,,,-977.08,,Medical,Expenses,,,,,,synthetic
-2022-07-27,,,,4190.33,,Salary,Income,,,,,,synthetic
-2022-07-29,,,,2439.07,,Other Expenses,Income,,,,,,synthetic
-2022-07-30,,,,-1958.61,,Transport,Expenses,,,,,,synthetic
-2022-07-31,,,,-1348.83,,Other Expenses,Expenses,,,,,,synthetic
-2022-08-02,,,,-2530.95,,Savings,Saving,,,,,,synthetic
-2022-08-02,,,,-1622.21,,Fashion,Saving,,,,,,synthetic
-2022-08-03,,,,-1253.15,,Salary,Expenses,,,,,,synthetic
-2022-08-05,,,,-2805.58,,Other Expenses,Saving,,,,,,synthetic
-2022-08-06,recharge,30.0,0.0,-30.0,mobile phones,Living Expenses,Expenses,,,,,,original
-2022-08-06,,,,3657.5,,Living Expenses,Income,,,,,,synthetic
-2022-08-07,,,,-2191.06,,Transport,Expenses,,,,,,synthetic
-2022-08-07,,,,-2279.57,,Savings,Saving,,,,,,synthetic
-2022-08-10,,,,-430.84,,Transport,Saving,,,,,,synthetic
-2022-08-10,shopping,1247.0,0.0,-1247.0,clothes,Fashion,Expenses,,,,,,original
-2022-08-10,,,,-1412.87,,Savings,Expenses,,,,,,synthetic
-2022-08-10,food,500.0,0.0,-500.0,groceries & foods,Living Expenses,Expenses,,,,,,original
-2022-08-12,,,,2358.72,,Other Expenses,Income,,,,,,synthetic
-2022-08-13,,,,-2458.78,,Savings,Saving,,,,,,synthetic
-2022-08-13,,,,-2473.55,,Transport,Expenses,,,,,,synthetic
-2022-08-14,,,,-1440.83,,Salary,Saving,,,,,,synthetic
-2022-08-15,,,,955.57,,Salary,Income,,,,,,synthetic
-2022-08-17,,,,-426.63,,Other Expenses,Expenses,,,,,,synthetic
-2022-08-17,,,,1342.38,,Fashion,Income,,,,,,synthetic
-2022-08-18,,,,3842.28,,Medical,Income,,,,,,synthetic
-2022-08-20,,,,-834.9,,Medical,Saving,,,,,,synthetic
-2022-08-20,,,,-399.32,,Other Expenses,Saving,,,,,,synthetic
-2022-08-20,,,,-2581.63,,Other Expenses,Saving,,,,,,synthetic
-2022-08-21,,,,1433.46,,Other Expenses,Income,,,,,,synthetic
-2022-08-22,,,,3862.92,,Savings,Income,,,,,,synthetic
-2022-08-22,,,,-715.6,,Salary,Saving,,,,,,synthetic
-2022-08-22,,,,-1925.69,,Living Expenses,Saving,,,,,,synthetic
-2022-08-24,,,,-627.6,,Transport,Saving,,,,,,synthetic
-2022-08-24,,,,-2348.95,,Salary,Expenses,,,,,,synthetic
-2022-08-24,,,,-2900.19,,Medical,Expenses,,,,,,synthetic
-2022-08-26,,,,-2542.59,,Living Expenses,Saving,,,,,,synthetic
-2022-08-26,,,,-1834.71,,Transport,Saving,,,,,,synthetic
-2022-08-26,,,,782.98,,Salary,Income,,,,,,synthetic
-2022-08-27,,,,-438.08,,Transport,Expenses,,,,,,synthetic
-2022-08-27,,,,-313.85,,Transport,Expenses,,,,,,synthetic
-2022-08-27,,,,4742.06,,Living Expenses,Income,,,,,,synthetic
-2022-08-30,,,,-2855.95,,Other Expenses,Expenses,,,,,,synthetic
-2022-08-30,,,,-1536.3,,Living Expenses,Saving,,,,,,synthetic
-2022-08-30,,,,3636.89,,Savings,Income,,,,,,synthetic
-2022-08-31,,,,-460.68,,Medical,Saving,,,,,,synthetic
-2022-09-02,paid to someone,500.0,0.0,-500.0,other ,Other Expenses,Expenses,,,other ,other expenses,expenses,original
-2022-09-03,,,,-2369.79,,Salary,Expenses,,,,,,synthetic
-2022-09-05,,,,-1947.3,,Fashion,Saving,,,,,,synthetic
-2022-09-05,,,,4558.1,,Fashion,Income,,,,,,synthetic
-2022-09-05,,,,-2470.8,,Savings,Expenses,,,,,,synthetic
-2022-09-05,,,,3975.44,,Medical,Income,,,,,,synthetic
-2022-09-05,,,,-1782.43,,Other Expenses,Expenses,,,,,,synthetic
-2022-09-06,,,,3342.02,,Other Expenses,Income,,,,,,synthetic
-2022-09-06,,,,-454.85,,Living Expenses,Saving,,,,,,synthetic
-2022-09-06,recharge,30.0,0.0,-30.0,mobile phones,Living Expenses,Expenses,,,,,,original
-2022-09-07,,,,-2174.89,,Savings,Saving,,,,,,synthetic
-2022-09-07,,,,4875.1,,Savings,Income,,,,,,synthetic
-2022-09-08,,,,-1436.99,,Fashion,Saving,,,,,,synthetic
-2022-09-09,,,,-2593.88,,Medical,Expenses,,,,,,synthetic
-2022-09-09,,,,-1482.0,,Medical,Expenses,,,,,,synthetic
-2022-09-09,,,,-2065.97,,Transport,Saving,,,,,,synthetic
-2022-09-10,,,,-2643.35,,Other Expenses,Expenses,,,,,,synthetic
-2022-09-10,,,,-1974.0,,Fashion,Saving,,,,,,synthetic
-2022-09-10,,,,-2544.95,,Salary,Expenses,,,,,,synthetic
-2022-09-11,,,,2318.17,,Medical,Income,,,,,,synthetic
-2022-09-11,food,163.0,0.0,-163.0,groceries & foods,Living Expenses,Expenses,,,,,,original
-2022-09-13,,,,3262.13,,Savings,Income,,,,,,synthetic
-2022-09-14,,,,-1032.83,,Medical,Expenses,,,,,,synthetic
-2022-09-16,,,,1979.38,,Other Expenses,Income,,,,,,synthetic
-2022-09-16,,,,1270.03,,Medical,Income,,,,,,synthetic
-2022-09-18,,,,-1481.97,,Fashion,Saving,,,,,,synthetic
-2022-09-18,,,,-2096.7,,Other Expenses,Saving,,,,,,synthetic
-2022-09-18,,,,1125.26,,Salary,Income,,,,,,synthetic
-2022-09-19,,,,4943.14,,Other Expenses,Income,,,,,,synthetic
-2022-09-19,,,,-2114.04,,Living Expenses,Expenses,,,,,,synthetic
-2022-09-19,,,,-1755.73,,Other Expenses,Expenses,,,,,,synthetic
-2022-09-19,,,,4706.86,,Fashion,Income,,,,,,synthetic
-2022-09-20,,,,-1077.32,,Medical,Expenses,,,,,,synthetic
-2022-09-20,,,,-2534.43,,Salary,Expenses,,,,,,synthetic
-2022-09-21,,,,-410.53,,Medical,Saving,,,,,,synthetic
-2022-09-21,,,,507.32,,Living Expenses,Income,,,,,,synthetic
-2022-09-21,,,,-1882.6,,Living Expenses,Saving,,,,,,synthetic
-2022-09-22,,,,2780.52,,Other Expenses,Income,,,,,,synthetic
-2022-09-22,,,,-2178.43,,Medical,Saving,,,,,,synthetic
-2022-09-22,,,,-2906.8,,Living Expenses,Expenses,,,,,,synthetic
-2022-09-23,,,,1045.28,,Medical,Income,,,,,,synthetic
-2022-09-23,,,,4669.57,,Living Expenses,Income,,,,,,synthetic
-2022-09-25,,,,-2183.45,,Fashion,Expenses,,,,,,synthetic
-2022-09-26,,,,-225.4,,Salary,Expenses,,,,,,synthetic
-2022-09-29,,,,1923.1,,Transport,Income,,,,,,synthetic
-2022-09-29,,,,-1230.16,,Medical,Saving,,,,,,synthetic
-2022-09-29,,,,-1699.26,,Other Expenses,Saving,,,,,,synthetic
-2022-09-30,,,,3308.65,,Savings,Income,,,,,,synthetic
-2022-10-01,,,,-516.6,,Fashion,Expenses,,,,,,synthetic
-2022-10-01,,,,-2183.63,,Salary,Expenses,,,,,,synthetic
-2022-10-01,,,,-1046.65,,Fashion,Saving,,,,,,synthetic
-2022-10-02,other,500.0,0.0,-500.0,other ,Other Expenses,Expenses,,,,,,original
-2022-10-03,,,,-1331.86,,Transport,Expenses,,,,,,synthetic
-2022-10-03,,,,-808.27,,Other Expenses,Saving,,,,,,synthetic
-2022-10-03,,,,-2212.5,,Salary,Saving,,,,,,synthetic
-2022-10-03,,,,4192.51,,Salary,Income,,,,,,synthetic
-2022-10-03,,,,-2955.96,,Living Expenses,Expenses,,,,,,synthetic
-2022-10-03,,,,-244.55,,Medical,Saving,,,,,,synthetic
-2022-10-04,,,,4962.83,,Salary,Income,,,,,,synthetic
-2022-10-04,,,,-2824.61,,Other Expenses,Saving,,,,,,synthetic
-2022-10-04,fixed deposit,0.0,17820.0,17820.0,fixed deposit,Savings,Saving,,,,,,original
-2022-10-05,,,,-1801.7,,Other Expenses,Saving,,,,,,synthetic
-2022-10-05,,,,-2143.97,,Savings,Expenses,,,,,,synthetic
-2022-10-06,,,,-1500.25,,Savings,Saving,,,,,,synthetic
-2022-10-07,,,,-1755.88,,Medical,Expenses,,,,,,synthetic
-2022-10-08,,,,-733.57,,Medical,Expenses,,,,,,synthetic
-2022-10-08,,,,-662.65,,Salary,Expenses,,,,,,synthetic
-2022-10-09,,,,-2115.79,,Savings,Saving,,,,,,synthetic
-2022-10-09,,,,-2803.09,,Salary,Expenses,,,,,,synthetic
-2022-10-09,,,,-1330.43,,Salary,Expenses,,,,,,synthetic
-2022-10-09,,,,-2924.15,,Medical,Saving,,,,,,synthetic
-2022-10-11,,,,-1131.1,,Living Expenses,Expenses,,,,,,synthetic
-2022-10-11,,,,-882.55,,Medical,Expenses,,,,,,synthetic
-2022-10-12,,,,2339.74,,Savings,Income,,,,,,synthetic
-2022-10-12,,,,-2261.93,,Living Expenses,Expenses,,,,,,synthetic
-2022-10-13,,,,-101.8,,Salary,Expenses,,,,,,synthetic
-2022-10-15,,,,2097.26,,Salary,Income,,,,,,synthetic
-2022-10-16,,,,-228.52,,Other Expenses,Expenses,,,,,,synthetic
-2022-10-16,,,,-520.01,,Other Expenses,Expenses,,,,,,synthetic
-2022-10-16,,,,4847.02,,Transport,Income,,,,,,synthetic
-2022-10-21,,,,1336.33,,Living Expenses,Income,,,,,,synthetic
-2022-10-22,,,,-2357.12,,Other Expenses,Expenses,,,,,,synthetic
-2022-10-22,,,,-1948.97,,Medical,Saving,,,,,,synthetic
-2022-10-22,,,,-620.36,,Other Expenses,Saving,,,,,,synthetic
-2022-10-22,,,,4104.94,,Medical,Income,,,,,,synthetic
-2022-10-23,,,,3258.14,,Other Expenses,Income,,,,,,synthetic
-2022-10-24,,,,-1797.3,,Fashion,Expenses,,,,,,synthetic
-2022-10-25,,,,-980.3,,Savings,Saving,,,,,,synthetic
-2022-10-25,,,,-220.18,,Transport,Expenses,,,,,,synthetic
-2022-10-26,,,,3429.42,,Medical,Income,,,,,,synthetic
-2022-10-26,,,,4021.89,,Savings,Income,,,,,,synthetic
-2022-10-26,,,,-742.9,,Fashion,Saving,,,,,,synthetic
-2022-10-28,,,,4514.84,,Medical,Income,,,,,,synthetic
-2022-10-29,,,,1932.3,,Transport,Income,,,,,,synthetic
-2022-10-29,,,,-119.43,,Medical,Expenses,,,,,,synthetic
-2022-10-29,,,,-89.07,,Other Expenses,Expenses,,,,,,synthetic
-2022-10-30,,,,4606.63,,Living Expenses,Income,,,,,,synthetic
-2022-10-30,,,,4333.29,,Salary,Income,,,,,,synthetic
-2022-10-30,,,,-2640.41,,Medical,Saving,,,,,,synthetic
-2022-11-01,,,,3622.16,,Fashion,Income,,,,,,synthetic
-2022-11-01,,,,-2759.07,,Salary,Saving,,,,,,synthetic
-2022-11-02,,,,-897.66,,Fashion,Saving,,,,,,synthetic
-2022-11-02,food,1000.0,0.0,-1000.0,groceries & foods,Living Expenses,Expenses,,,,,,original
-2022-11-04,recharge,19.0,0.0,-19.0,mobile phones,Living Expenses,Expenses,,,,,,original
-2022-11-04,,,,3979.4,,Other Expenses,Income,,,,,,synthetic
-2022-11-05,,,,-2656.67,,Salary,Saving,,,,,,synthetic
-2022-11-06,,,,4885.79,,Living Expenses,Income,,,,,,synthetic
-2022-11-06,,,,-536.14,,Living Expenses,Saving,,,,,,synthetic
-2022-11-06,,,,-2799.9,,Transport,Expenses,,,,,,synthetic
-2022-11-08,clothes,2000.0,0.0,-2000.0,clothes,Fashion,Expenses,,,,,,original
-2022-11-09,,,,1659.8,,Savings,Income,,,,,,synthetic
-2022-11-09,,,,-1928.97,,Other Expenses,Expenses,,,,,,synthetic
-2022-11-10,,,,-254.37,,Transport,Saving,,,,,,synthetic
-2022-11-12,,,,-2049.55,,Medical,Saving,,,,,,synthetic
-2022-11-13,,,,-2882.47,,Medical,Expenses,,,,,,synthetic
-2022-11-13,,,,-769.21,,Transport,Saving,,,,,,synthetic
-2022-11-14,,,,-526.91,,Salary,Expenses,,,,,,synthetic
-2022-11-14,,,,-784.84,,Salary,Expenses,,,,,,synthetic
-2022-11-15,,,,-2090.97,,Other Expenses,Saving,,,,,,synthetic
-2022-11-15,,,,-259.34,,Transport,Saving,,,,,,synthetic
-2022-11-15,,,,-2847.49,,Fashion,Expenses,,,,,,synthetic
-2022-11-16,,,,-1045.22,,Savings,Expenses,,,,,,synthetic
-2022-11-17,,,,4019.25,,Other Expenses,Income,,,,,,synthetic
-2022-11-17,,,,4866.99,,Transport,Income,,,,,,synthetic
-2022-11-18,,,,-2305.99,,Fashion,Saving,,,,,,synthetic
-2022-11-21,,,,-2377.41,,Transport,Expenses,,,,,,synthetic
-2022-11-22,,,,1832.92,,Transport,Income,,,,,,synthetic
-2022-11-24,,,,-1186.97,,Fashion,Saving,,,,,,synthetic
-2022-11-24,,,,4397.23,,Other Expenses,Income,,,,,,synthetic
-2022-11-25,,,,448.58,,Fashion,Income,,,,,,synthetic
-2022-11-25,,,,-1479.74,,Savings,Saving,,,,,,synthetic
-2022-11-25,,,,-1161.25,,Living Expenses,Saving,,,,,,synthetic
-2022-11-25,,,,-1189.78,,Transport,Saving,,,,,,synthetic
-2022-11-26,,,,-563.19,,Transport,Saving,,,,,,synthetic
-2022-11-26,,,,4326.25,,Salary,Income,,,,,,synthetic
-2022-11-27,,,,-2023.58,,Fashion,Saving,,,,,,synthetic
-2022-11-27,,,,-2162.9,,Transport,Saving,,,,,,synthetic
-2022-12-02,food,193.0,0.0,-193.0,groceries & foods,Living Expenses,Expenses,,,,,,original
-2022-12-02,,,,-2843.5,,Living Expenses,Expenses,,,,,,synthetic
-2022-12-03,,,,-814.83,,Medical,Saving,,,,,,synthetic
-2022-12-03,,,,-291.59,,Fashion,Expenses,,,,,,synthetic
-2022-12-05,,,,-1877.0,,Fashion,Expenses,,,,,,synthetic
-2022-12-05,other,120.0,0.0,-120.0,other ,Other Expenses,Expenses,,,,,,original
-2022-12-05,,,,-2807.83,,Living Expenses,Saving,,,,,,synthetic
-2022-12-06,,,,-1098.12,,Savings,Saving,,,,,,synthetic
-2022-12-06,,,,-2826.93,,Other Expenses,Saving,,,,,,synthetic
-2022-12-08,,,,-1904.56,,Living Expenses,Saving,,,,,,synthetic
-2022-12-08,,,,-2048.95,,Fashion,Saving,,,,,,synthetic
-2022-12-08,,,,-1609.76,,Other Expenses,Saving,,,,,,synthetic
-2022-12-09,,,,-2770.5,,Living Expenses,Saving,,,,,,synthetic
-2022-12-09,rent received,0.0,3400.0,3400.0,house rent ,Salary,Income,,,,,,original
-2022-12-09,,,,2112.64,,Fashion,Income,,,,,,synthetic
-2022-12-09,,,,-443.46,,Savings,Saving,,,,,,synthetic
-2022-12-10,,,,-1838.58,,Medical,Saving,,,,,,synthetic
-2022-12-15,,,,1015.92,,Medical,Income,,,,,,synthetic
-2022-12-15,,,,-980.52,,Transport,Saving,,,,,,synthetic
-2022-12-16,,,,-1671.26,,Transport,Saving,,,,,,synthetic
-2022-12-16,,,,4830.66,,Medical,Income,,,,,,synthetic
-2022-12-18,,,,-1280.95,,Medical,Saving,,,,,,synthetic
-2022-12-18,,,,2392.58,,Transport,Income,,,,,,synthetic
-2022-12-19,,,,-1865.84,,Other Expenses,Expenses,,,,,,synthetic
-2022-12-19,,,,2575.46,,Medical,Income,,,,,,synthetic
-2022-12-21,,,,-2370.42,,Salary,Expenses,,,,,,synthetic
-2022-12-23,,,,-2463.49,,Living Expenses,Saving,,,,,,synthetic
-2022-12-23,,,,-432.43,,Medical,Saving,,,,,,synthetic
-2022-12-24,,,,-1251.48,,Savings,Expenses,,,,,,synthetic
-2022-12-24,,,,-2907.38,,Savings,Expenses,,,,,,synthetic
-2022-12-25,,,,-1848.45,,Medical,Saving,,,,,,synthetic
-2022-12-25,,,,-869.06,,Fashion,Saving,,,,,,synthetic
-2022-12-26,,,,1642.31,,Living Expenses,Income,,,,,,synthetic
-2022-12-26,,,,-1793.23,,Living Expenses,Expenses,,,,,,synthetic
-2022-12-27,,,,2849.56,,Living Expenses,Income,,,,,,synthetic
-2022-12-27,,,,-2043.84,,Other Expenses,Saving,,,,,,synthetic
-2022-12-31,,,,-2587.23,,Living Expenses,Expenses,,,,,,synthetic
-2022-12-31,,,,-2060.4,,Transport,Expenses,,,,,,synthetic
-2022-12-31,,,,4776.34,,Other Expenses,Income,,,,,,synthetic
-2022-12-31,,,,-2231.96,,Transport,Saving,,,,,,synthetic
-2023-01-01,,,,-1336.68,,Medical,Saving,,,,,,synthetic
-2023-01-01,,,,4658.08,,Salary,Income,,,,,,synthetic
-2023-01-01,,,,-1464.1,,Other Expenses,Saving,,,,,,synthetic
-2023-01-02,,,,-2560.4,,Transport,Expenses,,,,,,synthetic
-2023-01-02,,,,1568.3,,Medical,Income,,,,,,synthetic
-2023-01-03,,,,-74.33,,Savings,Expenses,,,,,,synthetic
-2023-01-03,,,,-1769.63,,Fashion,Saving,,,,,,synthetic
-2023-01-03,,,,4622.12,,Salary,Income,,,,,,synthetic
-2023-01-04,,,,4104.69,,Medical,Income,,,,,,synthetic
-2023-01-04,,,,-2647.26,,Salary,Expenses,,,,,,synthetic
-2023-01-05,,,,-535.18,,Medical,Expenses,,,,,,synthetic
-2023-01-07,,,,-1536.44,,Fashion,Expenses,,,,,,synthetic
-2023-01-07,,,,-2681.53,,Living Expenses,Saving,,,,,,synthetic
-2023-01-07,,,,-2301.11,,Living Expenses,Saving,,,,,,synthetic
-2023-01-08,,,,-2788.05,,Fashion,Expenses,,,,,,synthetic
-2023-01-09,,,,-2615.1,,Salary,Saving,,,,,,synthetic
-2023-01-09,,,,1615.56,,Medical,Income,,,,,,synthetic
-2023-01-09,,,,4185.84,,Fashion,Income,,,,,,synthetic
-2023-01-09,,,,2369.8,,Medical,Income,,,,,,synthetic
-2023-01-10,,,,2849.98,,Transport,Income,,,,,,synthetic
-2023-01-10,,,,-2436.03,,Medical,Saving,,,,,,synthetic
-2023-01-11,,,,-1030.02,,Living Expenses,Expenses,,,,,,synthetic
-2023-01-11,,,,2138.12,,Medical,Income,,,,,,synthetic
-2023-01-13,,,,-2922.03,,Medical,Expenses,,,,,,synthetic
-2023-01-13,,,,-441.46,,Savings,Saving,,,,,,synthetic
-2023-01-13,,,,3034.36,,Savings,Income,,,,,,synthetic
-2023-01-14,,,,-1755.09,,Savings,Expenses,,,,,,synthetic
-2023-01-15,,,,-2398.2,,Savings,Expenses,,,,,,synthetic
-2023-01-15,,,,-975.58,,Living Expenses,Expenses,,,,,,synthetic
-2023-01-17,,,,-2175.37,,Medical,Expenses,,,,,,synthetic
-2023-01-18,,,,-2108.16,,Other Expenses,Expenses,,,,,,synthetic
-2023-01-18,,,,-878.89,,Fashion,Expenses,,,,,,synthetic
-2023-01-18,,,,768.57,,Salary,Income,,,,,,synthetic
-2023-01-19,,,,-2033.37,,Transport,Expenses,,,,,,synthetic
-2023-01-19,,,,-883.22,,Fashion,Saving,,,,,,synthetic
-2023-01-19,,,,260.79,,Living Expenses,Income,,,,,,synthetic
-2023-01-20,,,,-2613.78,,Other Expenses,Saving,,,,,,synthetic
-2023-01-20,,,,-1395.81,,Savings,Expenses,,,,,,synthetic
-2023-01-20,,,,1777.09,,Medical,Income,,,,,,synthetic
-2023-01-21,,,,-2262.13,,Savings,Expenses,,,,,,synthetic
-2023-01-23,,,,-2824.37,,Salary,Expenses,,,,,,synthetic
-2023-01-23,,,,-2038.49,,Other Expenses,Saving,,,,,,synthetic
-2023-01-23,,,,2016.24,,Savings,Income,,,,,,synthetic
-2023-01-24,,,,-1210.21,,Transport,Saving,,,,,,synthetic
-2023-01-24,,,,-2821.87,,Living Expenses,Saving,,,,,,synthetic
-2023-01-25,,,,-1372.07,,Savings,Expenses,,,,,,synthetic
-2023-01-27,,,,-1845.7,,Medical,Expenses,,,,,,synthetic
-2023-01-27,,,,1783.06,,Salary,Income,,,,,,synthetic
-2023-01-28,,,,-2168.1,,Fashion,Saving,,,,,,synthetic
-2023-01-28,,,,-1907.01,,Salary,Saving,,,,,,synthetic
-2023-01-28,,,,1525.99,,Living Expenses,Income,,,,,,synthetic
-2023-01-28,,,,3690.77,,Savings,Income,,,,,,synthetic
-2023-01-29,,,,-61.48,,Medical,Expenses,,,,,,synthetic
-2023-01-29,,,,-2405.34,,Savings,Saving,,,,,,synthetic
-2023-01-30,,,,4603.86,,Savings,Income,,,,,,synthetic
-2023-01-31,,,,-1911.66,,Savings,Expenses,,,,,,synthetic
-2023-01-31,,,,-727.99,,Other Expenses,Saving,,,,,,synthetic
-2023-02-03,,,,-2203.1,,Transport,Expenses,,,,,,synthetic
-2023-02-04,,,,-1506.3,,Savings,Expenses,,,,,,synthetic
-2023-02-04,,,,-255.51,,Other Expenses,Saving,,,,,,synthetic
-2023-02-06,,,,-895.42,,Living Expenses,Saving,,,,,,synthetic
-2023-02-07,,,,2900.12,,Transport,Income,,,,,,synthetic
-2023-02-08,,,,-655.2,,Salary,Saving,,,,,,synthetic
-2023-02-08,,,,-1877.31,,Other Expenses,Expenses,,,,,,synthetic
-2023-02-09,,,,-1945.59,,Transport,Expenses,,,,,,synthetic
-2023-02-12,,,,-828.35,,Fashion,Expenses,,,,,,synthetic
-2023-02-12,,,,-2841.91,,Living Expenses,Saving,,,,,,synthetic
-2023-02-13,,,,3000.05,,Living Expenses,Income,,,,,,synthetic
-2023-02-13,,,,-1431.09,,Living Expenses,Saving,,,,,,synthetic
-2023-02-13,,,,-1577.23,,Savings,Saving,,,,,,synthetic
-2023-02-13,,,,-1748.17,,Medical,Saving,,,,,,synthetic
-2023-02-14,,,,1344.51,,Salary,Income,,,,,,synthetic
-2023-02-14,,,,-1693.14,,Fashion,Expenses,,,,,,synthetic
-2023-02-15,,,,-1154.37,,Medical,Expenses,,,,,,synthetic
-2023-02-15,,,,-2458.76,,Transport,Expenses,,,,,,synthetic
-2023-02-16,,,,2362.51,,Living Expenses,Income,,,,,,synthetic
-2023-02-16,,,,990.26,,Transport,Income,,,,,,synthetic
-2023-02-17,,,,-1814.02,,Living Expenses,Saving,,,,,,synthetic
-2023-02-18,,,,-599.42,,Fashion,Saving,,,,,,synthetic
-2023-02-18,,,,-1274.88,,Transport,Expenses,,,,,,synthetic
-2023-02-18,,,,1318.39,,Transport,Income,,,,,,synthetic
-2023-02-20,,,,-2856.49,,Medical,Expenses,,,,,,synthetic
-2023-02-20,,,,-1337.29,,Transport,Saving,,,,,,synthetic
-2023-02-22,,,,3903.21,,Fashion,Income,,,,,,synthetic
-2023-02-24,,,,-1711.99,,Other Expenses,Expenses,,,,,,synthetic
-2023-02-26,,,,3113.91,,Other Expenses,Income,,,,,,synthetic
-2023-02-26,,,,4643.67,,Fashion,Income,,,,,,synthetic
-2023-02-27,,,,-1398.88,,Savings,Expenses,,,,,,synthetic
-2023-02-27,,,,-133.13,,Living Expenses,Expenses,,,,,,synthetic
-2023-02-28,,,,4067.73,,Fashion,Income,,,,,,synthetic
-2023-02-28,,,,-2765.15,,Medical,Saving,,,,,,synthetic
-2023-03-01,,,,-371.23,,Living Expenses,Expenses,,,,,,synthetic
-2023-03-01,,,,-752.44,,Savings,Saving,,,,,,synthetic
-2023-03-01,,,,-1679.71,,Fashion,Saving,,,,,,synthetic
-2023-03-02,,,,-2763.15,,Savings,Saving,,,,,,synthetic
-2023-03-03,,,,-2956.76,,Medical,Saving,,,,,,synthetic
-2023-03-04,,,,-1850.04,,Salary,Saving,,,,,,synthetic
-2023-03-04,,,,2268.7,,Salary,Income,,,,,,synthetic
-2023-03-04,,,,-727.89,,Other Expenses,Expenses,,,,,,synthetic
-2023-03-05,,,,-2321.58,,Transport,Expenses,,,,,,synthetic
-2023-03-07,,,,-1090.15,,Transport,Saving,,,,,,synthetic
-2023-03-08,,,,-264.31,,Salary,Saving,,,,,,synthetic
-2023-03-09,,,,640.44,,Fashion,Income,,,,,,synthetic
-2023-03-09,,,,-2642.8,,Medical,Saving,,,,,,synthetic
-2023-03-09,,,,-1852.47,,Fashion,Expenses,,,,,,synthetic
-2023-03-11,,,,561.17,,Salary,Income,,,,,,synthetic
-2023-03-12,,,,-1852.26,,Fashion,Expenses,,,,,,synthetic
-2023-03-13,,,,-1822.39,,Other Expenses,Expenses,,,,,,synthetic
-2023-03-13,,,,2240.67,,Medical,Income,,,,,,synthetic
-2023-03-14,,,,2160.88,,Living Expenses,Income,,,,,,synthetic
-2023-03-14,,,,-28.45,,Living Expenses,Saving,,,,,,synthetic
-2023-03-16,,,,989.78,,Savings,Income,,,,,,synthetic
-2023-03-17,,,,-2064.5,,Living Expenses,Expenses,,,,,,synthetic
-2023-03-17,,,,4583.05,,Salary,Income,,,,,,synthetic
-2023-03-20,,,,-1423.41,,Other Expenses,Expenses,,,,,,synthetic
-2023-03-22,,,,-539.12,,Fashion,Expenses,,,,,,synthetic
-2023-03-22,,,,-164.57,,Salary,Saving,,,,,,synthetic
-2023-03-25,,,,1871.98,,Fashion,Income,,,,,,synthetic
-2023-03-25,,,,-1066.28,,Medical,Expenses,,,,,,synthetic
-2023-03-25,,,,-2102.05,,Salary,Expenses,,,,,,synthetic
-2023-03-25,,,,-771.77,,Medical,Expenses,,,,,,synthetic
-2023-03-26,,,,-1266.54,,Medical,Saving,,,,,,synthetic
-2023-03-26,,,,-1473.81,,Transport,Saving,,,,,,synthetic
-2023-03-26,,,,4553.26,,Savings,Income,,,,,,synthetic
-2023-03-29,,,,-909.37,,Salary,Saving,,,,,,synthetic
-2023-03-30,,,,654.68,,Savings,Income,,,,,,synthetic
-2023-03-30,,,,3505.35,,Transport,Income,,,,,,synthetic
-2023-03-30,,,,2432.16,,Savings,Income,,,,,,synthetic
-2023-03-30,,,,-1098.1,,Living Expenses,Saving,,,,,,synthetic
-2023-04-01,,,,-2878.71,,Salary,Expenses,,,,,,synthetic
-2023-04-03,,,,589.87,,Medical,Income,,,,,,synthetic
-2023-04-03,,,,-1882.77,,Other Expenses,Saving,,,,,,synthetic
-2023-04-03,,,,-2497.22,,Medical,Expenses,,,,,,synthetic
-2023-04-04,,,,-910.4,,Fashion,Saving,,,,,,synthetic
-2023-04-04,,,,-870.04,,Medical,Expenses,,,,,,synthetic
-2023-04-04,,,,-297.56,,Medical,Saving,,,,,,synthetic
-2023-04-04,,,,-1493.24,,Fashion,Expenses,,,,,,synthetic
-2023-04-07,,,,4652.83,,Savings,Income,,,,,,synthetic
-2023-04-08,,,,-2008.06,,Transport,Saving,,,,,,synthetic
-2023-04-08,,,,-187.22,,Savings,Expenses,,,,,,synthetic
-2023-04-09,,,,-1236.72,,Other Expenses,Saving,,,,,,synthetic
-2023-04-10,,,,-808.67,,Fashion,Saving,,,,,,synthetic
-2023-04-10,,,,-2160.86,,Savings,Saving,,,,,,synthetic
-2023-04-10,,,,2215.12,,Savings,Income,,,,,,synthetic
-2023-04-11,,,,-80.6,,Savings,Saving,,,,,,synthetic
-2023-04-11,,,,-880.03,,Other Expenses,Saving,,,,,,synthetic
-2023-04-11,,,,-1417.95,,Living Expenses,Saving,,,,,,synthetic
-2023-04-12,,,,-511.69,,Transport,Saving,,,,,,synthetic
-2023-04-13,,,,-2935.43,,Medical,Saving,,,,,,synthetic
-2023-04-13,,,,-1945.46,,Salary,Saving,,,,,,synthetic
-2023-04-14,,,,-1267.97,,Transport,Expenses,,,,,,synthetic
-2023-04-15,,,,-2443.29,,Medical,Expenses,,,,,,synthetic
-2023-04-16,,,,3994.39,,Fashion,Income,,,,,,synthetic
-2023-04-16,,,,1393.55,,Medical,Income,,,,,,synthetic
-2023-04-17,,,,-362.95,,Salary,Saving,,,,,,synthetic
-2023-04-18,,,,-972.85,,Savings,Expenses,,,,,,synthetic
-2023-04-18,,,,3616.68,,Other Expenses,Income,,,,,,synthetic
-2023-04-18,,,,925.43,,Savings,Income,,,,,,synthetic
-2023-04-19,,,,-569.67,,Transport,Saving,,,,,,synthetic
-2023-04-20,,,,-2504.56,,Living Expenses,Expenses,,,,,,synthetic
-2023-04-21,,,,-179.76,,Fashion,Saving,,,,,,synthetic
-2023-04-21,,,,-1789.58,,Medical,Saving,,,,,,synthetic
-2023-04-23,,,,-2036.33,,Salary,Saving,,,,,,synthetic
-2023-04-23,,,,2501.09,,Savings,Income,,,,,,synthetic
-2023-04-24,,,,-2710.36,,Fashion,Saving,,,,,,synthetic
-2023-04-24,,,,-1002.35,,Savings,Saving,,,,,,synthetic
-2023-04-25,,,,-1199.5,,Medical,Saving,,,,,,synthetic
-2023-04-26,,,,1451.77,,Living Expenses,Income,,,,,,synthetic
-2023-04-28,,,,-504.71,,Medical,Expenses,,,,,,synthetic
-2023-04-29,,,,2975.89,,Fashion,Income,,,,,,synthetic
-2023-05-01,,,,-953.94,,Savings,Saving,,,,,,synthetic
-2023-05-01,,,,3943.7,,Living Expenses,Income,,,,,,synthetic
-2023-05-02,,,,-1408.84,,Living Expenses,Expenses,,,,,,synthetic
-2023-05-03,,,,-201.72,,Savings,Expenses,,,,,,synthetic
-2023-05-04,,,,-911.48,,Other Expenses,Saving,,,,,,synthetic
-2023-05-04,,,,2276.57,,Living Expenses,Income,,,,,,synthetic
-2023-05-05,,,,-1446.42,,Fashion,Saving,,,,,,synthetic
-2023-05-06,,,,-775.88,,Transport,Expenses,,,,,,synthetic
-2023-05-06,,,,-1345.19,,Living Expenses,Expenses,,,,,,synthetic
-2023-05-07,,,,-2937.42,,Living Expenses,Expenses,,,,,,synthetic
-2023-05-09,,,,637.82,,Other Expenses,Income,,,,,,synthetic
-2023-05-10,,,,-429.07,,Fashion,Expenses,,,,,,synthetic
-2023-05-10,,,,857.77,,Salary,Income,,,,,,synthetic
-2023-05-11,,,,-1282.26,,Transport,Expenses,,,,,,synthetic
-2023-05-11,,,,234.52,,Savings,Income,,,,,,synthetic
-2023-05-11,,,,3976.61,,Salary,Income,,,,,,synthetic
-2023-05-12,,,,3202.47,,Salary,Income,,,,,,synthetic
-2023-05-12,,,,-2606.91,,Fashion,Expenses,,,,,,synthetic
-2023-05-12,,,,-1066.05,,Other Expenses,Expenses,,,,,,synthetic
-2023-05-13,,,,4999.56,,Savings,Income,,,,,,synthetic
-2023-05-13,,,,2205.85,,Salary,Income,,,,,,synthetic
-2023-05-13,,,,-1521.44,,Salary,Expenses,,,,,,synthetic
-2023-05-13,,,,3785.02,,Fashion,Income,,,,,,synthetic
-2023-05-14,,,,3227.62,,Savings,Income,,,,,,synthetic
-2023-05-14,,,,-2983.99,,Other Expenses,Expenses,,,,,,synthetic
-2023-05-15,,,,-1887.86,,Transport,Expenses,,,,,,synthetic
-2023-05-16,,,,-2753.94,,Savings,Expenses,,,,,,synthetic
-2023-05-16,,,,1714.63,,Fashion,Income,,,,,,synthetic
-2023-05-17,,,,-315.55,,Savings,Expenses,,,,,,synthetic
-2023-05-17,,,,-2653.37,,Savings,Saving,,,,,,synthetic
-2023-05-17,,,,2382.97,,Savings,Income,,,,,,synthetic
-2023-05-18,,,,695.37,,Fashion,Income,,,,,,synthetic
-2023-05-18,,,,-1940.97,,Living Expenses,Expenses,,,,,,synthetic
-2023-05-20,,,,4115.77,,Other Expenses,Income,,,,,,synthetic
-2023-05-20,,,,-653.96,,Savings,Saving,,,,,,synthetic
-2023-05-21,,,,-1894.5,,Living Expenses,Saving,,,,,,synthetic
-2023-05-21,,,,-862.38,,Savings,Saving,,,,,,synthetic
-2023-05-22,,,,-1130.97,,Salary,Saving,,,,,,synthetic
-2023-05-23,,,,-2495.99,,Other Expenses,Saving,,,,,,synthetic
-2023-05-23,,,,2133.68,,Medical,Income,,,,,,synthetic
-2023-05-24,,,,-1962.48,,Transport,Saving,,,,,,synthetic
-2023-05-24,,,,-2988.37,,Savings,Saving,,,,,,synthetic
-2023-05-25,,,,3661.68,,Medical,Income,,,,,,synthetic
-2023-05-26,,,,2636.91,,Medical,Income,,,,,,synthetic
-2023-05-26,,,,2369.2,,Medical,Income,,,,,,synthetic
-2023-05-27,,,,-2389.03,,Living Expenses,Saving,,,,,,synthetic
-2023-05-27,,,,2386.0,,Savings,Income,,,,,,synthetic
-2023-05-29,,,,-1160.91,,Other Expenses,Expenses,,,,,,synthetic
-2023-05-31,,,,3883.28,,Other Expenses,Income,,,,,,synthetic
-2023-05-31,,,,3860.51,,Other Expenses,Income,,,,,,synthetic
-2023-06-01,,,,-1518.66,,Other Expenses,Expenses,,,,,,synthetic
-2023-06-01,,,,-2081.53,,Living Expenses,Expenses,,,,,,synthetic
-2023-06-01,,,,-1345.31,,Salary,Expenses,,,,,,synthetic
-2023-06-02,,,,-951.89,,Savings,Saving,,,,,,synthetic
-2023-06-03,,,,-2246.1,,Savings,Expenses,,,,,,synthetic
-2023-06-04,,,,-2893.37,,Transport,Saving,,,,,,synthetic
-2023-06-05,,,,-1726.75,,Other Expenses,Expenses,,,,,,synthetic
-2023-06-07,,,,3819.93,,Salary,Income,,,,,,synthetic
-2023-06-07,,,,4907.72,,Medical,Income,,,,,,synthetic
-2023-06-07,,,,-2024.11,,Savings,Saving,,,,,,synthetic
-2023-06-07,,,,-573.55,,Transport,Expenses,,,,,,synthetic
-2023-06-08,,,,-1670.69,,Salary,Saving,,,,,,synthetic
-2023-06-09,,,,2296.22,,Other Expenses,Income,,,,,,synthetic
-2023-06-10,,,,-181.43,,Transport,Saving,,,,,,synthetic
-2023-06-10,,,,3026.49,,Medical,Income,,,,,,synthetic
-2023-06-12,,,,3679.25,,Medical,Income,,,,,,synthetic
-2023-06-16,,,,-1931.62,,Other Expenses,Expenses,,,,,,synthetic
-2023-06-17,,,,324.38,,Living Expenses,Income,,,,,,synthetic
-2023-06-17,,,,-1085.15,,Transport,Saving,,,,,,synthetic
-2023-06-18,,,,-2747.46,,Savings,Expenses,,,,,,synthetic
-2023-06-19,,,,4986.37,,Salary,Income,,,,,,synthetic
-2023-06-19,,,,850.83,,Fashion,Income,,,,,,synthetic
-2023-06-20,,,,-2611.47,,Transport,Expenses,,,,,,synthetic
-2023-06-21,,,,-2467.84,,Salary,Saving,,,,,,synthetic
-2023-06-23,,,,-1281.3,,Savings,Saving,,,,,,synthetic
-2023-06-23,,,,-1430.73,,Medical,Saving,,,,,,synthetic
-2023-06-29,,,,-1956.64,,Transport,Saving,,,,,,synthetic
-2023-06-29,,,,-1291.69,,Fashion,Saving,,,,,,synthetic
-2023-07-01,,,,-1073.72,,Salary,Expenses,,,,,,synthetic
-2023-07-01,,,,-2684.58,,Transport,Expenses,,,,,,synthetic
-2023-07-03,,,,1155.48,,Other Expenses,Income,,,,,,synthetic
-2023-07-03,,,,-303.65,,Salary,Saving,,,,,,synthetic
-2023-07-04,,,,3890.98,,Salary,Income,,,,,,synthetic
-2023-07-04,,,,-373.53,,Medical,Expenses,,,,,,synthetic
-2023-07-04,,,,1808.05,,Salary,Income,,,,,,synthetic
-2023-07-05,,,,-491.97,,Living Expenses,Saving,,,,,,synthetic
-2023-07-06,,,,-1573.92,,Medical,Saving,,,,,,synthetic
-2023-07-08,,,,325.1,,Other Expenses,Income,,,,,,synthetic
-2023-07-08,,,,1639.88,,Fashion,Income,,,,,,synthetic
-2023-07-09,,,,-321.08,,Transport,Saving,,,,,,synthetic
-2023-07-09,,,,-954.54,,Salary,Saving,,,,,,synthetic
-2023-07-11,,,,3070.58,,Transport,Income,,,,,,synthetic
-2023-07-12,,,,2191.51,,Other Expenses,Income,,,,,,synthetic
-2023-07-13,,,,3042.69,,Savings,Income,,,,,,synthetic
-2023-07-14,,,,-142.76,,Other Expenses,Saving,,,,,,synthetic
-2023-07-15,,,,-2925.65,,Other Expenses,Saving,,,,,,synthetic
-2023-07-17,,,,-807.8,,Medical,Saving,,,,,,synthetic
-2023-07-18,,,,616.1,,Medical,Income,,,,,,synthetic
-2023-07-18,,,,-1135.42,,Fashion,Expenses,,,,,,synthetic
-2023-07-22,,,,-2521.93,,Other Expenses,Saving,,,,,,synthetic
-2023-07-22,,,,-2853.62,,Fashion,Saving,,,,,,synthetic
-2023-07-24,,,,-1723.87,,Salary,Expenses,,,,,,synthetic
-2023-07-27,,,,1919.56,,Living Expenses,Income,,,,,,synthetic
-2023-07-28,,,,-459.39,,Fashion,Saving,,,,,,synthetic
-2023-07-29,,,,-1397.89,,Salary,Saving,,,,,,synthetic
-2023-07-29,,,,-1956.88,,Medical,Saving,,,,,,synthetic
-2023-07-30,,,,-976.75,,Transport,Expenses,,,,,,synthetic
-2023-07-30,,,,-200.14,,Transport,Expenses,,,,,,synthetic
-2023-07-30,,,,-23.82,,Salary,Saving,,,,,,synthetic
-2023-07-31,,,,-2361.56,,Living Expenses,Expenses,,,,,,synthetic
-2023-08-01,,,,1822.16,,Savings,Income,,,,,,synthetic
-2023-08-02,,,,4187.51,,Other Expenses,Income,,,,,,synthetic
-2023-08-02,,,,-2839.0,,Fashion,Saving,,,,,,synthetic
-2023-08-03,,,,-477.7,,Medical,Expenses,,,,,,synthetic
-2023-08-03,,,,-2757.93,,Medical,Expenses,,,,,,synthetic
-2023-08-04,,,,-1635.53,,Living Expenses,Expenses,,,,,,synthetic
-2023-08-06,,,,-1693.72,,Other Expenses,Saving,,,,,,synthetic
-2023-08-08,,,,-360.34,,Salary,Saving,,,,,,synthetic
-2023-08-09,,,,4355.83,,Other Expenses,Income,,,,,,synthetic
-2023-08-10,,,,4907.47,,Transport,Income,,,,,,synthetic
-2023-08-11,,,,542.77,,Other Expenses,Income,,,,,,synthetic
-2023-08-12,,,,2598.0,,Salary,Income,,,,,,synthetic
-2023-08-14,,,,-2618.86,,Medical,Saving,,,,,,synthetic
-2023-08-14,,,,-2448.81,,Medical,Saving,,,,,,synthetic
-2023-08-16,,,,-1476.58,,Living Expenses,Expenses,,,,,,synthetic
-2023-08-17,,,,-1970.73,,Transport,Saving,,,,,,synthetic
-2023-08-17,,,,4207.14,,Fashion,Income,,,,,,synthetic
-2023-08-19,,,,1271.41,,Other Expenses,Income,,,,,,synthetic
-2023-08-20,,,,3337.93,,Medical,Income,,,,,,synthetic
-2023-08-21,,,,1189.19,,Salary,Income,,,,,,synthetic
-2023-08-21,,,,4189.02,,Savings,Income,,,,,,synthetic
-2023-08-22,,,,-2276.9,,Savings,Expenses,,,,,,synthetic
-2023-08-24,,,,-1188.03,,Fashion,Saving,,,,,,synthetic
-2023-08-26,,,,-2018.05,,Transport,Expenses,,,,,,synthetic
-2023-08-28,,,,-1129.27,,Medical,Expenses,,,,,,synthetic
-2023-08-29,,,,-2385.33,,Savings,Expenses,,,,,,synthetic
-2023-08-31,,,,-1200.81,,Living Expenses,Expenses,,,,,,synthetic
-2023-08-31,,,,2853.75,,Medical,Income,,,,,,synthetic
-2023-08-31,,,,-424.28,,Living Expenses,Saving,,,,,,synthetic
-2023-09-01,,,,-2325.11,,Transport,Expenses,,,,,,synthetic
-2023-09-01,,,,-920.39,,Living Expenses,Expenses,,,,,,synthetic
-2023-09-02,,,,-2764.09,,Fashion,Expenses,,,,,,synthetic
-2023-09-03,,,,-2025.47,,Salary,Expenses,,,,,,synthetic
-2023-09-04,,,,-849.01,,Transport,Saving,,,,,,synthetic
-2023-09-04,,,,3356.77,,Medical,Income,,,,,,synthetic
-2023-09-04,,,,3667.73,,Transport,Income,,,,,,synthetic
-2023-09-06,,,,-2597.9,,Salary,Saving,,,,,,synthetic
-2023-09-08,,,,-2014.99,,Living Expenses,Expenses,,,,,,synthetic
-2023-09-09,,,,-2540.76,,Salary,Saving,,,,,,synthetic
-2023-09-10,,,,-922.44,,Living Expenses,Saving,,,,,,synthetic
-2023-09-10,,,,-2818.93,,Savings,Expenses,,,,,,synthetic
-2023-09-11,,,,3261.77,,Fashion,Income,,,,,,synthetic
-2023-09-11,,,,-2289.65,,Fashion,Expenses,,,,,,synthetic
-2023-09-12,,,,-1218.79,,Transport,Saving,,,,,,synthetic
-2023-09-12,,,,-428.65,,Other Expenses,Expenses,,,,,,synthetic
-2023-09-16,,,,1136.62,,Transport,Income,,,,,,synthetic
-2023-09-16,,,,-1102.67,,Fashion,Expenses,,,,,,synthetic
-2023-09-16,,,,-1548.19,,Other Expenses,Expenses,,,,,,synthetic
-2023-09-16,,,,593.78,,Fashion,Income,,,,,,synthetic
-2023-09-16,,,,-2882.77,,Medical,Saving,,,,,,synthetic
-2023-09-16,,,,-995.51,,Other Expenses,Expenses,,,,,,synthetic
-2023-09-17,,,,-1022.46,,Fashion,Expenses,,,,,,synthetic
-2023-09-17,,,,3253.7,,Other Expenses,Income,,,,,,synthetic
-2023-09-18,,,,2587.45,,Salary,Income,,,,,,synthetic
-2023-09-21,,,,-447.86,,Living Expenses,Saving,,,,,,synthetic
-2023-09-22,,,,-2048.62,,Medical,Saving,,,,,,synthetic
-2023-09-24,,,,-1834.73,,Fashion,Saving,,,,,,synthetic
-2023-09-24,,,,2581.51,,Fashion,Income,,,,,,synthetic
-2023-09-24,,,,3349.08,,Living Expenses,Income,,,,,,synthetic
-2023-09-24,,,,-2204.15,,Medical,Expenses,,,,,,synthetic
-2023-09-25,,,,-2405.83,,Fashion,Saving,,,,,,synthetic
-2023-09-26,,,,-1833.79,,Living Expenses,Saving,,,,,,synthetic
-2023-09-27,,,,-1067.91,,Savings,Expenses,,,,,,synthetic
-2023-09-29,,,,-313.29,,Fashion,Saving,,,,,,synthetic
-2023-10-02,,,,-120.06,,Salary,Saving,,,,,,synthetic
-2023-10-02,,,,-324.65,,Medical,Expenses,,,,,,synthetic
-2023-10-03,,,,4190.68,,Medical,Income,,,,,,synthetic
-2023-10-03,,,,-710.93,,Transport,Expenses,,,,,,synthetic
-2023-10-03,,,,-2324.52,,Living Expenses,Expenses,,,,,,synthetic
-2023-10-05,,,,351.54,,Fashion,Income,,,,,,synthetic
-2023-10-05,,,,-365.64,,Salary,Expenses,,,,,,synthetic
-2023-10-06,,,,-316.08,,Living Expenses,Expenses,,,,,,synthetic
-2023-10-06,,,,4451.79,,Salary,Income,,,,,,synthetic
-2023-10-07,,,,3654.82,,Fashion,Income,,,,,,synthetic
-2023-10-07,,,,-1036.87,,Savings,Saving,,,,,,synthetic
-2023-10-08,,,,-2094.29,,Other Expenses,Expenses,,,,,,synthetic
-2023-10-08,,,,3472.22,,Savings,Income,,,,,,synthetic
-2023-10-10,,,,-96.52,,Salary,Saving,,,,,,synthetic
-2023-10-10,,,,-1023.56,,Salary,Saving,,,,,,synthetic
-2023-10-10,,,,-534.13,,Transport,Saving,,,,,,synthetic
-2023-10-10,,,,-2422.38,,Fashion,Expenses,,,,,,synthetic
-2023-10-11,,,,-2693.68,,Savings,Expenses,,,,,,synthetic
-2023-10-14,,,,-150.07,,Medical,Expenses,,,,,,synthetic
-2023-10-14,,,,-1798.44,,Savings,Saving,,,,,,synthetic
-2023-10-15,,,,3042.07,,Living Expenses,Income,,,,,,synthetic
-2023-10-15,,,,-1222.09,,Fashion,Saving,,,,,,synthetic
-2023-10-16,,,,2636.87,,Savings,Income,,,,,,synthetic
-2023-10-16,,,,-2923.19,,Transport,Saving,,,,,,synthetic
-2023-10-17,,,,-622.91,,Salary,Expenses,,,,,,synthetic
-2023-10-17,,,,-2887.15,,Living Expenses,Saving,,,,,,synthetic
-2023-10-18,,,,4514.76,,Fashion,Income,,,,,,synthetic
-2023-10-18,,,,4847.39,,Other Expenses,Income,,,,,,synthetic
-2023-10-18,,,,-2553.87,,Fashion,Expenses,,,,,,synthetic
-2023-10-19,,,,1078.61,,Other Expenses,Income,,,,,,synthetic
-2023-10-19,,,,477.95,,Fashion,Income,,,,,,synthetic
-2023-10-20,,,,-1250.91,,Medical,Saving,,,,,,synthetic
-2023-10-20,,,,-1142.5,,Other Expenses,Saving,,,,,,synthetic
-2023-10-20,,,,-2619.7,,Medical,Expenses,,,,,,synthetic
-2023-10-21,,,,-1654.1,,Fashion,Saving,,,,,,synthetic
-2023-10-21,,,,-957.74,,Savings,Saving,,,,,,synthetic
-2023-10-21,,,,-2422.48,,Savings,Saving,,,,,,synthetic
-2023-10-22,,,,1458.49,,Salary,Income,,,,,,synthetic
-2023-10-22,,,,-2577.54,,Medical,Expenses,,,,,,synthetic
-2023-10-22,,,,-622.43,,Savings,Saving,,,,,,synthetic
-2023-10-22,,,,-339.76,,Savings,Saving,,,,,,synthetic
-2023-10-24,,,,2153.16,,Savings,Income,,,,,,synthetic
-2023-10-24,,,,4430.8,,Medical,Income,,,,,,synthetic
-2023-10-24,,,,596.82,,Transport,Income,,,,,,synthetic
-2023-10-25,,,,-2107.67,,Salary,Saving,,,,,,synthetic
-2023-10-26,,,,881.0,,Transport,Income,,,,,,synthetic
-2023-10-27,,,,4841.07,,Other Expenses,Income,,,,,,synthetic
-2023-10-29,,,,-2932.44,,Other Expenses,Saving,,,,,,synthetic
-2023-10-29,,,,1119.4,,Fashion,Income,,,,,,synthetic
-2023-10-29,,,,-2293.36,,Other Expenses,Saving,,,,,,synthetic
-2023-10-30,,,,2863.58,,Fashion,Income,,,,,,synthetic
-2023-10-30,,,,1821.76,,Other Expenses,Income,,,,,,synthetic
-2023-11-01,,,,1103.18,,Salary,Income,,,,,,synthetic
-2023-11-01,,,,-1855.42,,Fashion,Expenses,,,,,,synthetic
-2023-11-02,,,,4060.82,,Living Expenses,Income,,,,,,synthetic
-2023-11-02,,,,-1842.8,,Fashion,Expenses,,,,,,synthetic
-2023-11-03,,,,-1676.26,,Fashion,Expenses,,,,,,synthetic
-2023-11-03,,,,-2943.83,,Transport,Saving,,,,,,synthetic
-2023-11-03,,,,-1373.96,,Other Expenses,Expenses,,,,,,synthetic
-2023-11-05,,,,-2764.69,,Savings,Expenses,,,,,,synthetic
-2023-11-07,,,,-597.83,,Savings,Saving,,,,,,synthetic
-2023-11-07,,,,923.99,,Salary,Income,,,,,,synthetic
-2023-11-08,,,,-697.99,,Transport,Saving,,,,,,synthetic
-2023-11-10,,,,-1293.06,,Fashion,Saving,,,,,,synthetic
-2023-11-11,,,,1593.02,,Salary,Income,,,,,,synthetic
-2023-11-11,,,,1472.27,,Savings,Income,,,,,,synthetic
-2023-11-12,,,,3435.05,,Savings,Income,,,,,,synthetic
-2023-11-13,,,,-718.79,,Fashion,Expenses,,,,,,synthetic
-2023-11-14,,,,-867.33,,Salary,Saving,,,,,,synthetic
-2023-11-15,,,,2376.48,,Transport,Income,,,,,,synthetic
-2023-11-16,,,,3513.35,,Other Expenses,Income,,,,,,synthetic
-2023-11-16,,,,244.71,,Medical,Income,,,,,,synthetic
-2023-11-17,,,,-469.85,,Fashion,Expenses,,,,,,synthetic
-2023-11-17,,,,-1066.54,,Living Expenses,Expenses,,,,,,synthetic
-2023-11-17,,,,-1740.51,,Medical,Expenses,,,,,,synthetic
-2023-11-17,,,,-2473.38,,Medical,Saving,,,,,,synthetic
-2023-11-17,,,,4121.08,,Transport,Income,,,,,,synthetic
-2023-11-18,,,,-632.23,,Fashion,Expenses,,,,,,synthetic
-2023-11-18,,,,3000.91,,Fashion,Income,,,,,,synthetic
-2023-11-19,,,,-1602.77,,Transport,Saving,,,,,,synthetic
-2023-11-19,,,,-1555.84,,Other Expenses,Expenses,,,,,,synthetic
-2023-11-21,,,,-2903.74,,Other Expenses,Expenses,,,,,,synthetic
-2023-11-21,,,,3091.52,,Living Expenses,Income,,,,,,synthetic
-2023-11-22,,,,-986.66,,Other Expenses,Saving,,,,,,synthetic
-2023-11-22,,,,-1404.36,,Fashion,Saving,,,,,,synthetic
-2023-11-22,,,,-329.77,,Fashion,Expenses,,,,,,synthetic
-2023-11-24,,,,-1161.47,,Transport,Expenses,,,,,,synthetic
-2023-11-24,,,,1249.85,,Living Expenses,Income,,,,,,synthetic
-2023-11-25,,,,-273.17,,Savings,Saving,,,,,,synthetic
-2023-11-26,,,,-1240.33,,Other Expenses,Saving,,,,,,synthetic
-2023-11-27,,,,-855.29,,Other Expenses,Expenses,,,,,,synthetic
-2023-11-27,,,,1933.4,,Transport,Income,,,,,,synthetic
-2023-11-27,,,,-688.24,,Other Expenses,Saving,,,,,,synthetic
-2023-11-28,,,,-2110.87,,Salary,Expenses,,,,,,synthetic
-2023-11-30,,,,-2067.46,,Transport,Saving,,,,,,synthetic
-2023-11-30,,,,3718.12,,Other Expenses,Income,,,,,,synthetic
-2023-12-02,,,,-2757.11,,Savings,Saving,,,,,,synthetic
-2023-12-02,,,,3715.82,,Medical,Income,,,,,,synthetic
-2023-12-04,,,,-784.2,,Transport,Saving,,,,,,synthetic
-2023-12-07,,,,-2916.14,,Other Expenses,Saving,,,,,,synthetic
-2023-12-07,,,,1608.17,,Medical,Income,,,,,,synthetic
-2023-12-07,,,,-1007.09,,Salary,Expenses,,,,,,synthetic
-2023-12-08,,,,-1647.15,,Transport,Expenses,,,,,,synthetic
-2023-12-09,,,,-2713.84,,Medical,Expenses,,,,,,synthetic
-2023-12-10,,,,-2403.61,,Fashion,Saving,,,,,,synthetic
-2023-12-11,,,,-1690.25,,Transport,Expenses,,,,,,synthetic
-2023-12-11,,,,3867.44,,Fashion,Income,,,,,,synthetic
-2023-12-13,,,,-1405.32,,Savings,Expenses,,,,,,synthetic
-2023-12-15,,,,-1694.21,,Salary,Saving,,,,,,synthetic
-2023-12-15,,,,-1712.11,,Salary,Saving,,,,,,synthetic
-2023-12-16,,,,-275.13,,Fashion,Saving,,,,,,synthetic
-2023-12-16,,,,-460.37,,Savings,Expenses,,,,,,synthetic
-2023-12-16,,,,-1437.37,,Other Expenses,Saving,,,,,,synthetic
-2023-12-17,,,,-2689.71,,Savings,Saving,,,,,,synthetic
-2023-12-18,,,,-419.13,,Salary,Expenses,,,,,,synthetic
-2023-12-20,,,,1455.46,,Savings,Income,,,,,,synthetic
-2023-12-20,,,,4753.66,,Salary,Income,,,,,,synthetic
-2023-12-20,,,,-1463.69,,Transport,Saving,,,,,,synthetic
-2023-12-21,,,,1643.53,,Medical,Income,,,,,,synthetic
-2023-12-21,,,,3713.53,,Transport,Income,,,,,,synthetic
-2023-12-22,,,,-1663.9,,Salary,Saving,,,,,,synthetic
-2023-12-23,,,,-613.67,,Medical,Expenses,,,,,,synthetic
-2023-12-23,,,,-2805.52,,Living Expenses,Expenses,,,,,,synthetic
-2023-12-25,,,,4212.44,,Salary,Income,,,,,,synthetic
-2023-12-26,,,,-2426.34,,Medical,Expenses,,,,,,synthetic
-2023-12-26,,,,-673.88,,Living Expenses,Expenses,,,,,,synthetic
-2023-12-27,,,,-2585.23,,Living Expenses,Expenses,,,,,,synthetic
-2023-12-27,,,,-2588.06,,Salary,Expenses,,,,,,synthetic
-2023-12-27,,,,-737.67,,Savings,Saving,,,,,,synthetic
-2023-12-27,,,,2086.18,,Other Expenses,Income,,,,,,synthetic
-2023-12-28,,,,3173.82,,Transport,Income,,,,,,synthetic
-2023-12-29,,,,-239.0,,Fashion,Expenses,,,,,,synthetic
-2023-12-29,,,,-2883.15,,Salary,Expenses,,,,,,synthetic
-2023-12-30,,,,-515.77,,Salary,Expenses,,,,,,synthetic
-2023-12-30,,,,320.05,,Fashion,Income,,,,,,synthetic
-2023-12-31,,,,1233.51,,Other Expenses,Income,,,,,,synthetic
-2023-12-31,,,,1866.58,,Savings,Income,,,,,,synthetic
-2024-01-01,,,,4217.49,,Medical,Income,,,,,,synthetic
-2024-01-02,,,,2645.73,,Living Expenses,Income,,,,,,synthetic
-2024-01-02,,,,-429.72,,Salary,Expenses,,,,,,synthetic
-2024-01-03,,,,514.96,,Savings,Income,,,,,,synthetic
-2024-01-03,,,,2592.2,,Fashion,Income,,,,,,synthetic
-2024-01-03,,,,-2903.33,,Medical,Saving,,,,,,synthetic
-2024-01-03,,,,-409.68,,Other Expenses,Expenses,,,,,,synthetic
-2024-01-04,,,,-1464.44,,Transport,Saving,,,,,,synthetic
-2024-01-05,,,,-222.52,,Salary,Saving,,,,,,synthetic
-2024-01-05,,,,-68.52,,Fashion,Expenses,,,,,,synthetic
-2024-01-05,,,,3810.82,,Savings,Income,,,,,,synthetic
-2024-01-06,,,,1422.67,,Savings,Income,,,,,,synthetic
-2024-01-06,,,,-678.71,,Fashion,Saving,,,,,,synthetic
-2024-01-06,,,,-1798.28,,Salary,Expenses,,,,,,synthetic
-2024-01-07,,,,-1599.38,,Transport,Saving,,,,,,synthetic
-2024-01-07,,,,-1714.52,,Transport,Expenses,,,,,,synthetic
-2024-01-09,,,,-1665.12,,Savings,Expenses,,,,,,synthetic
-2024-01-09,,,,-385.13,,Medical,Expenses,,,,,,synthetic
-2024-01-10,,,,-1950.95,,Medical,Expenses,,,,,,synthetic
-2024-01-12,,,,4682.83,,Medical,Income,,,,,,synthetic
-2024-01-14,,,,-2897.84,,Medical,Expenses,,,,,,synthetic
-2024-01-15,,,,3152.04,,Medical,Income,,,,,,synthetic
-2024-01-15,,,,-1297.27,,Salary,Saving,,,,,,synthetic
-2024-01-15,,,,-53.82,,Living Expenses,Saving,,,,,,synthetic
-2024-01-16,,,,-2773.98,,Transport,Saving,,,,,,synthetic
-2024-01-16,,,,-1568.67,,Medical,Expenses,,,,,,synthetic
-2024-01-17,,,,1314.5,,Savings,Income,,,,,,synthetic
-2024-01-17,,,,-1566.51,,Living Expenses,Expenses,,,,,,synthetic
-2024-01-19,,,,-2947.51,,Medical,Expenses,,,,,,synthetic
-2024-01-19,,,,-307.76,,Salary,Expenses,,,,,,synthetic
-2024-01-21,,,,-293.19,,Medical,Expenses,,,,,,synthetic
-2024-01-23,,,,-1428.56,,Savings,Saving,,,,,,synthetic
-2024-01-24,,,,-139.97,,Medical,Saving,,,,,,synthetic
-2024-01-24,,,,4298.34,,Salary,Income,,,,,,synthetic
-2024-01-24,,,,-2119.42,,Savings,Expenses,,,,,,synthetic
-2024-01-25,,,,-1502.17,,Salary,Saving,,,,,,synthetic
-2024-01-25,,,,2327.03,,Living Expenses,Income,,,,,,synthetic
-2024-01-25,,,,-2160.7,,Savings,Saving,,,,,,synthetic
-2024-01-25,,,,-1601.94,,Savings,Expenses,,,,,,synthetic
-2024-01-26,,,,-337.83,,Transport,Expenses,,,,,,synthetic
-2024-01-29,,,,-209.4,,Salary,Saving,,,,,,synthetic
-2024-01-29,,,,-1676.74,,Transport,Expenses,,,,,,synthetic
-2024-01-29,,,,4434.31,,Fashion,Income,,,,,,synthetic
-2024-01-31,,,,-2739.09,,Fashion,Saving,,,,,,synthetic
-2024-02-03,,,,-1971.67,,Living Expenses,Expenses,,,,,,synthetic
-2024-02-03,,,,4514.67,,Transport,Income,,,,,,synthetic
-2024-02-04,,,,-1381.26,,Savings,Expenses,,,,,,synthetic
-2024-02-04,,,,-917.37,,Living Expenses,Expenses,,,,,,synthetic
-2024-02-04,,,,872.65,,Living Expenses,Income,,,,,,synthetic
-2024-02-05,,,,2655.27,,Salary,Income,,,,,,synthetic
-2024-02-05,,,,-1414.7,,Living Expenses,Saving,,,,,,synthetic
-2024-02-07,,,,-363.98,,Living Expenses,Expenses,,,,,,synthetic
-2024-02-08,,,,-1798.64,,Savings,Expenses,,,,,,synthetic
-2024-02-09,,,,-759.82,,Living Expenses,Expenses,,,,,,synthetic
-2024-02-11,,,,-613.35,,Other Expenses,Saving,,,,,,synthetic
-2024-02-12,,,,570.39,,Living Expenses,Income,,,,,,synthetic
-2024-02-12,,,,-2580.84,,Other Expenses,Saving,,,,,,synthetic
-2024-02-13,,,,4584.48,,Transport,Income,,,,,,synthetic
-2024-02-14,,,,-588.02,,Living Expenses,Expenses,,,,,,synthetic
-2024-02-15,,,,-840.63,,Fashion,Saving,,,,,,synthetic
-2024-02-16,,,,-1057.93,,Savings,Expenses,,,,,,synthetic
-2024-02-16,,,,-252.26,,Living Expenses,Expenses,,,,,,synthetic
-2024-02-17,,,,-411.61,,Other Expenses,Saving,,,,,,synthetic
-2024-02-17,,,,2232.2,,Living Expenses,Income,,,,,,synthetic
-2024-02-18,,,,-289.33,,Living Expenses,Saving,,,,,,synthetic
-2024-02-18,,,,-970.33,,Fashion,Saving,,,,,,synthetic
-2024-02-18,,,,3015.03,,Savings,Income,,,,,,synthetic
-2024-02-18,,,,-2468.62,,Savings,Expenses,,,,,,synthetic
-2024-02-21,,,,1397.8,,Other Expenses,Income,,,,,,synthetic
-2024-02-22,,,,-1362.06,,Transport,Saving,,,,,,synthetic
-2024-02-22,,,,-2466.63,,Savings,Expenses,,,,,,synthetic
-2024-02-23,,,,-325.2,,Living Expenses,Expenses,,,,,,synthetic
-2024-02-23,,,,-1526.21,,Transport,Saving,,,,,,synthetic
-2024-02-23,,,,610.94,,Savings,Income,,,,,,synthetic
-2024-02-24,,,,-763.6,,Living Expenses,Saving,,,,,,synthetic
-2024-02-24,,,,-2893.94,,Fashion,Saving,,,,,,synthetic
-2024-02-25,,,,-1018.86,,Fashion,Saving,,,,,,synthetic
-2024-02-25,,,,-1266.04,,Transport,Saving,,,,,,synthetic
-2024-02-27,,,,-1164.42,,Savings,Saving,,,,,,synthetic
-2024-03-01,,,,-2550.04,,Fashion,Expenses,,,,,,synthetic
-2024-03-03,,,,-2041.89,,Other Expenses,Saving,,,,,,synthetic
-2024-03-04,,,,805.98,,Transport,Income,,,,,,synthetic
-2024-03-05,,,,-2037.56,,Savings,Expenses,,,,,,synthetic
-2024-03-06,,,,-2095.0,,Savings,Expenses,,,,,,synthetic
-2024-03-09,,,,3977.49,,Living Expenses,Income,,,,,,synthetic
-2024-03-11,,,,2433.9,,Fashion,Income,,,,,,synthetic
-2024-03-11,,,,-201.65,,Other Expenses,Expenses,,,,,,synthetic
-2024-03-13,,,,-123.7,,Fashion,Expenses,,,,,,synthetic
-2024-03-14,,,,-2090.22,,Fashion,Expenses,,,,,,synthetic
-2024-03-17,,,,4774.42,,Savings,Income,,,,,,synthetic
-2024-03-19,,,,-570.95,,Savings,Expenses,,,,,,synthetic
-2024-03-19,,,,420.76,,Other Expenses,Income,,,,,,synthetic
-2024-03-19,,,,1594.17,,Medical,Income,,,,,,synthetic
-2024-03-22,,,,-707.0,,Other Expenses,Expenses,,,,,,synthetic
-2024-03-22,,,,984.33,,Fashion,Income,,,,,,synthetic
-2024-03-22,,,,-1772.04,,Living Expenses,Saving,,,,,,synthetic
-2024-03-24,,,,-183.99,,Savings,Saving,,,,,,synthetic
-2024-03-24,,,,-1475.96,,Fashion,Expenses,,,,,,synthetic
-2024-03-25,,,,-1107.75,,Medical,Expenses,,,,,,synthetic
-2024-03-25,,,,1473.76,,Salary,Income,,,,,,synthetic
-2024-03-27,,,,3279.57,,Medical,Income,,,,,,synthetic
-2024-03-27,,,,-1668.61,,Salary,Saving,,,,,,synthetic
-2024-03-27,,,,1537.02,,Transport,Income,,,,,,synthetic
-2024-03-28,,,,-2293.99,,Other Expenses,Expenses,,,,,,synthetic
-2024-03-28,,,,4940.13,,Medical,Income,,,,,,synthetic
-2024-03-29,,,,-2041.35,,Living Expenses,Expenses,,,,,,synthetic
-2024-03-29,,,,1639.46,,Transport,Income,,,,,,synthetic
-2024-03-30,,,,4544.37,,Living Expenses,Income,,,,,,synthetic
-2024-03-30,,,,-576.02,,Transport,Expenses,,,,,,synthetic
-2024-03-31,,,,-308.17,,Fashion,Saving,,,,,,synthetic
-2024-03-31,,,,-1549.45,,Transport,Expenses,,,,,,synthetic
-2024-04-01,,,,-1291.76,,Salary,Expenses,,,,,,synthetic
-2024-04-03,,,,-1382.55,,Transport,Saving,,,,,,synthetic
-2024-04-05,,,,-658.43,,Fashion,Expenses,,,,,,synthetic
-2024-04-06,,,,-1578.56,,Transport,Expenses,,,,,,synthetic
-2024-04-06,,,,-1436.34,,Living Expenses,Saving,,,,,,synthetic
-2024-04-06,,,,-1142.94,,Transport,Saving,,,,,,synthetic
-2024-04-06,,,,-1362.53,,Savings,Expenses,,,,,,synthetic
-2024-04-07,,,,-2357.83,,Other Expenses,Saving,,,,,,synthetic
-2024-04-07,,,,-417.56,,Fashion,Expenses,,,,,,synthetic
-2024-04-08,,,,2574.63,,Medical,Income,,,,,,synthetic
-2024-04-09,,,,-197.48,,Medical,Expenses,,,,,,synthetic
-2024-04-10,,,,1006.35,,Transport,Income,,,,,,synthetic
-2024-04-10,,,,4217.98,,Other Expenses,Income,,,,,,synthetic
-2024-04-10,,,,-2388.64,,Medical,Saving,,,,,,synthetic
-2024-04-11,,,,560.2,,Medical,Income,,,,,,synthetic
-2024-04-11,,,,-2595.46,,Savings,Expenses,,,,,,synthetic
-2024-04-11,,,,-2388.91,,Other Expenses,Expenses,,,,,,synthetic
-2024-04-12,,,,-152.0,,Fashion,Saving,,,,,,synthetic
-2024-04-12,,,,354.64,,Fashion,Income,,,,,,synthetic
-2024-04-14,,,,3415.2,,Living Expenses,Income,,,,,,synthetic
-2024-04-14,,,,-2077.07,,Fashion,Expenses,,,,,,synthetic
-2024-04-14,,,,2499.25,,Fashion,Income,,,,,,synthetic
-2024-04-14,,,,-909.53,,Other Expenses,Saving,,,,,,synthetic
-2024-04-14,,,,922.72,,Savings,Income,,,,,,synthetic
-2024-04-15,,,,-2800.41,,Savings,Expenses,,,,,,synthetic
-2024-04-15,,,,-1926.59,,Medical,Saving,,,,,,synthetic
-2024-04-15,,,,-1258.55,,Living Expenses,Expenses,,,,,,synthetic
-2024-04-21,,,,2741.41,,Savings,Income,,,,,,synthetic
-2024-04-22,,,,3462.54,,Transport,Income,,,,,,synthetic
-2024-04-22,,,,-2428.38,,Fashion,Expenses,,,,,,synthetic
-2024-04-22,,,,224.87,,Medical,Income,,,,,,synthetic
-2024-04-24,,,,-2729.98,,Medical,Expenses,,,,,,synthetic
-2024-04-24,,,,-2583.3,,Transport,Expenses,,,,,,synthetic
-2024-04-25,,,,-2670.67,,Other Expenses,Expenses,,,,,,synthetic
-2024-04-25,,,,-626.72,,Fashion,Expenses,,,,,,synthetic
-2024-04-26,,,,-2707.78,,Savings,Saving,,,,,,synthetic
-2024-04-28,,,,-2772.02,,Savings,Saving,,,,,,synthetic
-2024-04-28,,,,665.54,,Transport,Income,,,,,,synthetic
-2024-04-29,,,,-1913.19,,Savings,Saving,,,,,,synthetic
-2024-04-29,,,,-2311.64,,Other Expenses,Saving,,,,,,synthetic
-2024-04-29,,,,-1660.16,,Transport,Saving,,,,,,synthetic
-2024-04-30,,,,-1170.51,,Medical,Expenses,,,,,,synthetic
-2024-05-01,,,,-1307.76,,Fashion,Saving,,,,,,synthetic
-2024-05-01,,,,-1642.51,,Fashion,Expenses,,,,,,synthetic
-2024-05-01,,,,3277.66,,Other Expenses,Income,,,,,,synthetic
-2024-05-02,,,,4080.61,,Living Expenses,Income,,,,,,synthetic
-2024-05-03,,,,2772.44,,Transport,Income,,,,,,synthetic
-2024-05-03,,,,-1768.75,,Savings,Saving,,,,,,synthetic
-2024-05-04,,,,-765.29,,Transport,Saving,,,,,,synthetic
-2024-05-05,,,,-1672.53,,Medical,Expenses,,,,,,synthetic
-2024-05-08,,,,-2847.11,,Living Expenses,Saving,,,,,,synthetic
-2024-05-09,,,,349.19,,Medical,Income,,,,,,synthetic
-2024-05-09,,,,340.66,,Savings,Income,,,,,,synthetic
-2024-05-11,,,,1373.85,,Salary,Income,,,,,,synthetic
-2024-05-12,,,,2366.18,,Living Expenses,Income,,,,,,synthetic
-2024-05-12,,,,-2839.26,,Transport,Saving,,,,,,synthetic
-2024-05-12,,,,1042.38,,Medical,Income,,,,,,synthetic
-2024-05-13,,,,-581.67,,Living Expenses,Expenses,,,,,,synthetic
-2024-05-13,,,,907.3,,Living Expenses,Income,,,,,,synthetic
-2024-05-15,,,,-1992.58,,Other Expenses,Expenses,,,,,,synthetic
-2024-05-17,,,,1650.88,,Other Expenses,Income,,,,,,synthetic
-2024-05-19,,,,457.07,,Transport,Income,,,,,,synthetic
-2024-05-19,,,,-1635.67,,Salary,Saving,,,,,,synthetic
-2024-05-20,,,,-2707.96,,Savings,Saving,,,,,,synthetic
-2024-05-20,,,,3320.69,,Other Expenses,Income,,,,,,synthetic
-2024-05-21,,,,-2924.17,,Other Expenses,Expenses,,,,,,synthetic
-2024-05-21,,,,-1531.8,,Savings,Expenses,,,,,,synthetic
-2024-05-21,,,,1398.45,,Medical,Income,,,,,,synthetic
-2024-05-22,,,,-731.28,,Fashion,Expenses,,,,,,synthetic
-2024-05-22,,,,-1135.89,,Fashion,Expenses,,,,,,synthetic
-2024-05-23,,,,-223.89,,Salary,Saving,,,,,,synthetic
-2024-05-24,,,,-445.76,,Fashion,Expenses,,,,,,synthetic
-2024-05-24,,,,-2743.66,,Fashion,Expenses,,,,,,synthetic
-2024-05-28,,,,-2994.41,,Savings,Expenses,,,,,,synthetic
-2024-05-28,,,,-1270.17,,Fashion,Saving,,,,,,synthetic
-2024-05-28,,,,-1822.81,,Transport,Saving,,,,,,synthetic
-2024-05-30,,,,3615.93,,Salary,Income,,,,,,synthetic
-2024-05-30,,,,998.29,,Salary,Income,,,,,,synthetic
-2024-05-30,,,,-1749.94,,Savings,Saving,,,,,,synthetic
-2024-06-02,,,,2651.25,,Other Expenses,Income,,,,,,synthetic
-2024-06-02,,,,-1525.28,,Other Expenses,Expenses,,,,,,synthetic
-2024-06-03,,,,-1482.65,,Fashion,Saving,,,,,,synthetic
-2024-06-03,,,,-254.82,,Salary,Expenses,,,,,,synthetic
-2024-06-04,,,,-304.82,,Salary,Saving,,,,,,synthetic
-2024-06-04,,,,-792.56,,Medical,Saving,,,,,,synthetic
-2024-06-04,,,,-2178.17,,Living Expenses,Saving,,,,,,synthetic
-2024-06-04,,,,-1577.79,,Transport,Saving,,,,,,synthetic
-2024-06-05,,,,503.68,,Transport,Income,,,,,,synthetic
-2024-06-07,,,,-685.25,,Savings,Expenses,,,,,,synthetic
-2024-06-08,,,,-1259.65,,Transport,Expenses,,,,,,synthetic
-2024-06-08,,,,-1274.46,,Living Expenses,Saving,,,,,,synthetic
-2024-06-08,,,,419.96,,Fashion,Income,,,,,,synthetic
-2024-06-09,,,,-2619.06,,Salary,Expenses,,,,,,synthetic
-2024-06-10,,,,1684.6,,Salary,Income,,,,,,synthetic
-2024-06-10,,,,4526.11,,Living Expenses,Income,,,,,,synthetic
-2024-06-11,,,,-1161.28,,Transport,Expenses,,,,,,synthetic
-2024-06-11,,,,1550.51,,Salary,Income,,,,,,synthetic
-2024-06-14,,,,-816.17,,Medical,Saving,,,,,,synthetic
-2024-06-14,,,,4867.98,,Fashion,Income,,,,,,synthetic
-2024-06-14,,,,3465.36,,Savings,Income,,,,,,synthetic
-2024-06-14,,,,820.09,,Transport,Income,,,,,,synthetic
-2024-06-15,,,,-1198.98,,Fashion,Expenses,,,,,,synthetic
-2024-06-16,,,,-1511.39,,Savings,Saving,,,,,,synthetic
-2024-06-16,,,,-2260.99,,Transport,Expenses,,,,,,synthetic
-2024-06-16,,,,-2458.85,,Salary,Expenses,,,,,,synthetic
-2024-06-17,,,,1973.73,,Salary,Income,,,,,,synthetic
-2024-06-17,,,,-1350.96,,Fashion,Expenses,,,,,,synthetic
-2024-06-17,,,,-1854.64,,Medical,Expenses,,,,,,synthetic
-2024-06-18,,,,3514.92,,Medical,Income,,,,,,synthetic
-2024-06-18,,,,-259.14,,Transport,Expenses,,,,,,synthetic
-2024-06-20,,,,-1596.24,,Medical,Saving,,,,,,synthetic
-2024-06-20,,,,-1371.16,,Transport,Expenses,,,,,,synthetic
-2024-06-21,,,,-2698.96,,Other Expenses,Expenses,,,,,,synthetic
-2024-06-22,,,,-2881.12,,Salary,Saving,,,,,,synthetic
-2024-06-22,,,,-1341.43,,Living Expenses,Saving,,,,,,synthetic
-2024-06-24,,,,4059.73,,Living Expenses,Income,,,,,,synthetic
-2024-06-26,,,,-810.31,,Salary,Expenses,,,,,,synthetic
-2024-06-26,,,,-1055.33,,Other Expenses,Saving,,,,,,synthetic
-2024-06-29,,,,-743.69,,Medical,Saving,,,,,,synthetic
-2024-06-29,,,,-253.71,,Fashion,Saving,,,,,,synthetic
-2024-06-29,,,,-2764.37,,Fashion,Saving,,,,,,synthetic
-2024-06-30,,,,1156.93,,Salary,Income,,,,,,synthetic
-2024-06-30,,,,-909.87,,Salary,Expenses,,,,,,synthetic
-2024-06-30,,,,2512.34,,Fashion,Income,,,,,,synthetic
-2024-07-01,,,,-1735.76,,Salary,Expenses,,,,,,synthetic
-2024-07-01,,,,-1153.54,,Salary,Saving,,,,,,synthetic
-2024-07-02,,,,4273.61,,Salary,Income,,,,,,synthetic
-2024-07-02,,,,-2968.78,,Transport,Expenses,,,,,,synthetic
-2024-07-05,,,,-978.38,,Savings,Saving,,,,,,synthetic
-2024-07-06,,,,-910.55,,Salary,Saving,,,,,,synthetic
-2024-07-07,,,,4225.64,,Transport,Income,,,,,,synthetic
-2024-07-10,,,,4810.5,,Transport,Income,,,,,,synthetic
-2024-07-11,,,,-255.63,,Other Expenses,Saving,,,,,,synthetic
-2024-07-11,,,,-2344.75,,Salary,Expenses,,,,,,synthetic
-2024-07-12,,,,2291.25,,Salary,Income,,,,,,synthetic
-2024-07-13,,,,2456.05,,Transport,Income,,,,,,synthetic
-2024-07-14,,,,-319.62,,Fashion,Expenses,,,,,,synthetic
-2024-07-16,,,,4146.16,,Transport,Income,,,,,,synthetic
-2024-07-16,,,,-479.35,,Other Expenses,Saving,,,,,,synthetic
-2024-07-16,,,,-1582.47,,Fashion,Saving,,,,,,synthetic
-2024-07-17,,,,-240.42,,Transport,Expenses,,,,,,synthetic
-2024-07-17,,,,-2499.44,,Savings,Expenses,,,,,,synthetic
-2024-07-17,,,,-390.94,,Other Expenses,Expenses,,,,,,synthetic
-2024-07-17,,,,2359.88,,Fashion,Income,,,,,,synthetic
-2024-07-18,,,,2856.12,,Salary,Income,,,,,,synthetic
-2024-07-19,,,,-1741.35,,Medical,Saving,,,,,,synthetic
-2024-07-19,,,,-1108.93,,Savings,Expenses,,,,,,synthetic
-2024-07-20,,,,-2910.47,,Transport,Saving,,,,,,synthetic
-2024-07-21,,,,-2540.88,,Savings,Expenses,,,,,,synthetic
-2024-07-21,,,,-1795.75,,Transport,Expenses,,,,,,synthetic
-2024-07-21,,,,-552.13,,Salary,Expenses,,,,,,synthetic
-2024-07-22,,,,-1492.47,,Medical,Saving,,,,,,synthetic
-2024-07-22,,,,860.48,,Medical,Income,,,,,,synthetic
-2024-07-22,,,,-1863.19,,Other Expenses,Saving,,,,,,synthetic
-2024-07-23,,,,-496.75,,Living Expenses,Saving,,,,,,synthetic
-2024-07-24,,,,-2326.61,,Fashion,Expenses,,,,,,synthetic
-2024-07-25,,,,-77.76,,Salary,Expenses,,,,,,synthetic
-2024-07-26,,,,-2127.78,,Fashion,Expenses,,,,,,synthetic
-2024-07-26,,,,447.38,,Fashion,Income,,,,,,synthetic
-2024-07-28,,,,-2453.03,,Transport,Expenses,,,,,,synthetic
-2024-07-28,,,,3891.07,,Transport,Income,,,,,,synthetic
-2024-07-29,,,,1658.6,,Savings,Income,,,,,,synthetic
-2024-07-29,,,,-749.74,,Other Expenses,Expenses,,,,,,synthetic
-2024-08-01,,,,3087.98,,Salary,Income,,,,,,synthetic
-2024-08-01,,,,-1138.01,,Fashion,Expenses,,,,,,synthetic
-2024-08-02,,,,-2611.71,,Savings,Expenses,,,,,,synthetic
-2024-08-02,,,,-1999.15,,Transport,Saving,,,,,,synthetic
-2024-08-03,,,,1783.35,,Living Expenses,Income,,,,,,synthetic
-2024-08-03,,,,-1264.38,,Savings,Saving,,,,,,synthetic
-2024-08-03,,,,-270.44,,Fashion,Saving,,,,,,synthetic
-2024-08-04,,,,-363.22,,Transport,Expenses,,,,,,synthetic
-2024-08-05,,,,-393.01,,Savings,Expenses,,,,,,synthetic
-2024-08-05,,,,-2171.54,,Salary,Expenses,,,,,,synthetic
-2024-08-05,,,,3936.87,,Salary,Income,,,,,,synthetic
-2024-08-07,,,,4220.74,,Other Expenses,Income,,,,,,synthetic
-2024-08-07,,,,-2134.31,,Savings,Expenses,,,,,,synthetic
-2024-08-08,,,,2396.24,,Other Expenses,Income,,,,,,synthetic
-2024-08-09,,,,1582.9,,Salary,Income,,,,,,synthetic
-2024-08-09,,,,4639.66,,Medical,Income,,,,,,synthetic
-2024-08-09,,,,244.48,,Other Expenses,Income,,,,,,synthetic
-2024-08-10,,,,-2353.05,,Other Expenses,Saving,,,,,,synthetic
-2024-08-11,,,,1519.91,,Living Expenses,Income,,,,,,synthetic
-2024-08-12,,,,-534.97,,Fashion,Expenses,,,,,,synthetic
-2024-08-12,,,,-1662.97,,Transport,Saving,,,,,,synthetic
-2024-08-12,,,,-2479.43,,Savings,Expenses,,,,,,synthetic
-2024-08-12,,,,2090.74,,Living Expenses,Income,,,,,,synthetic
-2024-08-13,,,,-1510.23,,Savings,Expenses,,,,,,synthetic
-2024-08-14,,,,3255.77,,Other Expenses,Income,,,,,,synthetic
-2024-08-16,,,,-1595.95,,Savings,Expenses,,,,,,synthetic
-2024-08-16,,,,-2086.43,,Fashion,Saving,,,,,,synthetic
-2024-08-16,,,,-1941.82,,Transport,Expenses,,,,,,synthetic
-2024-08-17,,,,-1556.05,,Salary,Expenses,,,,,,synthetic
-2024-08-17,,,,-1247.74,,Other Expenses,Expenses,,,,,,synthetic
-2024-08-17,,,,2735.78,,Savings,Income,,,,,,synthetic
-2024-08-17,,,,-705.73,,Savings,Saving,,,,,,synthetic
-2024-08-18,,,,3775.95,,Living Expenses,Income,,,,,,synthetic
-2024-08-18,,,,-1046.7,,Salary,Expenses,,,,,,synthetic
-2024-08-20,,,,-866.76,,Fashion,Expenses,,,,,,synthetic
-2024-08-21,,,,-1105.61,,Salary,Expenses,,,,,,synthetic
-2024-08-22,,,,-2422.51,,Savings,Expenses,,,,,,synthetic
-2024-08-22,,,,-1031.12,,Transport,Saving,,,,,,synthetic
-2024-08-22,,,,-2270.69,,Living Expenses,Saving,,,,,,synthetic
-2024-08-23,,,,-2156.47,,Living Expenses,Expenses,,,,,,synthetic
-2024-08-25,,,,4314.13,,Medical,Income,,,,,,synthetic
-2024-08-25,,,,3263.32,,Living Expenses,Income,,,,,,synthetic
-2024-08-26,,,,-1090.59,,Savings,Saving,,,,,,synthetic
-2024-08-27,,,,638.37,,Other Expenses,Income,,,,,,synthetic
-2024-08-29,,,,-149.73,,Medical,Expenses,,,,,,synthetic
-2024-08-29,,,,-1365.63,,Living Expenses,Expenses,,,,,,synthetic
-2024-08-30,,,,-2738.13,,Living Expenses,Expenses,,,,,,synthetic
-2024-08-30,,,,-2073.62,,Fashion,Saving,,,,,,synthetic
-2024-09-01,,,,-2397.54,,Living Expenses,Expenses,,,,,,synthetic
-2024-09-02,,,,-123.49,,Medical,Saving,,,,,,synthetic
-2024-09-02,,,,-1261.43,,Living Expenses,Saving,,,,,,synthetic
-2024-09-04,,,,-843.97,,Fashion,Expenses,,,,,,synthetic
-2024-09-04,,,,2651.96,,Fashion,Income,,,,,,synthetic
-2024-09-04,,,,-317.14,,Medical,Expenses,,,,,,synthetic
-2024-09-04,,,,2191.37,,Living Expenses,Income,,,,,,synthetic
-2024-09-04,,,,3971.58,,Savings,Income,,,,,,synthetic
-2024-09-05,,,,2936.36,,Medical,Income,,,,,,synthetic
-2024-09-05,,,,4795.33,,Living Expenses,Income,,,,,,synthetic
-2024-09-06,,,,-797.75,,Living Expenses,Expenses,,,,,,synthetic
-2024-09-06,,,,2590.58,,Fashion,Income,,,,,,synthetic
-2024-09-10,,,,646.66,,Medical,Income,,,,,,synthetic
-2024-09-10,,,,-724.18,,Other Expenses,Saving,,,,,,synthetic
-2024-09-12,,,,-2350.28,,Transport,Saving,,,,,,synthetic
-2024-09-12,,,,-2822.28,,Transport,Saving,,,,,,synthetic
-2024-09-13,,,,2252.51,,Other Expenses,Income,,,,,,synthetic
-2024-09-13,,,,3137.35,,Savings,Income,,,,,,synthetic
-2024-09-14,,,,-2763.23,,Other Expenses,Expenses,,,,,,synthetic
-2024-09-14,,,,-1444.41,,Salary,Saving,,,,,,synthetic
-2024-09-15,,,,-44.37,,Other Expenses,Saving,,,,,,synthetic
-2024-09-15,,,,-1026.51,,Other Expenses,Expenses,,,,,,synthetic
-2024-09-16,,,,-577.14,,Medical,Saving,,,,,,synthetic
-2024-09-16,,,,496.44,,Savings,Income,,,,,,synthetic
-2024-09-16,,,,-180.02,,Fashion,Expenses,,,,,,synthetic
-2024-09-17,,,,-1840.91,,Savings,Saving,,,,,,synthetic
-2024-09-20,,,,-946.63,,Medical,Expenses,,,,,,synthetic
-2024-09-23,,,,649.74,,Salary,Income,,,,,,synthetic
-2024-09-24,,,,2307.54,,Other Expenses,Income,,,,,,synthetic
-2024-09-24,,,,827.43,,Salary,Income,,,,,,synthetic
-2024-09-25,,,,-1028.87,,Other Expenses,Saving,,,,,,synthetic
-2024-09-27,,,,-2539.21,,Salary,Expenses,,,,,,synthetic
-2024-09-29,,,,788.66,,Transport,Income,,,,,,synthetic
-2024-09-29,,,,-114.57,,Salary,Expenses,,,,,,synthetic
-2024-09-29,,,,1274.1,,Medical,Income,,,,,,synthetic
-2024-09-30,,,,4877.11,,Other Expenses,Income,,,,,,synthetic
-2024-10-01,,,,-269.12,,Living Expenses,Expenses,,,,,,synthetic
-2024-10-02,,,,-272.56,,Savings,Saving,,,,,,synthetic
-2024-10-02,,,,3248.27,,Other Expenses,Income,,,,,,synthetic
-2024-10-03,,,,-1810.98,,Living Expenses,Saving,,,,,,synthetic
-2024-10-03,,,,-916.83,,Savings,Saving,,,,,,synthetic
-2024-10-03,,,,-2942.84,,Fashion,Expenses,,,,,,synthetic
-2024-10-05,,,,3811.74,,Salary,Income,,,,,,synthetic
-2024-10-05,,,,-2511.36,,Fashion,Saving,,,,,,synthetic
-2024-10-06,,,,665.27,,Living Expenses,Income,,,,,,synthetic
-2024-10-06,,,,-718.33,,Transport,Expenses,,,,,,synthetic
-2024-10-07,,,,1169.93,,Transport,Income,,,,,,synthetic
-2024-10-08,,,,-2531.7,,Fashion,Expenses,,,,,,synthetic
-2024-10-08,,,,-1581.09,,Transport,Expenses,,,,,,synthetic
-2024-10-09,,,,4548.12,,Savings,Income,,,,,,synthetic
-2024-10-09,,,,-592.18,,Other Expenses,Expenses,,,,,,synthetic
-2024-10-10,,,,-1389.09,,Salary,Saving,,,,,,synthetic
-2024-10-10,,,,-1784.77,,Living Expenses,Expenses,,,,,,synthetic
-2024-10-11,,,,-2044.64,,Medical,Saving,,,,,,synthetic
-2024-10-11,,,,-628.69,,Other Expenses,Expenses,,,,,,synthetic
-2024-10-11,,,,-923.5,,Medical,Expenses,,,,,,synthetic
-2024-10-12,,,,-511.83,,Transport,Saving,,,,,,synthetic
-2024-10-13,,,,-2018.47,,Fashion,Saving,,,,,,synthetic
-2024-10-13,,,,-1602.15,,Transport,Saving,,,,,,synthetic
-2024-10-13,,,,2918.34,,Living Expenses,Income,,,,,,synthetic
-2024-10-14,,,,4896.76,,Medical,Income,,,,,,synthetic
-2024-10-14,,,,-1163.86,,Savings,Expenses,,,,,,synthetic
-2024-10-14,,,,-1951.89,,Fashion,Expenses,,,,,,synthetic
-2024-10-15,,,,630.17,,Salary,Income,,,,,,synthetic
-2024-10-18,,,,1423.98,,Transport,Income,,,,,,synthetic
-2024-10-18,,,,-107.86,,Transport,Expenses,,,,,,synthetic
-2024-10-18,,,,-1259.22,,Savings,Expenses,,,,,,synthetic
-2024-10-19,,,,4867.42,,Salary,Income,,,,,,synthetic
-2024-10-20,,,,2449.75,,Transport,Income,,,,,,synthetic
-2024-10-20,,,,-2443.21,,Salary,Saving,,,,,,synthetic
-2024-10-21,,,,2741.2,,Salary,Income,,,,,,synthetic
-2024-10-21,,,,-2259.01,,Medical,Saving,,,,,,synthetic
-2024-10-22,,,,-1567.61,,Other Expenses,Expenses,,,,,,synthetic
-2024-10-22,,,,-2793.86,,Salary,Expenses,,,,,,synthetic
-2024-10-23,,,,4795.22,,Transport,Income,,,,,,synthetic
-2024-10-25,,,,-1110.02,,Other Expenses,Saving,,,,,,synthetic
-2024-10-26,,,,2260.31,,Medical,Income,,,,,,synthetic
-2024-10-26,,,,-2242.5,,Medical,Expenses,,,,,,synthetic
-2024-10-27,,,,-962.21,,Other Expenses,Expenses,,,,,,synthetic
-2024-10-28,,,,-589.49,,Salary,Saving,,,,,,synthetic
-2024-10-30,,,,-688.25,,Fashion,Expenses,,,,,,synthetic
-2024-10-31,,,,-75.85,,Salary,Expenses,,,,,,synthetic
-2024-11-01,,,,-2410.66,,Other Expenses,Expenses,,,,,,synthetic
-2024-11-02,,,,3936.42,,Salary,Income,,,,,,synthetic
-2024-11-02,,,,-1951.15,,Fashion,Saving,,,,,,synthetic
-2024-11-03,,,,-728.17,,Medical,Expenses,,,,,,synthetic
-2024-11-04,,,,-2120.6,,Other Expenses,Expenses,,,,,,synthetic
-2024-11-06,,,,-2736.5,,Savings,Saving,,,,,,synthetic
-2024-11-06,,,,1207.42,,Salary,Income,,,,,,synthetic
-2024-11-07,,,,-560.84,,Transport,Expenses,,,,,,synthetic
-2024-11-07,,,,4227.53,,Savings,Income,,,,,,synthetic
-2024-11-07,,,,1456.53,,Savings,Income,,,,,,synthetic
-2024-11-10,,,,1800.14,,Savings,Income,,,,,,synthetic
-2024-11-10,,,,-2590.66,,Other Expenses,Saving,,,,,,synthetic
-2024-11-11,,,,978.79,,Transport,Income,,,,,,synthetic
-2024-11-11,,,,-1068.92,,Salary,Expenses,,,,,,synthetic
-2024-11-11,,,,-967.81,,Fashion,Expenses,,,,,,synthetic
-2024-11-14,,,,-1826.83,,Medical,Expenses,,,,,,synthetic
-2024-11-14,,,,2411.0,,Living Expenses,Income,,,,,,synthetic
-2024-11-14,,,,-2140.8,,Living Expenses,Expenses,,,,,,synthetic
-2024-11-16,,,,-129.36,,Transport,Saving,,,,,,synthetic
-2024-11-17,,,,-2363.51,,Savings,Saving,,,,,,synthetic
-2024-11-17,,,,-1352.45,,Transport,Expenses,,,,,,synthetic
-2024-11-19,,,,4074.66,,Savings,Income,,,,,,synthetic
-2024-11-19,,,,3757.91,,Other Expenses,Income,,,,,,synthetic
-2024-11-20,,,,-1995.74,,Savings,Saving,,,,,,synthetic
-2024-11-21,,,,-1075.78,,Other Expenses,Saving,,,,,,synthetic
-2024-11-21,,,,-2842.24,,Salary,Expenses,,,,,,synthetic
-2024-11-22,,,,3014.64,,Savings,Income,,,,,,synthetic
-2024-11-24,,,,-682.85,,Medical,Expenses,,,,,,synthetic
-2024-11-24,,,,-1155.84,,Fashion,Saving,,,,,,synthetic
-2024-11-24,,,,-2039.28,,Transport,Expenses,,,,,,synthetic
-2024-11-24,,,,-1382.2,,Fashion,Saving,,,,,,synthetic
-2024-11-25,,,,-2631.25,,Living Expenses,Expenses,,,,,,synthetic
-2024-11-25,,,,-965.55,,Savings,Saving,,,,,,synthetic
-2024-11-25,,,,-1468.25,,Salary,Saving,,,,,,synthetic
-2024-11-25,,,,-311.77,,Medical,Saving,,,,,,synthetic
-2024-11-27,,,,-816.99,,Fashion,Saving,,,,,,synthetic
-2024-11-29,,,,3243.79,,Other Expenses,Income,,,,,,synthetic
-2024-12-02,,,,1608.52,,Transport,Income,,,,,,synthetic
-2024-12-03,,,,-2471.38,,Other Expenses,Saving,,,,,,synthetic
-2024-12-04,,,,4765.61,,Other Expenses,Income,,,,,,synthetic
-2024-12-05,,,,4679.65,,Other Expenses,Income,,,,,,synthetic
-2024-12-05,,,,-2902.8,,Medical,Expenses,,,,,,synthetic
-2024-12-05,,,,-2597.43,,Salary,Expenses,,,,,,synthetic
-2024-12-05,,,,-2120.0,,Living Expenses,Saving,,,,,,synthetic
-2024-12-07,,,,-151.38,,Transport,Expenses,,,,,,synthetic
-2024-12-09,,,,-758.8,,Other Expenses,Expenses,,,,,,synthetic
-2024-12-09,,,,-489.15,,Medical,Saving,,,,,,synthetic
-2024-12-09,,,,-309.55,,Living Expenses,Saving,,,,,,synthetic
-2024-12-09,,,,-2598.48,,Fashion,Expenses,,,,,,synthetic
-2024-12-09,,,,-1134.41,,Transport,Saving,,,,,,synthetic
-2024-12-11,,,,250.63,,Transport,Income,,,,,,synthetic
-2024-12-11,,,,-413.88,,Transport,Saving,,,,,,synthetic
-2024-12-11,,,,-397.22,,Fashion,Saving,,,,,,synthetic
-2024-12-11,,,,-582.17,,Savings,Saving,,,,,,synthetic
-2024-12-12,,,,2383.9,,Transport,Income,,,,,,synthetic
-2024-12-12,,,,3065.24,,Savings,Income,,,,,,synthetic
-2024-12-12,,,,-1623.9,,Transport,Expenses,,,,,,synthetic
-2024-12-14,,,,-1349.89,,Other Expenses,Saving,,,,,,synthetic
-2024-12-15,,,,-1361.21,,Fashion,Expenses,,,,,,synthetic
-2024-12-16,,,,-2985.39,,Transport,Saving,,,,,,synthetic
-2024-12-16,,,,3485.26,,Salary,Income,,,,,,synthetic
-2024-12-17,,,,-772.21,,Savings,Saving,,,,,,synthetic
-2024-12-17,,,,-1785.57,,Medical,Saving,,,,,,synthetic
-2024-12-18,,,,-398.13,,Other Expenses,Saving,,,,,,synthetic
-2024-12-19,,,,-275.37,,Fashion,Expenses,,,,,,synthetic
-2024-12-19,,,,1021.76,,Savings,Income,,,,,,synthetic
-2024-12-20,,,,-1150.21,,Salary,Expenses,,,,,,synthetic
-2024-12-22,,,,-2399.57,,Savings,Expenses,,,,,,synthetic
-2024-12-23,,,,-2986.36,,Fashion,Saving,,,,,,synthetic
-2024-12-23,,,,420.53,,Medical,Income,,,,,,synthetic
-2024-12-23,,,,-106.49,,Transport,Expenses,,,,,,synthetic
-2024-12-24,,,,-538.79,,Fashion,Saving,,,,,,synthetic
-2024-12-25,,,,-1910.2,,Transport,Saving,,,,,,synthetic
-2024-12-26,,,,-137.48,,Fashion,Saving,,,,,,synthetic
-2024-12-27,,,,528.38,,Fashion,Income,,,,,,synthetic
-2024-12-27,,,,4922.89,,Salary,Income,,,,,,synthetic
-2024-12-28,,,,-1718.15,,Living Expenses,Expenses,,,,,,synthetic
-2024-12-29,,,,2971.27,,Medical,Income,,,,,,synthetic
-2024-12-30,,,,-27.37,,Other Expenses,Saving,,,,,,synthetic
-2024-12-30,,,,-25.36,,Living Expenses,Saving,,,,,,synthetic
-2024-12-31,,,,-1489.38,,Living Expenses,Expenses,,,,,,synthetic
-2024-12-31,,,,-1704.38,,Fashion,Saving,,,,,,synthetic
-2024-12-31,,,,-255.29,,Transport,Expenses,,,,,,synthetic
-2025-01-01,,,,-2187.66,,Medical,Saving,,,,,,synthetic
-2025-01-02,,,,-621.72,,Fashion,Expenses,,,,,,synthetic
-2025-01-02,,,,-1285.01,,Salary,Saving,,,,,,synthetic
-2025-01-03,,,,-1249.78,,Salary,Saving,,,,,,synthetic
-2025-01-08,,,,-1372.16,,Other Expenses,Saving,,,,,,synthetic
-2025-01-08,,,,-1759.43,,Salary,Expenses,,,,,,synthetic
-2025-01-10,,,,-2693.19,,Medical,Saving,,,,,,synthetic
-2025-01-10,,,,-2991.84,,Fashion,Expenses,,,,,,synthetic
-2025-01-11,,,,-1420.34,,Fashion,Saving,,,,,,synthetic
-2025-01-12,,,,1788.75,,Savings,Income,,,,,,synthetic
-2025-01-12,,,,3452.94,,Fashion,Income,,,,,,synthetic
-2025-01-12,,,,2591.67,,Medical,Income,,,,,,synthetic
-2025-01-13,,,,-1224.21,,Salary,Saving,,,,,,synthetic
-2025-01-13,,,,-1124.3,,Transport,Saving,,,,,,synthetic
-2025-01-13,,,,-2681.22,,Other Expenses,Expenses,,,,,,synthetic
-2025-01-13,,,,-1330.82,,Living Expenses,Expenses,,,,,,synthetic
-2025-01-15,,,,4815.05,,Other Expenses,Income,,,,,,synthetic
-2025-01-15,,,,-1883.72,,Medical,Expenses,,,,,,synthetic
-2025-01-16,,,,-1203.51,,Savings,Saving,,,,,,synthetic
-2025-01-16,,,,-2452.53,,Other Expenses,Saving,,,,,,synthetic
-2025-01-17,,,,3596.58,,Salary,Income,,,,,,synthetic
-2025-01-17,,,,-399.79,,Living Expenses,Expenses,,,,,,synthetic
-2025-01-17,,,,-2964.31,,Other Expenses,Saving,,,,,,synthetic
-2025-01-17,,,,4601.12,,Transport,Income,,,,,,synthetic
-2025-01-17,,,,-2851.76,,Other Expenses,Expenses,,,,,,synthetic
-2025-01-18,,,,4231.34,,Medical,Income,,,,,,synthetic
-2025-01-18,,,,-2892.8,,Transport,Saving,,,,,,synthetic
-2025-01-20,,,,-2503.42,,Transport,Saving,,,,,,synthetic
-2025-01-21,,,,-2173.88,,Savings,Saving,,,,,,synthetic
-2025-01-22,,,,-1435.18,,Savings,Expenses,,,,,,synthetic
-2025-01-22,,,,-2671.01,,Savings,Saving,,,,,,synthetic
-2025-01-24,,,,3582.73,,Transport,Income,,,,,,synthetic
-2025-01-24,,,,-286.07,,Savings,Saving,,,,,,synthetic
-2025-01-25,,,,2390.95,,Living Expenses,Income,,,,,,synthetic
-2025-01-25,,,,-2243.95,,Savings,Saving,,,,,,synthetic
-2025-01-26,,,,-2872.57,,Savings,Saving,,,,,,synthetic
-2025-01-27,,,,4120.18,,Salary,Income,,,,,,synthetic
-2025-01-30,,,,4854.03,,Fashion,Income,,,,,,synthetic
-2025-01-30,,,,-2470.55,,Medical,Expenses,,,,,,synthetic
-2025-01-31,,,,-1832.73,,Salary,Expenses,,,,,,synthetic
-2025-01-31,,,,-1777.57,,Other Expenses,Saving,,,,,,synthetic
-2025-01-31,,,,-135.57,,Fashion,Expenses,,,,,,synthetic
-2025-02-01,,,,-453.8,,Other Expenses,Expenses,,,,,,synthetic
-2025-02-03,,,,-529.99,,Savings,Saving,,,,,,synthetic
-2025-02-04,,,,-416.31,,Fashion,Saving,,,,,,synthetic
-2025-02-04,,,,3861.08,,Fashion,Income,,,,,,synthetic
-2025-02-05,,,,-2815.25,,Savings,Saving,,,,,,synthetic
-2025-02-05,,,,-1261.37,,Living Expenses,Saving,,,,,,synthetic
-2025-02-06,,,,-2121.58,,Fashion,Expenses,,,,,,synthetic
-2025-02-07,,,,3465.64,,Medical,Income,,,,,,synthetic
-2025-02-07,,,,-1477.23,,Fashion,Saving,,,,,,synthetic
-2025-02-09,,,,-1925.62,,Transport,Expenses,,,,,,synthetic
-2025-02-09,,,,-729.25,,Salary,Saving,,,,,,synthetic
-2025-02-11,,,,2978.81,,Savings,Income,,,,,,synthetic
-2025-02-11,,,,1509.4,,Medical,Income,,,,,,synthetic
-2025-02-13,,,,-2247.49,,Other Expenses,Expenses,,,,,,synthetic
-2025-02-14,,,,-1658.18,,Medical,Expenses,,,,,,synthetic
-2025-02-14,,,,2689.68,,Fashion,Income,,,,,,synthetic
-2025-02-14,,,,1624.2,,Living Expenses,Income,,,,,,synthetic
-2025-02-15,,,,-1025.75,,Transport,Expenses,,,,,,synthetic
-2025-02-15,,,,3754.6,,Salary,Income,,,,,,synthetic
-2025-02-17,,,,-1365.43,,Transport,Saving,,,,,,synthetic
-2025-02-18,,,,1299.43,,Medical,Income,,,,,,synthetic
-2025-02-18,,,,-810.49,,Fashion,Saving,,,,,,synthetic
-2025-02-19,,,,3439.22,,Other Expenses,Income,,,,,,synthetic
-2025-02-19,,,,2320.3,,Living Expenses,Income,,,,,,synthetic
-2025-02-20,,,,3129.53,,Savings,Income,,,,,,synthetic
-2025-02-20,,,,2005.73,,Savings,Income,,,,,,synthetic
-2025-02-22,,,,-2066.83,,Medical,Saving,,,,,,synthetic
-2025-02-22,,,,2189.32,,Transport,Income,,,,,,synthetic
-2025-02-23,,,,-2088.06,,Savings,Expenses,,,,,,synthetic
-2025-02-25,,,,2917.48,,Savings,Income,,,,,,synthetic
-2025-02-25,,,,3823.73,,Other Expenses,Income,,,,,,synthetic
-2025-02-27,,,,3637.02,,Living Expenses,Income,,,,,,synthetic
-2025-03-01,,,,1662.36,,Salary,Income,,,,,,synthetic
-2025-03-03,,,,-24.36,,Salary,Expenses,,,,,,synthetic
-2025-03-03,,,,-2117.59,,Salary,Saving,,,,,,synthetic
-2025-03-03,,,,1356.65,,Savings,Income,,,,,,synthetic
-2025-03-04,,,,-2686.02,,Fashion,Expenses,,,,,,synthetic
-2025-03-05,,,,-1555.82,,Salary,Saving,,,,,,synthetic
-2025-03-05,,,,643.03,,Other Expenses,Income,,,,,,synthetic
-2025-03-06,,,,-2764.36,,Salary,Saving,,,,,,synthetic
-2025-03-06,,,,-1730.92,,Salary,Saving,,,,,,synthetic
-2025-03-08,,,,2907.0,,Other Expenses,Income,,,,,,synthetic
-2025-03-10,,,,-2387.9,,Salary,Saving,,,,,,synthetic
-2025-03-10,,,,-1705.64,,Living Expenses,Expenses,,,,,,synthetic
-2025-03-12,,,,-517.31,,Medical,Saving,,,,,,synthetic
-2025-03-12,,,,-2249.84,,Living Expenses,Saving,,,,,,synthetic
-2025-03-13,,,,-2647.33,,Transport,Saving,,,,,,synthetic
-2025-03-14,,,,-132.07,,Transport,Expenses,,,,,,synthetic
-2025-03-17,,,,-1555.54,,Medical,Expenses,,,,,,synthetic
-2025-03-18,,,,-2284.43,,Medical,Saving,,,,,,synthetic
-2025-03-18,,,,902.93,,Living Expenses,Income,,,,,,synthetic
-2025-03-18,,,,-912.15,,Fashion,Saving,,,,,,synthetic
-2025-03-19,,,,-248.66,,Other Expenses,Expenses,,,,,,synthetic
-2025-03-20,,,,-2317.87,,Medical,Saving,,,,,,synthetic
-2025-03-22,,,,267.6,,Fashion,Income,,,,,,synthetic
-2025-03-23,,,,-1077.93,,Fashion,Saving,,,,,,synthetic
-2025-03-24,,,,-2921.7,,Transport,Expenses,,,,,,synthetic
-2025-03-24,,,,-1215.47,,Salary,Expenses,,,,,,synthetic
-2025-03-25,,,,-277.43,,Other Expenses,Expenses,,,,,,synthetic
-2025-03-25,,,,526.25,,Fashion,Income,,,,,,synthetic
-2025-03-26,,,,-295.54,,Transport,Expenses,,,,,,synthetic
-2025-03-28,,,,4197.88,,Salary,Income,,,,,,synthetic
-2025-03-28,,,,558.5,,Other Expenses,Income,,,,,,synthetic
-2025-03-29,,,,-116.5,,Medical,Saving,,,,,,synthetic
-2025-03-29,,,,-1035.3,,Transport,Expenses,,,,,,synthetic
-2025-03-30,,,,-532.18,,Salary,Expenses,,,,,,synthetic
-2025-03-30,,,,-2803.03,,Fashion,Saving,,,,,,synthetic
-2025-03-31,,,,-1463.34,,Transport,Saving,,,,,,synthetic
-2025-03-31,,,,3798.93,,Other Expenses,Income,,,,,,synthetic
-2025-03-31,,,,-25.04,,Fashion,Expenses,,,,,,synthetic
-2025-03-31,,,,2945.41,,Savings,Income,,,,,,synthetic
-2025-04-01,,,,-2016.67,,Salary,Saving,,,,,,synthetic
-2025-04-01,,,,1602.03,,Salary,Income,,,,,,synthetic
-2025-04-01,,,,-2522.88,,Transport,Saving,,,,,,synthetic
-2025-04-02,,,,-341.73,,Transport,Saving,,,,,,synthetic
-2025-04-02,,,,-29.67,,Living Expenses,Expenses,,,,,,synthetic
-2025-04-03,,,,-2656.26,,Living Expenses,Saving,,,,,,synthetic
-2025-04-04,,,,-644.75,,Transport,Saving,,,,,,synthetic
-2025-04-04,,,,2038.74,,Salary,Income,,,,,,synthetic
-2025-04-04,,,,1520.08,,Salary,Income,,,,,,synthetic
-2025-04-05,,,,4848.31,,Fashion,Income,,,,,,synthetic
-2025-04-05,,,,1608.8,,Other Expenses,Income,,,,,,synthetic
-2025-04-07,,,,-1408.45,,Other Expenses,Saving,,,,,,synthetic
-2025-04-07,,,,-1753.04,,Other Expenses,Saving,,,,,,synthetic
-2025-04-08,,,,2693.33,,Savings,Income,,,,,,synthetic
-2025-04-08,,,,3352.95,,Salary,Income,,,,,,synthetic
-2025-04-08,,,,-2638.59,,Salary,Expenses,,,,,,synthetic
-2025-04-08,,,,-436.99,,Other Expenses,Saving,,,,,,synthetic
-2025-04-09,,,,-439.12,,Salary,Expenses,,,,,,synthetic
-2025-04-09,,,,-2191.82,,Other Expenses,Expenses,,,,,,synthetic
-2025-04-10,,,,-474.1,,Salary,Saving,,,,,,synthetic
-2025-04-10,,,,-2017.96,,Salary,Saving,,,,,,synthetic
-2025-04-12,,,,-2602.01,,Salary,Saving,,,,,,synthetic
-2025-04-12,,,,-1089.7,,Transport,Saving,,,,,,synthetic
-2025-04-13,,,,-1706.47,,Savings,Expenses,,,,,,synthetic
-2025-04-14,,,,-1301.14,,Salary,Expenses,,,,,,synthetic
-2025-04-14,,,,-692.55,,Medical,Saving,,,,,,synthetic
-2025-04-14,,,,834.37,,Living Expenses,Income,,,,,,synthetic
-2025-04-14,,,,-941.67,,Other Expenses,Saving,,,,,,synthetic
-2025-04-15,,,,1774.02,,Salary,Income,,,,,,synthetic
-2025-04-15,,,,-98.24,,Fashion,Saving,,,,,,synthetic
-2025-04-15,,,,4269.88,,Fashion,Income,,,,,,synthetic
-2025-04-16,,,,-417.35,,Salary,Expenses,,,,,,synthetic
-2025-04-16,,,,236.9,,Savings,Income,,,,,,synthetic
-2025-04-16,,,,3641.21,,Fashion,Income,,,,,,synthetic
-2025-04-18,,,,-561.88,,Transport,Expenses,,,,,,synthetic
-2025-04-18,,,,-2825.58,,Transport,Expenses,,,,,,synthetic
-2025-04-18,,,,-525.68,,Medical,Saving,,,,,,synthetic
-2025-04-20,,,,-2848.39,,Living Expenses,Saving,,,,,,synthetic
-2025-04-20,,,,-261.94,,Other Expenses,Saving,,,,,,synthetic
-2025-04-20,,,,-2921.34,,Medical,Saving,,,,,,synthetic
-2025-04-22,,,,-1629.15,,Other Expenses,Saving,,,,,,synthetic
-2025-04-23,,,,3104.46,,Savings,Income,,,,,,synthetic
-2025-04-24,,,,-2488.88,,Fashion,Expenses,,,,,,synthetic
-2025-04-24,,,,-2932.89,,Other Expenses,Saving,,,,,,synthetic
-2025-04-25,,,,-2039.74,,Savings,Expenses,,,,,,synthetic
-2025-04-25,,,,4663.63,,Fashion,Income,,,,,,synthetic
-2025-04-26,,,,-1219.15,,Transport,Expenses,,,,,,synthetic
-2025-04-26,,,,-1562.88,,Living Expenses,Expenses,,,,,,synthetic
+2022-03-02,recharge,151.0,0.0,-151.0,mobile phones,Mobile Phones,Expenses,,,Donation,charity,expenses,original
+2022-03-03,petrol,1000.0,0.0,-1000.0,petrol,Petrol,Expenses,,,,,,original
+2022-04-03,other,1150.0,0.0,-1150.0,other ,Other,Expenses,,,,,,original
+2022-04-09,gas,1000.0,0.0,-1000.0,gas,Gas,Expenses,,,,,,original
+2022-04-10,travel,1676.0,0.0,-1676.0,travelling,Travelling,Expenses,,,,,,original
+2022-04-12,medical,3500.0,0.0,-3500.0,health,Health,Expenses,,,,,,original
+2022-04-12,medical,43.0,0.0,-43.0,health,Health,Expenses,,,,,,original
+2022-04-29,,,,194.83,,Groceries,Expense,,,,,,synthetic
+2022-04-30,,,,31.75,,Entertainment,Expense,,,,,,synthetic
+2022-05-01,,,,233.83,,Medical,Expense,,,,,,synthetic
+2022-05-01,,,,412.61,,Groceries,Expense,,,,,,synthetic
+2022-05-01,,,,189.3,,Utilities,Expense,,,,,,synthetic
+2022-05-02,,,,389.64,,Utilities,Expense,,,,,,synthetic
+2022-05-03,,,,5979.01,,Investment,Income,,,,,,synthetic
+2022-05-03,,,,200.33,,Rent,Expense,,,,,,synthetic
+2022-05-03,,,,323.43,,Transport,Expense,,,,,,synthetic
+2022-05-04,,,,164.11,,Medical,Expense,,,,,,synthetic
+2022-05-05,,,,8211.9,,Salary,Income,,,,,,synthetic
+2022-05-06,,,,336.78,,Entertainment,Expense,,,,,,synthetic
+2022-05-06,,,,135.11,,Insurance,Expense,,,,,,synthetic
+2022-05-06,,,,117.04,,Entertainment,Expense,,,,,,synthetic
+2022-05-08,,,,9599.01,,Bonus,Income,,,,,,synthetic
+2022-05-09,,,,495.21,,Transport,Expense,,,,,,synthetic
+2022-05-09,,,,198.54,,Groceries,Expense,,,,,,synthetic
+2022-05-10,,,,366.99,,Utilities,Expense,,,,,,synthetic
+2022-05-10,,,,340.24,,Food,Expense,,,,,,synthetic
+2022-05-11,,,,3380.13,,Salary,Income,,,,,,synthetic
+2022-05-13,,,,253.1,,Medical,Expense,,,,,,synthetic
+2022-05-13,,,,25.79,,Groceries,Expense,,,,,,synthetic
+2022-05-14,,,,8321.3,,Salary,Income,,,,,,synthetic
+2022-05-14,,,,263.16,,Groceries,Expense,,,,,,synthetic
+2022-05-15,,,,7179.1,,Investment,Income,,,,,,synthetic
+2022-05-15,,,,323.83,,Rent,Expense,,,,,,synthetic
+2022-05-15,,,,24.36,,Transport,Expense,,,,,,synthetic
+2022-05-15,,,,350.05,,Entertainment,Expense,,,,,,synthetic
+2022-05-16,,,,368.16,,Groceries,Expense,,,,,,synthetic
+2022-05-16,,,,1803.7,,Investment,Income,,,,,,synthetic
+2022-05-17,,,,280.32,,Insurance,Expense,,,,,,synthetic
+2022-05-18,,,,8193.82,,Investment,Income,,,,,,synthetic
+2022-05-18,,,,285.11,,Utilities,Expense,,,,,,synthetic
+2022-05-20,,,,64.82,,Food,Expense,,,,,,synthetic
+2022-05-20,,,,46.67,,Rent,Expense,,,,,,synthetic
+2022-05-21,,,,408.63,,Transport,Expense,,,,,,synthetic
+2022-05-21,,,,406.56,,Insurance,Expense,,,,,,synthetic
+2022-05-22,,,,181.56,,Groceries,Expense,,,,,,synthetic
+2022-05-22,,,,97.88,,Food,Expense,,,,,,synthetic
+2022-05-22,,,,3038.89,,Salary,Income,,,,,,synthetic
+2022-05-23,,,,296.01,,Medical,Expense,,,,,,synthetic
+2022-05-24,,,,86.6,,Insurance,Expense,,,,,,synthetic
+2022-05-24,,,,3945.71,,Bonus,Income,,,,,,synthetic
+2022-05-26,,,,346.54,,Rent,Expense,,,,,,synthetic
+2022-05-26,,,,253.71,,Entertainment,Expense,,,,,,synthetic
+2022-05-30,,,,6240.91,,Salary,Income,,,,,,synthetic
+2022-05-30,,,,66.21,,Food,Expense,,,,,,synthetic
+2022-05-30,,,,358.07,,Utilities,Expense,,,,,,synthetic
+2022-05-30,,,,297.15,,Medical,Expense,,,,,,synthetic
+2022-05-31,,,,7157.45,,Investment,Income,,,,,,synthetic
+2022-06-01,,,,343.76,,Insurance,Expense,,,,,,synthetic
+2022-06-01,,,,9832.02,,Salary,Income,,,,,,synthetic
+2022-06-01,,,,8932.75,,Salary,Income,,,,,,synthetic
+2022-06-02,,,,475.99,,Food,Expense,,,,,,synthetic
+2022-06-02,,,,9581.5,,Investment,Income,,,,,,synthetic
+2022-06-03,,,,118.99,,Insurance,Expense,,,,,,synthetic
+2022-06-03,,,,281.2,,Insurance,Expense,,,,,,synthetic
+2022-06-03,other,1000.0,0.0,-1000.0,other ,Other,Expenses,,,,,,original
+2022-06-04,,,,5075.61,,Bonus,Income,,,,,,synthetic
+2022-06-04,,,,5234.51,,Salary,Income,,,,,,synthetic
+2022-06-04,electricity bill,93.0,0.0,-93.0,electricity bill,Electricity Bill,Expenses,,,,,,original
+2022-06-04,,,,234.04,,Entertainment,Expense,,,,,,synthetic
+2022-06-06,,,,406.15,,Transport,Expense,,,,,,synthetic
+2022-06-07,,,,437.68,,Insurance,Expense,,,,,,synthetic
+2022-06-08,,,,290.29,,Insurance,Expense,,,,,,synthetic
+2022-06-10,clothes,250.0,0.0,-250.0,clothes,Clothes,Expenses,,,,,,original
+2022-06-10,,,,234.44,,Entertainment,Expense,,,,,,synthetic
+2022-06-11,,,,368.86,,Utilities,Expense,,,,,,synthetic
+2022-06-12,,,,432.43,,Groceries,Expense,,,,,,synthetic
+2022-06-13,,,,352.87,,Entertainment,Expense,,,,,,synthetic
+2022-06-14,,,,59.93,,Insurance,Expense,,,,,,synthetic
+2022-06-15,,,,164.62,,Transport,Expense,,,,,,synthetic
+2022-06-15,,,,5904.47,,Investment,Income,,,,,,synthetic
+2022-06-17,,,,372.39,,Entertainment,Expense,,,,,,synthetic
+2022-06-20,,,,458.48,,Utilities,Expense,,,,,,synthetic
+2022-06-22,,,,321.35,,Groceries,Expense,,,,,,synthetic
+2022-06-22,,,,3047.35,,Bonus,Income,,,,,,synthetic
+2022-06-23,,,,7771.45,,Investment,Income,,,,,,synthetic
+2022-06-23,,,,5260.6,,Investment,Income,,,,,,synthetic
+2022-06-23,,,,281.47,,Utilities,Expense,,,,,,synthetic
+2022-06-24,,,,8214.36,,Bonus,Income,,,,,,synthetic
+2022-06-24,,,,119.42,,Medical,Expense,,,,,,synthetic
+2022-06-25,,,,319.38,,Insurance,Expense,,,,,,synthetic
+2022-06-25,,,,2403.96,,Bonus,Income,,,,,,synthetic
+2022-06-26,,,,464.94,,Groceries,Expense,,,,,,synthetic
+2022-06-27,,,,279.3,,Groceries,Expense,,,,,,synthetic
+2022-06-28,,,,2418.54,,Salary,Income,,,,,,synthetic
+2022-06-28,,,,377.02,,Food,Expense,,,,,,synthetic
+2022-06-29,,,,1897.41,,Bonus,Income,,,,,,synthetic
+2022-06-30,,,,5859.83,,Investment,Income,,,,,,synthetic
+2022-07-01,,,,333.05,,Insurance,Expense,,,,,,synthetic
+2022-07-01,,,,234.35,,Transport,Expense,,,,,,synthetic
+2022-07-02,electricity bill,93.0,0.0,-93.0,electricity bill,Electricity Bill,Expenses,,,Gas,living expenses,expenses,original
+2022-07-03,electricity bill,93.0,0.0,-93.0,electricity bill,Electricity Bill,Expenses,,,,,,original
+2022-07-04,recharge,211.0,0.0,-211.0,mobile phones,Mobile Phones,Expenses,,,,,,original
+2022-07-04,,,,451.59,,Insurance,Expense,,,,,,synthetic
+2022-07-06,recharge,30.0,0.0,-30.0,mobile phones,Mobile Phones,Expenses,,,,,,original
+2022-07-06,,,,144.06,,Transport,Expense,,,,,,synthetic
+2022-07-06,,,,3073.12,,Investment,Income,,,,,,synthetic
+2022-07-07,,,,220.73,,Transport,Expense,,,,,,synthetic
+2022-07-08,,,,4853.5,,Investment,Income,,,,,,synthetic
+2022-07-11,,,,487.37,,Entertainment,Expense,,,,,,synthetic
+2022-07-12,,,,436.15,,Utilities,Expense,,,,,,synthetic
+2022-07-14,,,,361.29,,Transport,Expense,,,,,,synthetic
+2022-07-15,,,,4925.98,,Salary,Income,,,,,,synthetic
+2022-07-15,,,,7127.7,,Investment,Income,,,,,,synthetic
+2022-07-17,,,,217.29,,Medical,Expense,,,,,,synthetic
+2022-07-17,,,,8697.86,,Salary,Income,,,,,,synthetic
+2022-07-18,,,,3134.85,,Salary,Income,,,,,,synthetic
+2022-07-19,,,,110.67,,Entertainment,Expense,,,,,,synthetic
+2022-07-19,,,,3690.22,,Investment,Income,,,,,,synthetic
+2022-07-19,,,,3882.81,,Salary,Income,,,,,,synthetic
+2022-07-19,,,,9427.03,,Investment,Income,,,,,,synthetic
+2022-07-21,,,,98.93,,Entertainment,Expense,,,,,,synthetic
+2022-07-21,,,,473.4,,Food,Expense,,,,,,synthetic
+2022-07-21,,,,341.83,,Entertainment,Expense,,,,,,synthetic
+2022-07-21,,,,152.02,,Groceries,Expense,,,,,,synthetic
+2022-07-22,,,,3250.88,,Investment,Income,,,,,,synthetic
+2022-07-24,,,,7621.63,,Investment,Income,,,,,,synthetic
+2022-07-25,,,,8059.39,,Investment,Income,,,,,,synthetic
+2022-07-25,,,,139.68,,Transport,Expense,,,,,,synthetic
+2022-07-26,,,,326.89,,Utilities,Expense,,,,,,synthetic
+2022-07-26,,,,145.96,,Rent,Expense,,,,,,synthetic
+2022-07-28,,,,76.44,,Groceries,Expense,,,,,,synthetic
+2022-07-28,,,,60.18,,Medical,Expense,,,,,,synthetic
+2022-07-28,,,,192.7,,Utilities,Expense,,,,,,synthetic
+2022-07-28,,,,327.17,,Transport,Expense,,,,,,synthetic
+2022-07-29,,,,487.4,,Food,Expense,,,,,,synthetic
+2022-07-30,,,,4291.98,,Investment,Income,,,,,,synthetic
+2022-07-30,,,,302.3,,Insurance,Expense,,,,,,synthetic
+2022-07-30,,,,4380.81,,Bonus,Income,,,,,,synthetic
+2022-07-31,,,,144.5,,Medical,Expense,,,,,,synthetic
+2022-07-31,,,,9904.63,,Salary,Income,,,,,,synthetic
+2022-07-31,,,,88.26,,Entertainment,Expense,,,,,,synthetic
+2022-07-31,,,,165.72,,Transport,Expense,,,,,,synthetic
+2022-08-03,,,,395.41,,Food,Expense,,,,,,synthetic
+2022-08-05,,,,279.37,,Insurance,Expense,,,,,,synthetic
+2022-08-06,recharge,30.0,0.0,-30.0,mobile phones,Mobile Phones,Expenses,,,,,,original
+2022-08-06,,,,149.23,,Medical,Expense,,,,,,synthetic
+2022-08-06,,,,51.95,,Transport,Expense,,,,,,synthetic
+2022-08-06,,,,8961.67,,Bonus,Income,,,,,,synthetic
+2022-08-07,,,,373.36,,Food,Expense,,,,,,synthetic
+2022-08-08,,,,105.22,,Entertainment,Expense,,,,,,synthetic
+2022-08-08,,,,398.62,,Groceries,Expense,,,,,,synthetic
+2022-08-08,,,,487.18,,Medical,Expense,,,,,,synthetic
+2022-08-09,,,,292.9,,Utilities,Expense,,,,,,synthetic
+2022-08-09,,,,420.36,,Entertainment,Expense,,,,,,synthetic
+2022-08-09,,,,96.13,,Groceries,Expense,,,,,,synthetic
+2022-08-10,shopping,1247.0,0.0,-1247.0,clothes,Clothes,Expenses,,,,,,original
+2022-08-10,food,500.0,0.0,-500.0,groceries & foods,Groceries & Foods,Expenses,,,,,,original
+2022-08-11,,,,136.32,,Medical,Expense,,,,,,synthetic
+2022-08-13,,,,277.67,,Utilities,Expense,,,,,,synthetic
+2022-08-13,,,,88.84,,Medical,Expense,,,,,,synthetic
+2022-08-14,,,,138.98,,Transport,Expense,,,,,,synthetic
+2022-08-15,,,,199.22,,Transport,Expense,,,,,,synthetic
+2022-08-16,,,,417.36,,Rent,Expense,,,,,,synthetic
+2022-08-17,,,,154.64,,Medical,Expense,,,,,,synthetic
+2022-08-17,,,,3813.89,,Investment,Income,,,,,,synthetic
+2022-08-17,,,,7214.62,,Bonus,Income,,,,,,synthetic
+2022-08-17,,,,468.01,,Utilities,Expense,,,,,,synthetic
+2022-08-18,,,,362.95,,Rent,Expense,,,,,,synthetic
+2022-08-20,,,,244.07,,Rent,Expense,,,,,,synthetic
+2022-08-21,,,,24.19,,Entertainment,Expense,,,,,,synthetic
+2022-08-21,,,,353.43,,Food,Expense,,,,,,synthetic
+2022-08-22,,,,95.77,,Entertainment,Expense,,,,,,synthetic
+2022-08-22,,,,395.27,,Groceries,Expense,,,,,,synthetic
+2022-08-22,,,,221.0,,Utilities,Expense,,,,,,synthetic
+2022-08-24,,,,8920.97,,Investment,Income,,,,,,synthetic
+2022-08-24,,,,1359.14,,Salary,Income,,,,,,synthetic
+2022-08-24,,,,244.57,,Insurance,Expense,,,,,,synthetic
+2022-08-25,,,,145.86,,Food,Expense,,,,,,synthetic
+2022-08-25,,,,311.8,,Entertainment,Expense,,,,,,synthetic
+2022-08-26,,,,1080.08,,Investment,Income,,,,,,synthetic
+2022-08-26,,,,1505.55,,Investment,Income,,,,,,synthetic
+2022-08-27,,,,1667.49,,Investment,Income,,,,,,synthetic
+2022-08-27,,,,499.08,,Utilities,Expense,,,,,,synthetic
+2022-08-29,,,,496.42,,Entertainment,Expense,,,,,,synthetic
+2022-08-30,,,,5780.19,,Investment,Income,,,,,,synthetic
+2022-08-31,,,,142.51,,Medical,Expense,,,,,,synthetic
+2022-09-01,,,,420.12,,Transport,Expense,,,,,,synthetic
+2022-09-01,,,,298.89,,Groceries,Expense,,,,,,synthetic
+2022-09-02,paid to someone,500.0,0.0,-500.0,other ,Other,Expenses,,,other ,other expenses,expenses,original
+2022-09-02,,,,4570.33,,Investment,Income,,,,,,synthetic
+2022-09-02,,,,265.35,,Transport,Expense,,,,,,synthetic
+2022-09-02,,,,212.49,,Insurance,Expense,,,,,,synthetic
+2022-09-02,,,,140.99,,Utilities,Expense,,,,,,synthetic
+2022-09-03,,,,196.12,,Transport,Expense,,,,,,synthetic
+2022-09-04,,,,9068.73,,Investment,Income,,,,,,synthetic
+2022-09-04,,,,389.49,,Medical,Expense,,,,,,synthetic
+2022-09-04,,,,145.48,,Insurance,Expense,,,,,,synthetic
+2022-09-05,,,,5153.03,,Salary,Income,,,,,,synthetic
+2022-09-06,recharge,30.0,0.0,-30.0,mobile phones,Mobile Phones,Expenses,,,,,,original
+2022-09-07,,,,121.92,,Groceries,Expense,,,,,,synthetic
+2022-09-08,,,,236.25,,Entertainment,Expense,,,,,,synthetic
+2022-09-08,,,,429.75,,Utilities,Expense,,,,,,synthetic
+2022-09-09,,,,12.54,,Rent,Expense,,,,,,synthetic
+2022-09-10,,,,370.87,,Rent,Expense,,,,,,synthetic
+2022-09-11,,,,382.4,,Insurance,Expense,,,,,,synthetic
+2022-09-11,food,163.0,0.0,-163.0,groceries & foods,Groceries & Foods,Expenses,,,,,,original
+2022-09-12,,,,9679.69,,Investment,Income,,,,,,synthetic
+2022-09-13,,,,6401.94,,Investment,Income,,,,,,synthetic
+2022-09-14,,,,421.99,,Food,Expense,,,,,,synthetic
+2022-09-15,,,,4714.1,,Investment,Income,,,,,,synthetic
+2022-09-16,,,,7406.28,,Salary,Income,,,,,,synthetic
+2022-09-19,,,,23.45,,Entertainment,Expense,,,,,,synthetic
+2022-09-19,,,,229.78,,Medical,Expense,,,,,,synthetic
+2022-09-20,,,,371.09,,Food,Expense,,,,,,synthetic
+2022-09-20,,,,244.31,,Rent,Expense,,,,,,synthetic
+2022-09-20,,,,163.95,,Insurance,Expense,,,,,,synthetic
+2022-09-20,,,,373.78,,Transport,Expense,,,,,,synthetic
+2022-09-21,,,,200.44,,Rent,Expense,,,,,,synthetic
+2022-09-21,,,,97.57,,Insurance,Expense,,,,,,synthetic
+2022-09-21,,,,215.72,,Medical,Expense,,,,,,synthetic
+2022-09-21,,,,4569.89,,Bonus,Income,,,,,,synthetic
+2022-09-21,,,,426.01,,Medical,Expense,,,,,,synthetic
+2022-09-22,,,,7055.16,,Salary,Income,,,,,,synthetic
+2022-09-22,,,,2961.11,,Investment,Income,,,,,,synthetic
+2022-09-23,,,,408.62,,Utilities,Expense,,,,,,synthetic
+2022-09-25,,,,304.99,,Utilities,Expense,,,,,,synthetic
+2022-09-25,,,,170.85,,Medical,Expense,,,,,,synthetic
+2022-09-25,,,,449.67,,Transport,Expense,,,,,,synthetic
+2022-09-25,,,,7517.95,,Investment,Income,,,,,,synthetic
+2022-09-25,,,,4384.5,,Bonus,Income,,,,,,synthetic
+2022-09-26,,,,55.74,,Entertainment,Expense,,,,,,synthetic
+2022-09-27,,,,477.76,,Utilities,Expense,,,,,,synthetic
+2022-09-27,,,,421.65,,Entertainment,Expense,,,,,,synthetic
+2022-09-28,,,,479.86,,Transport,Expense,,,,,,synthetic
+2022-09-28,,,,1407.18,,Bonus,Income,,,,,,synthetic
+2022-09-29,,,,369.14,,Entertainment,Expense,,,,,,synthetic
+2022-09-30,,,,110.83,,Transport,Expense,,,,,,synthetic
+2022-09-30,,,,396.88,,Insurance,Expense,,,,,,synthetic
+2022-09-30,,,,6328.88,,Salary,Income,,,,,,synthetic
+2022-10-01,,,,2044.62,,Salary,Income,,,,,,synthetic
+2022-10-01,,,,152.2,,Food,Expense,,,,,,synthetic
+2022-10-02,,,,4572.48,,Investment,Income,,,,,,synthetic
+2022-10-02,,,,7174.39,,Investment,Income,,,,,,synthetic
+2022-10-02,other,500.0,0.0,-500.0,other ,Other,Expenses,,,,,,original
+2022-10-03,,,,455.94,,Transport,Expense,,,,,,synthetic
+2022-10-03,,,,26.98,,Rent,Expense,,,,,,synthetic
+2022-10-04,fixed deposit,0.0,17820.0,17820.0,fixed deposit,Fixed Deposit,Saving,,,,,,original
+2022-10-05,,,,19.37,,Medical,Expense,,,,,,synthetic
+2022-10-06,,,,430.76,,Food,Expense,,,,,,synthetic
+2022-10-07,,,,34.61,,Insurance,Expense,,,,,,synthetic
+2022-10-08,,,,78.92,,Insurance,Expense,,,,,,synthetic
+2022-10-08,,,,154.76,,Groceries,Expense,,,,,,synthetic
+2022-10-12,,,,333.69,,Entertainment,Expense,,,,,,synthetic
+2022-10-12,,,,3728.69,,Bonus,Income,,,,,,synthetic
+2022-10-13,,,,433.67,,Food,Expense,,,,,,synthetic
+2022-10-15,,,,491.37,,Utilities,Expense,,,,,,synthetic
+2022-10-16,,,,375.38,,Groceries,Expense,,,,,,synthetic
+2022-10-16,,,,404.07,,Utilities,Expense,,,,,,synthetic
+2022-10-17,,,,7981.24,,Salary,Income,,,,,,synthetic
+2022-10-18,,,,2956.08,,Investment,Income,,,,,,synthetic
+2022-10-19,,,,327.93,,Medical,Expense,,,,,,synthetic
+2022-10-19,,,,20.68,,Groceries,Expense,,,,,,synthetic
+2022-10-19,,,,338.31,,Utilities,Expense,,,,,,synthetic
+2022-10-20,,,,340.27,,Rent,Expense,,,,,,synthetic
+2022-10-21,,,,4972.3,,Investment,Income,,,,,,synthetic
+2022-10-21,,,,7656.9,,Salary,Income,,,,,,synthetic
+2022-10-21,,,,445.82,,Insurance,Expense,,,,,,synthetic
+2022-10-21,,,,4442.88,,Salary,Income,,,,,,synthetic
+2022-10-22,,,,9536.17,,Bonus,Income,,,,,,synthetic
+2022-10-22,,,,29.18,,Rent,Expense,,,,,,synthetic
+2022-10-23,,,,7340.54,,Bonus,Income,,,,,,synthetic
+2022-10-24,,,,448.92,,Medical,Expense,,,,,,synthetic
+2022-10-25,,,,234.64,,Utilities,Expense,,,,,,synthetic
+2022-10-25,,,,6390.5,,Salary,Income,,,,,,synthetic
+2022-10-26,,,,2511.9,,Salary,Income,,,,,,synthetic
+2022-10-26,,,,42.18,,Rent,Expense,,,,,,synthetic
+2022-10-26,,,,72.88,,Utilities,Expense,,,,,,synthetic
+2022-10-26,,,,7892.32,,Bonus,Income,,,,,,synthetic
+2022-10-28,,,,97.69,,Rent,Expense,,,,,,synthetic
+2022-10-30,,,,407.63,,Rent,Expense,,,,,,synthetic
+2022-10-30,,,,290.56,,Food,Expense,,,,,,synthetic
+2022-10-31,,,,7260.64,,Salary,Income,,,,,,synthetic
+2022-11-02,food,1000.0,0.0,-1000.0,groceries & foods,Groceries & Foods,Expenses,,,,,,original
+2022-11-03,,,,4050.38,,Bonus,Income,,,,,,synthetic
+2022-11-03,,,,46.19,,Rent,Expense,,,,,,synthetic
+2022-11-04,,,,7512.07,,Salary,Income,,,,,,synthetic
+2022-11-04,recharge,19.0,0.0,-19.0,mobile phones,Mobile Phones,Expenses,,,,,,original
+2022-11-04,,,,281.91,,Rent,Expense,,,,,,synthetic
+2022-11-05,,,,163.46,,Rent,Expense,,,,,,synthetic
+2022-11-08,clothes,2000.0,0.0,-2000.0,clothes,Clothes,Expenses,,,,,,original
+2022-11-10,,,,406.26,,Insurance,Expense,,,,,,synthetic
+2022-11-12,,,,292.74,,Groceries,Expense,,,,,,synthetic
+2022-11-12,,,,278.91,,Rent,Expense,,,,,,synthetic
+2022-11-13,,,,8010.47,,Salary,Income,,,,,,synthetic
+2022-11-14,,,,252.41,,Transport,Expense,,,,,,synthetic
+2022-11-14,,,,437.64,,Transport,Expense,,,,,,synthetic
+2022-11-15,,,,266.87,,Rent,Expense,,,,,,synthetic
+2022-11-16,,,,7937.87,,Investment,Income,,,,,,synthetic
+2022-11-17,,,,2176.44,,Salary,Income,,,,,,synthetic
+2022-11-17,,,,251.63,,Entertainment,Expense,,,,,,synthetic
+2022-11-21,,,,476.97,,Food,Expense,,,,,,synthetic
+2022-11-21,,,,361.16,,Insurance,Expense,,,,,,synthetic
+2022-11-22,,,,280.28,,Food,Expense,,,,,,synthetic
+2022-11-23,,,,4134.96,,Salary,Income,,,,,,synthetic
+2022-11-24,,,,348.24,,Entertainment,Expense,,,,,,synthetic
+2022-11-26,,,,412.98,,Medical,Expense,,,,,,synthetic
+2022-11-27,,,,3814.43,,Investment,Income,,,,,,synthetic
+2022-11-28,,,,37.5,,Insurance,Expense,,,,,,synthetic
+2022-11-28,,,,228.43,,Rent,Expense,,,,,,synthetic
+2022-11-30,,,,66.8,,Utilities,Expense,,,,,,synthetic
+2022-11-30,,,,125.04,,Groceries,Expense,,,,,,synthetic
+2022-12-01,,,,324.95,,Groceries,Expense,,,,,,synthetic
+2022-12-01,,,,171.04,,Rent,Expense,,,,,,synthetic
+2022-12-02,,,,466.56,,Entertainment,Expense,,,,,,synthetic
+2022-12-02,,,,198.75,,Groceries,Expense,,,,,,synthetic
+2022-12-02,food,193.0,0.0,-193.0,groceries & foods,Groceries & Foods,Expenses,,,,,,original
+2022-12-02,,,,399.17,,Rent,Expense,,,,,,synthetic
+2022-12-04,,,,387.88,,Entertainment,Expense,,,,,,synthetic
+2022-12-05,other,120.0,0.0,-120.0,other ,Other,Expenses,,,,,,original
+2022-12-05,,,,115.5,,Rent,Expense,,,,,,synthetic
+2022-12-06,,,,161.55,,Food,Expense,,,,,,synthetic
+2022-12-06,,,,7740.62,,Investment,Income,,,,,,synthetic
+2022-12-07,,,,9213.65,,Investment,Income,,,,,,synthetic
+2022-12-08,,,,8848.89,,Investment,Income,,,,,,synthetic
+2022-12-08,,,,138.92,,Groceries,Expense,,,,,,synthetic
+2022-12-08,,,,3061.43,,Salary,Income,,,,,,synthetic
+2022-12-09,,,,102.3,,Entertainment,Expense,,,,,,synthetic
+2022-12-09,,,,311.26,,Food,Expense,,,,,,synthetic
+2022-12-09,,,,7052.69,,Investment,Income,,,,,,synthetic
+2022-12-09,rent received,0.0,3400.0,3400.0,house rent ,House Rent,Income,,,,,,original
+2022-12-11,,,,1457.7,,Investment,Income,,,,,,synthetic
+2022-12-11,,,,378.37,,Entertainment,Expense,,,,,,synthetic
+2022-12-11,,,,4146.93,,Bonus,Income,,,,,,synthetic
+2022-12-11,,,,254.2,,Rent,Expense,,,,,,synthetic
+2022-12-12,,,,379.57,,Food,Expense,,,,,,synthetic
+2022-12-13,,,,8575.02,,Bonus,Income,,,,,,synthetic
+2022-12-15,,,,52.78,,Rent,Expense,,,,,,synthetic
+2022-12-15,,,,7981.67,,Bonus,Income,,,,,,synthetic
+2022-12-17,,,,210.55,,Transport,Expense,,,,,,synthetic
+2022-12-17,,,,425.11,,Food,Expense,,,,,,synthetic
+2022-12-17,,,,176.97,,Rent,Expense,,,,,,synthetic
+2022-12-18,,,,1663.76,,Investment,Income,,,,,,synthetic
+2022-12-18,,,,83.11,,Rent,Expense,,,,,,synthetic
+2022-12-18,,,,3009.13,,Bonus,Income,,,,,,synthetic
+2022-12-19,,,,389.36,,Utilities,Expense,,,,,,synthetic
+2022-12-19,,,,141.85,,Transport,Expense,,,,,,synthetic
+2022-12-20,,,,1378.6,,Bonus,Income,,,,,,synthetic
+2022-12-20,,,,8818.92,,Investment,Income,,,,,,synthetic
+2022-12-21,,,,299.34,,Groceries,Expense,,,,,,synthetic
+2022-12-23,,,,16.06,,Utilities,Expense,,,,,,synthetic
+2022-12-25,,,,9332.76,,Bonus,Income,,,,,,synthetic
+2022-12-25,,,,4047.05,,Bonus,Income,,,,,,synthetic
+2022-12-27,,,,256.0,,Groceries,Expense,,,,,,synthetic
+2022-12-27,,,,7122.55,,Salary,Income,,,,,,synthetic
+2022-12-28,,,,2162.67,,Salary,Income,,,,,,synthetic
+2022-12-28,,,,324.53,,Entertainment,Expense,,,,,,synthetic
+2022-12-29,,,,206.57,,Utilities,Expense,,,,,,synthetic
+2022-12-29,,,,2580.81,,Investment,Income,,,,,,synthetic
+2022-12-30,,,,16.25,,Food,Expense,,,,,,synthetic
+2023-01-01,,,,440.16,,Utilities,Expense,,,,,,synthetic
+2023-01-02,,,,4901.71,,Salary,Income,,,,,,synthetic
+2023-01-02,,,,85.82,,Transport,Expense,,,,,,synthetic
+2023-01-03,,,,9367.42,,Bonus,Income,,,,,,synthetic
+2023-01-05,,,,93.29,,Rent,Expense,,,,,,synthetic
+2023-01-06,,,,452.68,,Entertainment,Expense,,,,,,synthetic
+2023-01-06,,,,193.76,,Food,Expense,,,,,,synthetic
+2023-01-07,,,,4051.33,,Bonus,Income,,,,,,synthetic
+2023-01-07,,,,4817.89,,Investment,Income,,,,,,synthetic
+2023-01-07,,,,95.01,,Transport,Expense,,,,,,synthetic
+2023-01-08,,,,9268.14,,Bonus,Income,,,,,,synthetic
+2023-01-08,,,,51.99,,Medical,Expense,,,,,,synthetic
+2023-01-08,,,,247.97,,Medical,Expense,,,,,,synthetic
+2023-01-09,,,,426.55,,Utilities,Expense,,,,,,synthetic
+2023-01-10,,,,29.57,,Rent,Expense,,,,,,synthetic
+2023-01-10,,,,379.93,,Utilities,Expense,,,,,,synthetic
+2023-01-10,,,,467.95,,Food,Expense,,,,,,synthetic
+2023-01-11,,,,228.83,,Transport,Expense,,,,,,synthetic
+2023-01-11,,,,416.1,,Food,Expense,,,,,,synthetic
+2023-01-12,,,,9541.55,,Salary,Income,,,,,,synthetic
+2023-01-13,,,,483.74,,Medical,Expense,,,,,,synthetic
+2023-01-14,,,,170.09,,Entertainment,Expense,,,,,,synthetic
+2023-01-15,,,,267.5,,Groceries,Expense,,,,,,synthetic
+2023-01-15,,,,185.0,,Utilities,Expense,,,,,,synthetic
+2023-01-15,,,,76.01,,Rent,Expense,,,,,,synthetic
+2023-01-16,,,,206.41,,Groceries,Expense,,,,,,synthetic
+2023-01-17,,,,2888.9,,Salary,Income,,,,,,synthetic
+2023-01-18,,,,228.76,,Food,Expense,,,,,,synthetic
+2023-01-20,,,,182.39,,Utilities,Expense,,,,,,synthetic
+2023-01-20,,,,301.02,,Food,Expense,,,,,,synthetic
+2023-01-20,,,,215.43,,Rent,Expense,,,,,,synthetic
+2023-01-20,,,,25.55,,Insurance,Expense,,,,,,synthetic
+2023-01-21,,,,115.36,,Food,Expense,,,,,,synthetic
+2023-01-21,,,,5273.71,,Investment,Income,,,,,,synthetic
+2023-01-23,,,,9135.36,,Investment,Income,,,,,,synthetic
+2023-01-25,,,,8427.8,,Bonus,Income,,,,,,synthetic
+2023-01-26,,,,1834.71,,Salary,Income,,,,,,synthetic
+2023-01-26,,,,6154.62,,Bonus,Income,,,,,,synthetic
+2023-01-26,,,,206.12,,Medical,Expense,,,,,,synthetic
+2023-01-28,,,,59.7,,Medical,Expense,,,,,,synthetic
+2023-01-29,,,,5760.47,,Investment,Income,,,,,,synthetic
+2023-01-30,,,,6403.7,,Investment,Income,,,,,,synthetic
+2023-01-31,,,,299.93,,Utilities,Expense,,,,,,synthetic
+2023-01-31,,,,1491.1,,Investment,Income,,,,,,synthetic
+2023-02-01,,,,51.97,,Groceries,Expense,,,,,,synthetic
+2023-02-01,,,,2289.02,,Bonus,Income,,,,,,synthetic
+2023-02-02,,,,346.44,,Entertainment,Expense,,,,,,synthetic
+2023-02-04,,,,5962.0,,Investment,Income,,,,,,synthetic
+2023-02-06,,,,411.29,,Groceries,Expense,,,,,,synthetic
+2023-02-06,,,,120.87,,Transport,Expense,,,,,,synthetic
+2023-02-06,,,,4646.21,,Investment,Income,,,,,,synthetic
+2023-02-07,,,,326.55,,Groceries,Expense,,,,,,synthetic
+2023-02-07,,,,9080.3,,Investment,Income,,,,,,synthetic
+2023-02-07,,,,138.85,,Groceries,Expense,,,,,,synthetic
+2023-02-07,,,,4481.54,,Salary,Income,,,,,,synthetic
+2023-02-08,,,,425.51,,Transport,Expense,,,,,,synthetic
+2023-02-08,,,,224.7,,Groceries,Expense,,,,,,synthetic
+2023-02-12,,,,238.34,,Insurance,Expense,,,,,,synthetic
+2023-02-12,,,,444.04,,Transport,Expense,,,,,,synthetic
+2023-02-12,,,,257.81,,Transport,Expense,,,,,,synthetic
+2023-02-14,,,,6956.84,,Investment,Income,,,,,,synthetic
+2023-02-15,,,,300.93,,Entertainment,Expense,,,,,,synthetic
+2023-02-16,,,,114.98,,Insurance,Expense,,,,,,synthetic
+2023-02-18,,,,7781.28,,Bonus,Income,,,,,,synthetic
+2023-02-18,,,,78.67,,Food,Expense,,,,,,synthetic
+2023-02-19,,,,1820.92,,Salary,Income,,,,,,synthetic
+2023-02-20,,,,111.35,,Food,Expense,,,,,,synthetic
+2023-02-21,,,,438.07,,Food,Expense,,,,,,synthetic
+2023-02-22,,,,9956.34,,Bonus,Income,,,,,,synthetic
+2023-02-22,,,,9768.03,,Investment,Income,,,,,,synthetic
+2023-02-23,,,,365.0,,Food,Expense,,,,,,synthetic
+2023-02-24,,,,213.76,,Utilities,Expense,,,,,,synthetic
+2023-02-24,,,,191.8,,Rent,Expense,,,,,,synthetic
+2023-02-24,,,,391.12,,Groceries,Expense,,,,,,synthetic
+2023-02-25,,,,1820.23,,Bonus,Income,,,,,,synthetic
+2023-02-27,,,,393.37,,Utilities,Expense,,,,,,synthetic
+2023-02-27,,,,255.13,,Transport,Expense,,,,,,synthetic
+2023-02-28,,,,9214.09,,Bonus,Income,,,,,,synthetic
+2023-02-28,,,,194.56,,Rent,Expense,,,,,,synthetic
+2023-03-01,,,,6901.33,,Investment,Income,,,,,,synthetic
+2023-03-01,,,,304.41,,Medical,Expense,,,,,,synthetic
+2023-03-01,,,,146.35,,Medical,Expense,,,,,,synthetic
+2023-03-02,,,,339.95,,Food,Expense,,,,,,synthetic
+2023-03-02,,,,1344.73,,Salary,Income,,,,,,synthetic
+2023-03-02,,,,92.02,,Groceries,Expense,,,,,,synthetic
+2023-03-03,,,,9645.03,,Bonus,Income,,,,,,synthetic
+2023-03-05,,,,4807.07,,Bonus,Income,,,,,,synthetic
+2023-03-05,,,,365.34,,Entertainment,Expense,,,,,,synthetic
+2023-03-07,,,,145.36,,Groceries,Expense,,,,,,synthetic
+2023-03-08,,,,305.83,,Utilities,Expense,,,,,,synthetic
+2023-03-08,,,,1260.53,,Investment,Income,,,,,,synthetic
+2023-03-09,,,,173.35,,Rent,Expense,,,,,,synthetic
+2023-03-10,,,,2146.14,,Bonus,Income,,,,,,synthetic
+2023-03-11,,,,348.39,,Food,Expense,,,,,,synthetic
+2023-03-11,,,,234.03,,Rent,Expense,,,,,,synthetic
+2023-03-12,,,,398.0,,Medical,Expense,,,,,,synthetic
+2023-03-12,,,,5861.94,,Salary,Income,,,,,,synthetic
+2023-03-15,,,,257.01,,Utilities,Expense,,,,,,synthetic
+2023-03-15,,,,4636.89,,Investment,Income,,,,,,synthetic
+2023-03-16,,,,9674.69,,Salary,Income,,,,,,synthetic
+2023-03-16,,,,3312.73,,Salary,Income,,,,,,synthetic
+2023-03-16,,,,353.89,,Entertainment,Expense,,,,,,synthetic
+2023-03-16,,,,313.66,,Medical,Expense,,,,,,synthetic
+2023-03-17,,,,83.97,,Utilities,Expense,,,,,,synthetic
+2023-03-18,,,,188.47,,Transport,Expense,,,,,,synthetic
+2023-03-19,,,,263.02,,Transport,Expense,,,,,,synthetic
+2023-03-20,,,,5594.35,,Salary,Income,,,,,,synthetic
+2023-03-20,,,,6286.27,,Salary,Income,,,,,,synthetic
+2023-03-20,,,,1879.17,,Salary,Income,,,,,,synthetic
+2023-03-20,,,,308.94,,Entertainment,Expense,,,,,,synthetic
+2023-03-22,,,,269.27,,Insurance,Expense,,,,,,synthetic
+2023-03-23,,,,490.71,,Medical,Expense,,,,,,synthetic
+2023-03-23,,,,1611.71,,Salary,Income,,,,,,synthetic
+2023-03-23,,,,199.18,,Medical,Expense,,,,,,synthetic
+2023-03-24,,,,312.87,,Medical,Expense,,,,,,synthetic
+2023-03-24,,,,405.02,,Medical,Expense,,,,,,synthetic
+2023-03-24,,,,298.34,,Transport,Expense,,,,,,synthetic
+2023-03-25,,,,7344.89,,Investment,Income,,,,,,synthetic
+2023-03-25,,,,1042.02,,Bonus,Income,,,,,,synthetic
+2023-03-25,,,,161.98,,Groceries,Expense,,,,,,synthetic
+2023-03-25,,,,419.12,,Transport,Expense,,,,,,synthetic
+2023-03-26,,,,9994.36,,Salary,Income,,,,,,synthetic
+2023-03-27,,,,307.59,,Rent,Expense,,,,,,synthetic
+2023-03-28,,,,129.92,,Food,Expense,,,,,,synthetic
+2023-03-29,,,,332.22,,Transport,Expense,,,,,,synthetic
+2023-03-30,,,,134.35,,Insurance,Expense,,,,,,synthetic
+2023-03-30,,,,1832.18,,Bonus,Income,,,,,,synthetic
+2023-03-31,,,,140.73,,Transport,Expense,,,,,,synthetic
+2023-04-01,,,,329.27,,Medical,Expense,,,,,,synthetic
+2023-04-01,,,,391.7,,Entertainment,Expense,,,,,,synthetic
+2023-04-02,,,,122.18,,Food,Expense,,,,,,synthetic
+2023-04-03,,,,210.17,,Food,Expense,,,,,,synthetic
+2023-04-04,,,,46.67,,Medical,Expense,,,,,,synthetic
+2023-04-04,,,,489.17,,Transport,Expense,,,,,,synthetic
+2023-04-04,,,,285.01,,Food,Expense,,,,,,synthetic
+2023-04-06,,,,356.93,,Food,Expense,,,,,,synthetic
+2023-04-07,,,,308.47,,Groceries,Expense,,,,,,synthetic
+2023-04-07,,,,359.66,,Rent,Expense,,,,,,synthetic
+2023-04-08,,,,398.12,,Rent,Expense,,,,,,synthetic
+2023-04-09,,,,353.73,,Rent,Expense,,,,,,synthetic
+2023-04-10,,,,266.13,,Transport,Expense,,,,,,synthetic
+2023-04-13,,,,3415.56,,Investment,Income,,,,,,synthetic
+2023-04-14,,,,456.38,,Transport,Expense,,,,,,synthetic
+2023-04-14,,,,5811.72,,Investment,Income,,,,,,synthetic
+2023-04-14,,,,6222.82,,Investment,Income,,,,,,synthetic
+2023-04-14,,,,8588.26,,Investment,Income,,,,,,synthetic
+2023-04-15,,,,8553.06,,Salary,Income,,,,,,synthetic
+2023-04-16,,,,71.33,,Entertainment,Expense,,,,,,synthetic
+2023-04-19,,,,59.02,,Transport,Expense,,,,,,synthetic
+2023-04-19,,,,413.45,,Medical,Expense,,,,,,synthetic
+2023-04-21,,,,281.66,,Entertainment,Expense,,,,,,synthetic
+2023-04-21,,,,367.51,,Medical,Expense,,,,,,synthetic
+2023-04-22,,,,397.34,,Rent,Expense,,,,,,synthetic
+2023-04-22,,,,4951.63,,Salary,Income,,,,,,synthetic
+2023-04-23,,,,120.1,,Transport,Expense,,,,,,synthetic
+2023-04-24,,,,129.55,,Medical,Expense,,,,,,synthetic
+2023-04-25,,,,399.98,,Food,Expense,,,,,,synthetic
+2023-04-25,,,,404.0,,Medical,Expense,,,,,,synthetic
+2023-04-27,,,,161.13,,Utilities,Expense,,,,,,synthetic
+2023-04-30,,,,40.44,,Transport,Expense,,,,,,synthetic
+2023-05-02,,,,9674.04,,Investment,Income,,,,,,synthetic
+2023-05-02,,,,240.56,,Groceries,Expense,,,,,,synthetic
+2023-05-04,,,,5292.82,,Bonus,Income,,,,,,synthetic
+2023-05-04,,,,329.63,,Groceries,Expense,,,,,,synthetic
+2023-05-05,,,,143.69,,Insurance,Expense,,,,,,synthetic
+2023-05-05,,,,477.68,,Insurance,Expense,,,,,,synthetic
+2023-05-05,,,,120.1,,Groceries,Expense,,,,,,synthetic
+2023-05-06,,,,201.32,,Food,Expense,,,,,,synthetic
+2023-05-06,,,,200.86,,Food,Expense,,,,,,synthetic
+2023-05-07,,,,152.72,,Insurance,Expense,,,,,,synthetic
+2023-05-08,,,,148.53,,Groceries,Expense,,,,,,synthetic
+2023-05-08,,,,76.86,,Utilities,Expense,,,,,,synthetic
+2023-05-09,,,,416.69,,Insurance,Expense,,,,,,synthetic
+2023-05-12,,,,429.8,,Food,Expense,,,,,,synthetic
+2023-05-14,,,,353.4,,Food,Expense,,,,,,synthetic
+2023-05-14,,,,429.73,,Groceries,Expense,,,,,,synthetic
+2023-05-14,,,,1259.35,,Investment,Income,,,,,,synthetic
+2023-05-14,,,,482.28,,Medical,Expense,,,,,,synthetic
+2023-05-15,,,,5074.82,,Bonus,Income,,,,,,synthetic
+2023-05-15,,,,60.61,,Medical,Expense,,,,,,synthetic
+2023-05-15,,,,2485.4,,Investment,Income,,,,,,synthetic
+2023-05-16,,,,2553.91,,Bonus,Income,,,,,,synthetic
+2023-05-17,,,,256.55,,Groceries,Expense,,,,,,synthetic
+2023-05-17,,,,345.37,,Groceries,Expense,,,,,,synthetic
+2023-05-17,,,,438.33,,Rent,Expense,,,,,,synthetic
+2023-05-18,,,,436.01,,Insurance,Expense,,,,,,synthetic
+2023-05-19,,,,4193.24,,Bonus,Income,,,,,,synthetic
+2023-05-19,,,,369.06,,Rent,Expense,,,,,,synthetic
+2023-05-20,,,,389.0,,Medical,Expense,,,,,,synthetic
+2023-05-22,,,,487.41,,Transport,Expense,,,,,,synthetic
+2023-05-23,,,,473.25,,Transport,Expense,,,,,,synthetic
+2023-05-23,,,,188.04,,Utilities,Expense,,,,,,synthetic
+2023-05-23,,,,62.97,,Entertainment,Expense,,,,,,synthetic
+2023-05-25,,,,144.55,,Transport,Expense,,,,,,synthetic
+2023-05-25,,,,218.49,,Groceries,Expense,,,,,,synthetic
+2023-05-26,,,,309.54,,Medical,Expense,,,,,,synthetic
+2023-05-27,,,,323.09,,Medical,Expense,,,,,,synthetic
+2023-05-27,,,,4117.27,,Salary,Income,,,,,,synthetic
+2023-05-28,,,,376.99,,Entertainment,Expense,,,,,,synthetic
+2023-05-28,,,,7877.45,,Salary,Income,,,,,,synthetic
+2023-05-29,,,,31.49,,Insurance,Expense,,,,,,synthetic
+2023-05-29,,,,160.04,,Transport,Expense,,,,,,synthetic
+2023-05-30,,,,408.73,,Rent,Expense,,,,,,synthetic
+2023-05-31,,,,292.36,,Entertainment,Expense,,,,,,synthetic
+2023-06-01,,,,2192.6,,Salary,Income,,,,,,synthetic
+2023-06-01,,,,3957.04,,Salary,Income,,,,,,synthetic
+2023-06-01,,,,374.85,,Groceries,Expense,,,,,,synthetic
+2023-06-02,,,,9869.39,,Investment,Income,,,,,,synthetic
+2023-06-02,,,,168.59,,Rent,Expense,,,,,,synthetic
+2023-06-02,,,,322.19,,Rent,Expense,,,,,,synthetic
+2023-06-04,,,,5490.99,,Salary,Income,,,,,,synthetic
+2023-06-06,,,,131.65,,Medical,Expense,,,,,,synthetic
+2023-06-08,,,,53.18,,Utilities,Expense,,,,,,synthetic
+2023-06-08,,,,113.71,,Utilities,Expense,,,,,,synthetic
+2023-06-08,,,,220.66,,Utilities,Expense,,,,,,synthetic
+2023-06-08,,,,43.58,,Rent,Expense,,,,,,synthetic
+2023-06-08,,,,4288.71,,Bonus,Income,,,,,,synthetic
+2023-06-09,,,,137.48,,Entertainment,Expense,,,,,,synthetic
+2023-06-10,,,,405.77,,Utilities,Expense,,,,,,synthetic
+2023-06-10,,,,103.3,,Medical,Expense,,,,,,synthetic
+2023-06-10,,,,311.28,,Utilities,Expense,,,,,,synthetic
+2023-06-11,,,,141.27,,Groceries,Expense,,,,,,synthetic
+2023-06-11,,,,5453.99,,Salary,Income,,,,,,synthetic
+2023-06-12,,,,72.91,,Rent,Expense,,,,,,synthetic
+2023-06-13,,,,1019.77,,Salary,Income,,,,,,synthetic
+2023-06-13,,,,3381.9,,Investment,Income,,,,,,synthetic
+2023-06-14,,,,77.8,,Groceries,Expense,,,,,,synthetic
+2023-06-16,,,,453.9,,Transport,Expense,,,,,,synthetic
+2023-06-16,,,,139.59,,Rent,Expense,,,,,,synthetic
+2023-06-17,,,,117.13,,Groceries,Expense,,,,,,synthetic
+2023-06-18,,,,487.25,,Transport,Expense,,,,,,synthetic
+2023-06-18,,,,377.59,,Entertainment,Expense,,,,,,synthetic
+2023-06-20,,,,1413.49,,Salary,Income,,,,,,synthetic
+2023-06-20,,,,9204.2,,Investment,Income,,,,,,synthetic
+2023-06-21,,,,2558.81,,Investment,Income,,,,,,synthetic
+2023-06-22,,,,9235.08,,Investment,Income,,,,,,synthetic
+2023-06-22,,,,156.25,,Entertainment,Expense,,,,,,synthetic
+2023-06-23,,,,453.2,,Transport,Expense,,,,,,synthetic
+2023-06-24,,,,170.7,,Rent,Expense,,,,,,synthetic
+2023-06-25,,,,73.73,,Entertainment,Expense,,,,,,synthetic
+2023-06-25,,,,339.69,,Utilities,Expense,,,,,,synthetic
+2023-06-26,,,,309.19,,Insurance,Expense,,,,,,synthetic
+2023-06-27,,,,2220.85,,Bonus,Income,,,,,,synthetic
+2023-06-27,,,,39.67,,Utilities,Expense,,,,,,synthetic
+2023-06-28,,,,475.53,,Utilities,Expense,,,,,,synthetic
+2023-06-28,,,,149.68,,Groceries,Expense,,,,,,synthetic
+2023-06-29,,,,117.31,,Utilities,Expense,,,,,,synthetic
+2023-06-30,,,,354.46,,Entertainment,Expense,,,,,,synthetic
+2023-06-30,,,,5909.27,,Salary,Income,,,,,,synthetic
+2023-07-01,,,,2329.98,,Bonus,Income,,,,,,synthetic
+2023-07-01,,,,4041.4,,Investment,Income,,,,,,synthetic
+2023-07-02,,,,4309.19,,Salary,Income,,,,,,synthetic
+2023-07-02,,,,341.15,,Groceries,Expense,,,,,,synthetic
+2023-07-02,,,,272.51,,Entertainment,Expense,,,,,,synthetic
+2023-07-02,,,,490.32,,Insurance,Expense,,,,,,synthetic
+2023-07-02,,,,449.51,,Food,Expense,,,,,,synthetic
+2023-07-03,,,,6775.25,,Investment,Income,,,,,,synthetic
+2023-07-04,,,,459.21,,Rent,Expense,,,,,,synthetic
+2023-07-04,,,,252.71,,Rent,Expense,,,,,,synthetic
+2023-07-04,,,,54.23,,Food,Expense,,,,,,synthetic
+2023-07-04,,,,5955.78,,Bonus,Income,,,,,,synthetic
+2023-07-04,,,,176.69,,Transport,Expense,,,,,,synthetic
+2023-07-04,,,,204.42,,Groceries,Expense,,,,,,synthetic
+2023-07-06,,,,1455.29,,Salary,Income,,,,,,synthetic
+2023-07-07,,,,3345.03,,Bonus,Income,,,,,,synthetic
+2023-07-08,,,,23.81,,Transport,Expense,,,,,,synthetic
+2023-07-09,,,,339.13,,Entertainment,Expense,,,,,,synthetic
+2023-07-10,,,,386.61,,Entertainment,Expense,,,,,,synthetic
+2023-07-10,,,,207.61,,Medical,Expense,,,,,,synthetic
+2023-07-12,,,,63.52,,Rent,Expense,,,,,,synthetic
+2023-07-12,,,,1087.05,,Salary,Income,,,,,,synthetic
+2023-07-13,,,,353.36,,Medical,Expense,,,,,,synthetic
+2023-07-14,,,,204.96,,Entertainment,Expense,,,,,,synthetic
+2023-07-14,,,,5975.78,,Salary,Income,,,,,,synthetic
+2023-07-15,,,,118.57,,Utilities,Expense,,,,,,synthetic
+2023-07-15,,,,268.58,,Insurance,Expense,,,,,,synthetic
+2023-07-16,,,,196.2,,Rent,Expense,,,,,,synthetic
+2023-07-16,,,,320.49,,Medical,Expense,,,,,,synthetic
+2023-07-17,,,,6951.37,,Salary,Income,,,,,,synthetic
+2023-07-18,,,,464.56,,Rent,Expense,,,,,,synthetic
+2023-07-18,,,,202.55,,Rent,Expense,,,,,,synthetic
+2023-07-18,,,,419.98,,Transport,Expense,,,,,,synthetic
+2023-07-19,,,,371.32,,Food,Expense,,,,,,synthetic
+2023-07-19,,,,55.05,,Medical,Expense,,,,,,synthetic
+2023-07-20,,,,295.43,,Utilities,Expense,,,,,,synthetic
+2023-07-21,,,,9338.66,,Bonus,Income,,,,,,synthetic
+2023-07-23,,,,9641.21,,Bonus,Income,,,,,,synthetic
+2023-07-23,,,,203.93,,Groceries,Expense,,,,,,synthetic
+2023-07-23,,,,237.04,,Entertainment,Expense,,,,,,synthetic
+2023-07-24,,,,8389.16,,Bonus,Income,,,,,,synthetic
+2023-07-25,,,,8442.91,,Bonus,Income,,,,,,synthetic
+2023-07-26,,,,4420.08,,Investment,Income,,,,,,synthetic
+2023-07-26,,,,49.8,,Food,Expense,,,,,,synthetic
+2023-07-27,,,,467.62,,Rent,Expense,,,,,,synthetic
+2023-07-29,,,,204.16,,Utilities,Expense,,,,,,synthetic
+2023-07-30,,,,348.05,,Medical,Expense,,,,,,synthetic
+2023-08-01,,,,310.26,,Utilities,Expense,,,,,,synthetic
+2023-08-01,,,,7056.8,,Bonus,Income,,,,,,synthetic
+2023-08-03,,,,3182.12,,Salary,Income,,,,,,synthetic
+2023-08-04,,,,88.76,,Food,Expense,,,,,,synthetic
+2023-08-04,,,,358.59,,Groceries,Expense,,,,,,synthetic
+2023-08-05,,,,2176.9,,Bonus,Income,,,,,,synthetic
+2023-08-07,,,,47.25,,Utilities,Expense,,,,,,synthetic
+2023-08-08,,,,6329.83,,Bonus,Income,,,,,,synthetic
+2023-08-09,,,,309.85,,Rent,Expense,,,,,,synthetic
+2023-08-09,,,,3786.24,,Salary,Income,,,,,,synthetic
+2023-08-09,,,,5879.12,,Bonus,Income,,,,,,synthetic
+2023-08-10,,,,6154.32,,Salary,Income,,,,,,synthetic
+2023-08-12,,,,9963.72,,Bonus,Income,,,,,,synthetic
+2023-08-13,,,,285.98,,Food,Expense,,,,,,synthetic
+2023-08-13,,,,488.07,,Food,Expense,,,,,,synthetic
+2023-08-13,,,,399.5,,Utilities,Expense,,,,,,synthetic
+2023-08-14,,,,113.48,,Rent,Expense,,,,,,synthetic
+2023-08-16,,,,473.67,,Food,Expense,,,,,,synthetic
+2023-08-16,,,,73.05,,Groceries,Expense,,,,,,synthetic
+2023-08-17,,,,442.25,,Rent,Expense,,,,,,synthetic
+2023-08-18,,,,1351.33,,Investment,Income,,,,,,synthetic
+2023-08-19,,,,22.7,,Groceries,Expense,,,,,,synthetic
+2023-08-20,,,,3623.03,,Bonus,Income,,,,,,synthetic
+2023-08-21,,,,374.39,,Rent,Expense,,,,,,synthetic
+2023-08-22,,,,126.0,,Rent,Expense,,,,,,synthetic
+2023-08-22,,,,55.76,,Utilities,Expense,,,,,,synthetic
+2023-08-22,,,,328.13,,Entertainment,Expense,,,,,,synthetic
+2023-08-22,,,,137.12,,Entertainment,Expense,,,,,,synthetic
+2023-08-23,,,,448.19,,Groceries,Expense,,,,,,synthetic
+2023-08-23,,,,6743.62,,Investment,Income,,,,,,synthetic
+2023-08-24,,,,73.41,,Groceries,Expense,,,,,,synthetic
+2023-08-24,,,,144.74,,Rent,Expense,,,,,,synthetic
+2023-08-24,,,,5175.58,,Bonus,Income,,,,,,synthetic
+2023-08-25,,,,8901.04,,Bonus,Income,,,,,,synthetic
+2023-08-26,,,,46.77,,Food,Expense,,,,,,synthetic
+2023-08-26,,,,139.42,,Entertainment,Expense,,,,,,synthetic
+2023-08-26,,,,479.12,,Utilities,Expense,,,,,,synthetic
+2023-08-27,,,,395.62,,Rent,Expense,,,,,,synthetic
+2023-08-27,,,,9456.89,,Bonus,Income,,,,,,synthetic
+2023-08-28,,,,34.77,,Insurance,Expense,,,,,,synthetic
+2023-08-28,,,,256.91,,Rent,Expense,,,,,,synthetic
+2023-08-28,,,,99.69,,Groceries,Expense,,,,,,synthetic
+2023-09-01,,,,28.12,,Insurance,Expense,,,,,,synthetic
+2023-09-02,,,,210.33,,Utilities,Expense,,,,,,synthetic
+2023-09-02,,,,8857.02,,Salary,Income,,,,,,synthetic
+2023-09-03,,,,19.31,,Groceries,Expense,,,,,,synthetic
+2023-09-03,,,,433.98,,Insurance,Expense,,,,,,synthetic
+2023-09-03,,,,427.36,,Groceries,Expense,,,,,,synthetic
+2023-09-04,,,,4336.34,,Salary,Income,,,,,,synthetic
+2023-09-05,,,,396.65,,Medical,Expense,,,,,,synthetic
+2023-09-05,,,,2902.75,,Salary,Income,,,,,,synthetic
+2023-09-07,,,,417.57,,Groceries,Expense,,,,,,synthetic
+2023-09-07,,,,155.7,,Insurance,Expense,,,,,,synthetic
+2023-09-10,,,,5704.57,,Salary,Income,,,,,,synthetic
+2023-09-10,,,,325.73,,Entertainment,Expense,,,,,,synthetic
+2023-09-11,,,,351.19,,Utilities,Expense,,,,,,synthetic
+2023-09-11,,,,404.83,,Rent,Expense,,,,,,synthetic
+2023-09-12,,,,309.72,,Entertainment,Expense,,,,,,synthetic
+2023-09-12,,,,3588.75,,Investment,Income,,,,,,synthetic
+2023-09-13,,,,77.31,,Rent,Expense,,,,,,synthetic
+2023-09-13,,,,194.47,,Entertainment,Expense,,,,,,synthetic
+2023-09-13,,,,153.75,,Food,Expense,,,,,,synthetic
+2023-09-14,,,,276.39,,Medical,Expense,,,,,,synthetic
+2023-09-15,,,,3155.07,,Bonus,Income,,,,,,synthetic
+2023-09-15,,,,364.85,,Rent,Expense,,,,,,synthetic
+2023-09-16,,,,59.62,,Food,Expense,,,,,,synthetic
+2023-09-17,,,,7385.91,,Investment,Income,,,,,,synthetic
+2023-09-17,,,,8334.68,,Bonus,Income,,,,,,synthetic
+2023-09-17,,,,257.09,,Medical,Expense,,,,,,synthetic
+2023-09-17,,,,236.22,,Insurance,Expense,,,,,,synthetic
+2023-09-17,,,,451.97,,Rent,Expense,,,,,,synthetic
+2023-09-18,,,,362.68,,Groceries,Expense,,,,,,synthetic
+2023-09-19,,,,284.64,,Utilities,Expense,,,,,,synthetic
+2023-09-19,,,,286.69,,Medical,Expense,,,,,,synthetic
+2023-09-20,,,,498.74,,Entertainment,Expense,,,,,,synthetic
+2023-09-20,,,,1479.31,,Bonus,Income,,,,,,synthetic
+2023-09-20,,,,6260.38,,Bonus,Income,,,,,,synthetic
+2023-09-21,,,,2108.97,,Investment,Income,,,,,,synthetic
+2023-09-21,,,,48.69,,Entertainment,Expense,,,,,,synthetic
+2023-09-22,,,,255.39,,Groceries,Expense,,,,,,synthetic
+2023-09-23,,,,54.85,,Groceries,Expense,,,,,,synthetic
+2023-09-24,,,,8294.62,,Salary,Income,,,,,,synthetic
+2023-09-25,,,,37.4,,Rent,Expense,,,,,,synthetic
+2023-09-25,,,,73.19,,Medical,Expense,,,,,,synthetic
+2023-09-25,,,,366.48,,Entertainment,Expense,,,,,,synthetic
+2023-09-26,,,,1637.72,,Bonus,Income,,,,,,synthetic
+2023-09-26,,,,4826.25,,Salary,Income,,,,,,synthetic
+2023-09-26,,,,417.53,,Utilities,Expense,,,,,,synthetic
+2023-09-26,,,,93.89,,Rent,Expense,,,,,,synthetic
+2023-09-27,,,,305.57,,Utilities,Expense,,,,,,synthetic
+2023-09-28,,,,450.85,,Transport,Expense,,,,,,synthetic
+2023-09-28,,,,101.68,,Rent,Expense,,,,,,synthetic
+2023-09-28,,,,1554.75,,Investment,Income,,,,,,synthetic
+2023-09-30,,,,9538.28,,Investment,Income,,,,,,synthetic
+2023-10-01,,,,246.71,,Rent,Expense,,,,,,synthetic
+2023-10-02,,,,6121.95,,Investment,Income,,,,,,synthetic
+2023-10-03,,,,1107.61,,Salary,Income,,,,,,synthetic
+2023-10-03,,,,490.58,,Transport,Expense,,,,,,synthetic
+2023-10-04,,,,9398.12,,Investment,Income,,,,,,synthetic
+2023-10-05,,,,65.13,,Medical,Expense,,,,,,synthetic
+2023-10-05,,,,48.61,,Medical,Expense,,,,,,synthetic
+2023-10-05,,,,490.53,,Groceries,Expense,,,,,,synthetic
+2023-10-06,,,,15.81,,Medical,Expense,,,,,,synthetic
+2023-10-06,,,,8342.08,,Salary,Income,,,,,,synthetic
+2023-10-08,,,,7351.98,,Salary,Income,,,,,,synthetic
+2023-10-09,,,,8210.33,,Bonus,Income,,,,,,synthetic
+2023-10-09,,,,124.45,,Medical,Expense,,,,,,synthetic
+2023-10-10,,,,24.06,,Utilities,Expense,,,,,,synthetic
+2023-10-12,,,,5731.26,,Bonus,Income,,,,,,synthetic
+2023-10-12,,,,326.49,,Insurance,Expense,,,,,,synthetic
+2023-10-13,,,,147.94,,Groceries,Expense,,,,,,synthetic
+2023-10-13,,,,171.55,,Groceries,Expense,,,,,,synthetic
+2023-10-13,,,,184.98,,Food,Expense,,,,,,synthetic
+2023-10-14,,,,318.81,,Insurance,Expense,,,,,,synthetic
+2023-10-14,,,,2584.9,,Salary,Income,,,,,,synthetic
+2023-10-16,,,,357.65,,Medical,Expense,,,,,,synthetic
+2023-10-17,,,,5449.32,,Investment,Income,,,,,,synthetic
+2023-10-18,,,,208.67,,Medical,Expense,,,,,,synthetic
+2023-10-18,,,,493.57,,Food,Expense,,,,,,synthetic
+2023-10-20,,,,5134.82,,Investment,Income,,,,,,synthetic
+2023-10-20,,,,311.35,,Groceries,Expense,,,,,,synthetic
+2023-10-22,,,,3824.86,,Bonus,Income,,,,,,synthetic
+2023-10-23,,,,94.68,,Medical,Expense,,,,,,synthetic
+2023-10-25,,,,3414.78,,Investment,Income,,,,,,synthetic
+2023-10-26,,,,6181.23,,Salary,Income,,,,,,synthetic
+2023-10-26,,,,264.36,,Utilities,Expense,,,,,,synthetic
+2023-10-28,,,,38.37,,Transport,Expense,,,,,,synthetic
+2023-10-29,,,,3168.71,,Bonus,Income,,,,,,synthetic
+2023-10-30,,,,351.84,,Food,Expense,,,,,,synthetic
+2023-10-30,,,,315.35,,Utilities,Expense,,,,,,synthetic
+2023-10-31,,,,7751.04,,Bonus,Income,,,,,,synthetic
+2023-11-01,,,,5585.74,,Salary,Income,,,,,,synthetic
+2023-11-01,,,,157.55,,Food,Expense,,,,,,synthetic
+2023-11-02,,,,439.6,,Entertainment,Expense,,,,,,synthetic
+2023-11-02,,,,4883.47,,Investment,Income,,,,,,synthetic
+2023-11-02,,,,123.77,,Rent,Expense,,,,,,synthetic
+2023-11-03,,,,256.42,,Medical,Expense,,,,,,synthetic
+2023-11-06,,,,207.85,,Transport,Expense,,,,,,synthetic
+2023-11-06,,,,3106.03,,Bonus,Income,,,,,,synthetic
+2023-11-07,,,,72.11,,Food,Expense,,,,,,synthetic
+2023-11-08,,,,154.94,,Groceries,Expense,,,,,,synthetic
+2023-11-08,,,,9679.27,,Bonus,Income,,,,,,synthetic
+2023-11-09,,,,338.46,,Transport,Expense,,,,,,synthetic
+2023-11-10,,,,290.63,,Insurance,Expense,,,,,,synthetic
+2023-11-11,,,,269.62,,Medical,Expense,,,,,,synthetic
+2023-11-12,,,,225.41,,Rent,Expense,,,,,,synthetic
+2023-11-13,,,,358.71,,Rent,Expense,,,,,,synthetic
+2023-11-13,,,,59.14,,Rent,Expense,,,,,,synthetic
+2023-11-13,,,,8433.97,,Bonus,Income,,,,,,synthetic
+2023-11-15,,,,8220.38,,Bonus,Income,,,,,,synthetic
+2023-11-15,,,,187.38,,Medical,Expense,,,,,,synthetic
+2023-11-15,,,,315.17,,Entertainment,Expense,,,,,,synthetic
+2023-11-15,,,,29.0,,Medical,Expense,,,,,,synthetic
+2023-11-16,,,,305.24,,Medical,Expense,,,,,,synthetic
+2023-11-19,,,,133.71,,Food,Expense,,,,,,synthetic
+2023-11-19,,,,4058.88,,Bonus,Income,,,,,,synthetic
+2023-11-20,,,,43.16,,Utilities,Expense,,,,,,synthetic
+2023-11-22,,,,210.48,,Insurance,Expense,,,,,,synthetic
+2023-11-24,,,,247.46,,Food,Expense,,,,,,synthetic
+2023-11-24,,,,44.1,,Medical,Expense,,,,,,synthetic
+2023-11-24,,,,185.54,,Food,Expense,,,,,,synthetic
+2023-11-29,,,,61.91,,Medical,Expense,,,,,,synthetic
+2023-11-30,,,,383.12,,Transport,Expense,,,,,,synthetic
+2023-11-30,,,,3501.76,,Bonus,Income,,,,,,synthetic
+2023-12-01,,,,1648.68,,Bonus,Income,,,,,,synthetic
+2023-12-02,,,,452.95,,Insurance,Expense,,,,,,synthetic
+2023-12-03,,,,433.68,,Transport,Expense,,,,,,synthetic
+2023-12-05,,,,284.33,,Utilities,Expense,,,,,,synthetic
+2023-12-07,,,,222.1,,Groceries,Expense,,,,,,synthetic
+2023-12-07,,,,262.84,,Transport,Expense,,,,,,synthetic
+2023-12-07,,,,262.54,,Entertainment,Expense,,,,,,synthetic
+2023-12-08,,,,39.88,,Insurance,Expense,,,,,,synthetic
+2023-12-10,,,,475.23,,Rent,Expense,,,,,,synthetic
+2023-12-10,,,,7414.66,,Bonus,Income,,,,,,synthetic
+2023-12-12,,,,48.4,,Medical,Expense,,,,,,synthetic
+2023-12-13,,,,408.46,,Utilities,Expense,,,,,,synthetic
+2023-12-13,,,,7907.76,,Investment,Income,,,,,,synthetic
+2023-12-13,,,,432.13,,Utilities,Expense,,,,,,synthetic
+2023-12-13,,,,9062.89,,Investment,Income,,,,,,synthetic
+2023-12-13,,,,5112.9,,Investment,Income,,,,,,synthetic
+2023-12-15,,,,281.08,,Food,Expense,,,,,,synthetic
+2023-12-16,,,,8475.87,,Bonus,Income,,,,,,synthetic
+2023-12-16,,,,394.06,,Food,Expense,,,,,,synthetic
+2023-12-16,,,,7310.58,,Investment,Income,,,,,,synthetic
+2023-12-17,,,,9575.1,,Salary,Income,,,,,,synthetic
+2023-12-18,,,,396.72,,Food,Expense,,,,,,synthetic
+2023-12-19,,,,70.39,,Rent,Expense,,,,,,synthetic
+2023-12-20,,,,56.55,,Groceries,Expense,,,,,,synthetic
+2023-12-20,,,,223.03,,Entertainment,Expense,,,,,,synthetic
+2023-12-21,,,,105.43,,Entertainment,Expense,,,,,,synthetic
+2023-12-21,,,,1841.5,,Salary,Income,,,,,,synthetic
+2023-12-22,,,,119.87,,Utilities,Expense,,,,,,synthetic
+2023-12-22,,,,3644.06,,Salary,Income,,,,,,synthetic
+2023-12-24,,,,6926.11,,Bonus,Income,,,,,,synthetic
+2023-12-24,,,,474.92,,Food,Expense,,,,,,synthetic
+2023-12-25,,,,7490.65,,Salary,Income,,,,,,synthetic
+2023-12-27,,,,390.31,,Transport,Expense,,,,,,synthetic
+2023-12-28,,,,6445.85,,Salary,Income,,,,,,synthetic
+2023-12-28,,,,232.24,,Entertainment,Expense,,,,,,synthetic
+2023-12-29,,,,2682.79,,Salary,Income,,,,,,synthetic
+2023-12-29,,,,78.97,,Groceries,Expense,,,,,,synthetic
+2023-12-30,,,,113.64,,Entertainment,Expense,,,,,,synthetic
+2023-12-31,,,,262.01,,Utilities,Expense,,,,,,synthetic
+2024-01-01,,,,69.17,,Transport,Expense,,,,,,synthetic
+2024-01-01,,,,7734.42,,Investment,Income,,,,,,synthetic
+2024-01-02,,,,8482.52,,Salary,Income,,,,,,synthetic
+2024-01-02,,,,109.14,,Medical,Expense,,,,,,synthetic
+2024-01-06,,,,78.69,,Insurance,Expense,,,,,,synthetic
+2024-01-06,,,,471.38,,Utilities,Expense,,,,,,synthetic
+2024-01-06,,,,4556.02,,Bonus,Income,,,,,,synthetic
+2024-01-08,,,,55.23,,Food,Expense,,,,,,synthetic
+2024-01-09,,,,260.23,,Transport,Expense,,,,,,synthetic
+2024-01-09,,,,182.47,,Utilities,Expense,,,,,,synthetic
+2024-01-09,,,,1339.73,,Investment,Income,,,,,,synthetic
+2024-01-10,,,,104.05,,Transport,Expense,,,,,,synthetic
+2024-01-10,,,,34.32,,Groceries,Expense,,,,,,synthetic
+2024-01-10,,,,242.45,,Entertainment,Expense,,,,,,synthetic
+2024-01-12,,,,163.88,,Insurance,Expense,,,,,,synthetic
+2024-01-13,,,,361.63,,Transport,Expense,,,,,,synthetic
+2024-01-13,,,,4155.68,,Investment,Income,,,,,,synthetic
+2024-01-13,,,,171.84,,Medical,Expense,,,,,,synthetic
+2024-01-14,,,,5437.74,,Bonus,Income,,,,,,synthetic
+2024-01-15,,,,207.4,,Groceries,Expense,,,,,,synthetic
+2024-01-15,,,,228.85,,Utilities,Expense,,,,,,synthetic
+2024-01-15,,,,395.02,,Groceries,Expense,,,,,,synthetic
+2024-01-16,,,,7226.36,,Salary,Income,,,,,,synthetic
+2024-01-17,,,,7732.71,,Investment,Income,,,,,,synthetic
+2024-01-18,,,,249.46,,Insurance,Expense,,,,,,synthetic
+2024-01-19,,,,85.26,,Insurance,Expense,,,,,,synthetic
+2024-01-19,,,,302.49,,Groceries,Expense,,,,,,synthetic
+2024-01-20,,,,6717.68,,Investment,Income,,,,,,synthetic
+2024-01-20,,,,261.41,,Utilities,Expense,,,,,,synthetic
+2024-01-22,,,,207.66,,Medical,Expense,,,,,,synthetic
+2024-01-22,,,,18.93,,Utilities,Expense,,,,,,synthetic
+2024-01-23,,,,442.84,,Groceries,Expense,,,,,,synthetic
+2024-01-23,,,,42.92,,Utilities,Expense,,,,,,synthetic
+2024-01-23,,,,159.64,,Medical,Expense,,,,,,synthetic
+2024-01-23,,,,322.56,,Rent,Expense,,,,,,synthetic
+2024-01-24,,,,7073.53,,Salary,Income,,,,,,synthetic
+2024-01-25,,,,21.0,,Medical,Expense,,,,,,synthetic
+2024-01-25,,,,1962.65,,Bonus,Income,,,,,,synthetic
+2024-01-26,,,,190.1,,Entertainment,Expense,,,,,,synthetic
+2024-01-26,,,,122.7,,Rent,Expense,,,,,,synthetic
+2024-01-27,,,,145.22,,Medical,Expense,,,,,,synthetic
+2024-01-27,,,,369.76,,Utilities,Expense,,,,,,synthetic
+2024-01-27,,,,456.2,,Food,Expense,,,,,,synthetic
+2024-01-28,,,,3692.39,,Investment,Income,,,,,,synthetic
+2024-01-28,,,,339.66,,Insurance,Expense,,,,,,synthetic
+2024-01-28,,,,9268.92,,Bonus,Income,,,,,,synthetic
+2024-01-29,,,,300.9,,Rent,Expense,,,,,,synthetic
+2024-01-29,,,,14.55,,Insurance,Expense,,,,,,synthetic
+2024-01-29,,,,5957.55,,Bonus,Income,,,,,,synthetic
+2024-01-29,,,,475.02,,Groceries,Expense,,,,,,synthetic
+2024-01-30,,,,178.82,,Medical,Expense,,,,,,synthetic
+2024-01-31,,,,349.66,,Transport,Expense,,,,,,synthetic
+2024-02-05,,,,255.9,,Food,Expense,,,,,,synthetic
+2024-02-06,,,,376.2,,Entertainment,Expense,,,,,,synthetic
+2024-02-06,,,,6250.1,,Salary,Income,,,,,,synthetic
+2024-02-09,,,,342.1,,Entertainment,Expense,,,,,,synthetic
+2024-02-10,,,,295.3,,Insurance,Expense,,,,,,synthetic
+2024-02-11,,,,427.18,,Food,Expense,,,,,,synthetic
+2024-02-11,,,,376.44,,Transport,Expense,,,,,,synthetic
+2024-02-12,,,,362.09,,Transport,Expense,,,,,,synthetic
+2024-02-12,,,,4729.97,,Bonus,Income,,,,,,synthetic
+2024-02-14,,,,185.75,,Food,Expense,,,,,,synthetic
+2024-02-15,,,,309.55,,Rent,Expense,,,,,,synthetic
+2024-02-16,,,,1825.82,,Salary,Income,,,,,,synthetic
+2024-02-16,,,,144.95,,Rent,Expense,,,,,,synthetic
+2024-02-17,,,,9653.22,,Salary,Income,,,,,,synthetic
+2024-02-17,,,,139.88,,Rent,Expense,,,,,,synthetic
+2024-02-19,,,,66.9,,Insurance,Expense,,,,,,synthetic
+2024-02-20,,,,4111.75,,Bonus,Income,,,,,,synthetic
+2024-02-21,,,,3270.44,,Bonus,Income,,,,,,synthetic
+2024-02-21,,,,328.28,,Utilities,Expense,,,,,,synthetic
+2024-02-23,,,,55.6,,Food,Expense,,,,,,synthetic
+2024-02-23,,,,82.84,,Medical,Expense,,,,,,synthetic
+2024-02-24,,,,237.87,,Transport,Expense,,,,,,synthetic
+2024-02-25,,,,414.7,,Food,Expense,,,,,,synthetic
+2024-02-25,,,,137.89,,Entertainment,Expense,,,,,,synthetic
+2024-02-28,,,,65.87,,Insurance,Expense,,,,,,synthetic
+2024-02-29,,,,297.33,,Transport,Expense,,,,,,synthetic
+2024-03-01,,,,9525.28,,Bonus,Income,,,,,,synthetic
+2024-03-02,,,,5996.59,,Bonus,Income,,,,,,synthetic
+2024-03-03,,,,305.28,,Insurance,Expense,,,,,,synthetic
+2024-03-05,,,,9828.35,,Salary,Income,,,,,,synthetic
+2024-03-05,,,,2316.19,,Salary,Income,,,,,,synthetic
+2024-03-05,,,,186.95,,Groceries,Expense,,,,,,synthetic
+2024-03-07,,,,363.0,,Groceries,Expense,,,,,,synthetic
+2024-03-07,,,,1783.25,,Salary,Income,,,,,,synthetic
+2024-03-07,,,,203.68,,Transport,Expense,,,,,,synthetic
+2024-03-08,,,,28.56,,Utilities,Expense,,,,,,synthetic
+2024-03-08,,,,6625.3,,Investment,Income,,,,,,synthetic
+2024-03-11,,,,457.85,,Utilities,Expense,,,,,,synthetic
+2024-03-12,,,,177.94,,Rent,Expense,,,,,,synthetic
+2024-03-12,,,,86.01,,Utilities,Expense,,,,,,synthetic
+2024-03-12,,,,5691.26,,Investment,Income,,,,,,synthetic
+2024-03-16,,,,214.22,,Groceries,Expense,,,,,,synthetic
+2024-03-16,,,,4160.32,,Bonus,Income,,,,,,synthetic
+2024-03-22,,,,392.56,,Rent,Expense,,,,,,synthetic
+2024-03-22,,,,3523.12,,Bonus,Income,,,,,,synthetic
+2024-03-23,,,,215.42,,Groceries,Expense,,,,,,synthetic
+2024-03-23,,,,69.47,,Transport,Expense,,,,,,synthetic
+2024-03-23,,,,179.55,,Transport,Expense,,,,,,synthetic
+2024-03-24,,,,190.5,,Food,Expense,,,,,,synthetic
+2024-03-25,,,,6522.16,,Investment,Income,,,,,,synthetic
+2024-03-25,,,,124.9,,Entertainment,Expense,,,,,,synthetic
+2024-03-27,,,,369.14,,Transport,Expense,,,,,,synthetic
+2024-03-27,,,,341.8,,Groceries,Expense,,,,,,synthetic
+2024-03-28,,,,396.27,,Insurance,Expense,,,,,,synthetic
+2024-03-30,,,,307.1,,Medical,Expense,,,,,,synthetic
+2024-03-30,,,,172.13,,Medical,Expense,,,,,,synthetic
+2024-03-31,,,,9069.34,,Salary,Income,,,,,,synthetic
+2024-03-31,,,,180.13,,Food,Expense,,,,,,synthetic
+2024-04-02,,,,129.66,,Rent,Expense,,,,,,synthetic
+2024-04-02,,,,232.86,,Food,Expense,,,,,,synthetic
+2024-04-03,,,,97.5,,Entertainment,Expense,,,,,,synthetic
+2024-04-06,,,,251.25,,Utilities,Expense,,,,,,synthetic
+2024-04-06,,,,214.94,,Medical,Expense,,,,,,synthetic
+2024-04-07,,,,6964.92,,Salary,Income,,,,,,synthetic
+2024-04-09,,,,257.65,,Entertainment,Expense,,,,,,synthetic
+2024-04-11,,,,5843.99,,Bonus,Income,,,,,,synthetic
+2024-04-14,,,,474.3,,Utilities,Expense,,,,,,synthetic
+2024-04-14,,,,309.52,,Insurance,Expense,,,,,,synthetic
+2024-04-15,,,,8399.04,,Salary,Income,,,,,,synthetic
+2024-04-15,,,,450.47,,Food,Expense,,,,,,synthetic
+2024-04-17,,,,70.04,,Utilities,Expense,,,,,,synthetic
+2024-04-18,,,,6525.69,,Bonus,Income,,,,,,synthetic
+2024-04-18,,,,9434.44,,Salary,Income,,,,,,synthetic
+2024-04-20,,,,410.28,,Rent,Expense,,,,,,synthetic
+2024-04-21,,,,52.94,,Medical,Expense,,,,,,synthetic
+2024-04-21,,,,365.54,,Transport,Expense,,,,,,synthetic
+2024-04-21,,,,292.14,,Entertainment,Expense,,,,,,synthetic
+2024-04-22,,,,341.89,,Medical,Expense,,,,,,synthetic
+2024-04-23,,,,7134.35,,Bonus,Income,,,,,,synthetic
+2024-04-23,,,,45.9,,Groceries,Expense,,,,,,synthetic
+2024-04-24,,,,486.23,,Entertainment,Expense,,,,,,synthetic
+2024-04-24,,,,29.81,,Utilities,Expense,,,,,,synthetic
+2024-04-26,,,,88.87,,Rent,Expense,,,,,,synthetic
+2024-04-27,,,,489.21,,Groceries,Expense,,,,,,synthetic
+2024-04-27,,,,465.15,,Medical,Expense,,,,,,synthetic
+2024-04-28,,,,396.1,,Medical,Expense,,,,,,synthetic
+2024-04-29,,,,371.0,,Medical,Expense,,,,,,synthetic
+2024-04-30,,,,127.93,,Food,Expense,,,,,,synthetic
+2024-04-30,,,,140.6,,Transport,Expense,,,,,,synthetic
+2024-04-30,,,,2496.8,,Salary,Income,,,,,,synthetic
+2024-04-30,,,,193.83,,Medical,Expense,,,,,,synthetic
+2024-04-30,,,,6196.13,,Salary,Income,,,,,,synthetic
+2024-05-04,,,,373.06,,Medical,Expense,,,,,,synthetic
+2024-05-04,,,,300.03,,Medical,Expense,,,,,,synthetic
+2024-05-04,,,,129.07,,Insurance,Expense,,,,,,synthetic
+2024-05-06,,,,217.55,,Medical,Expense,,,,,,synthetic
+2024-05-06,,,,436.23,,Rent,Expense,,,,,,synthetic
+2024-05-07,,,,421.91,,Rent,Expense,,,,,,synthetic
+2024-05-07,,,,282.62,,Rent,Expense,,,,,,synthetic
+2024-05-07,,,,5183.86,,Bonus,Income,,,,,,synthetic
+2024-05-09,,,,5297.04,,Bonus,Income,,,,,,synthetic
+2024-05-10,,,,1870.32,,Investment,Income,,,,,,synthetic
+2024-05-11,,,,223.56,,Entertainment,Expense,,,,,,synthetic
+2024-05-11,,,,3365.34,,Bonus,Income,,,,,,synthetic
+2024-05-11,,,,426.29,,Food,Expense,,,,,,synthetic
+2024-05-11,,,,232.32,,Entertainment,Expense,,,,,,synthetic
+2024-05-11,,,,269.95,,Groceries,Expense,,,,,,synthetic
+2024-05-14,,,,6197.27,,Bonus,Income,,,,,,synthetic
+2024-05-14,,,,6707.11,,Salary,Income,,,,,,synthetic
+2024-05-15,,,,126.96,,Utilities,Expense,,,,,,synthetic
+2024-05-15,,,,3271.51,,Salary,Income,,,,,,synthetic
+2024-05-16,,,,241.16,,Food,Expense,,,,,,synthetic
+2024-05-16,,,,1482.5,,Investment,Income,,,,,,synthetic
+2024-05-16,,,,404.3,,Transport,Expense,,,,,,synthetic
+2024-05-16,,,,484.84,,Insurance,Expense,,,,,,synthetic
+2024-05-17,,,,3237.91,,Salary,Income,,,,,,synthetic
+2024-05-17,,,,461.21,,Insurance,Expense,,,,,,synthetic
+2024-05-17,,,,475.52,,Utilities,Expense,,,,,,synthetic
+2024-05-18,,,,4673.04,,Investment,Income,,,,,,synthetic
+2024-05-18,,,,216.03,,Entertainment,Expense,,,,,,synthetic
+2024-05-19,,,,431.94,,Food,Expense,,,,,,synthetic
+2024-05-19,,,,142.02,,Utilities,Expense,,,,,,synthetic
+2024-05-21,,,,192.29,,Utilities,Expense,,,,,,synthetic
+2024-05-21,,,,5824.48,,Investment,Income,,,,,,synthetic
+2024-05-22,,,,196.64,,Utilities,Expense,,,,,,synthetic
+2024-05-23,,,,6608.91,,Salary,Income,,,,,,synthetic
+2024-05-23,,,,467.18,,Entertainment,Expense,,,,,,synthetic
+2024-05-23,,,,174.78,,Groceries,Expense,,,,,,synthetic
+2024-05-23,,,,190.0,,Insurance,Expense,,,,,,synthetic
+2024-05-24,,,,128.59,,Entertainment,Expense,,,,,,synthetic
+2024-05-24,,,,7061.5,,Bonus,Income,,,,,,synthetic
+2024-05-24,,,,315.09,,Utilities,Expense,,,,,,synthetic
+2024-05-24,,,,7501.99,,Salary,Income,,,,,,synthetic
+2024-05-24,,,,5798.85,,Investment,Income,,,,,,synthetic
+2024-05-27,,,,6737.84,,Investment,Income,,,,,,synthetic
+2024-05-27,,,,9339.64,,Salary,Income,,,,,,synthetic
+2024-05-27,,,,335.03,,Transport,Expense,,,,,,synthetic
+2024-05-28,,,,5279.5,,Investment,Income,,,,,,synthetic
+2024-05-29,,,,3863.59,,Salary,Income,,,,,,synthetic
+2024-05-29,,,,101.78,,Medical,Expense,,,,,,synthetic
+2024-05-31,,,,12.77,,Entertainment,Expense,,,,,,synthetic
+2024-05-31,,,,7716.63,,Investment,Income,,,,,,synthetic
+2024-06-02,,,,8179.8,,Salary,Income,,,,,,synthetic
+2024-06-02,,,,465.26,,Groceries,Expense,,,,,,synthetic
+2024-06-04,,,,4226.47,,Investment,Income,,,,,,synthetic
+2024-06-05,,,,266.73,,Food,Expense,,,,,,synthetic
+2024-06-05,,,,8272.2,,Bonus,Income,,,,,,synthetic
+2024-06-07,,,,8424.34,,Investment,Income,,,,,,synthetic
+2024-06-07,,,,76.69,,Transport,Expense,,,,,,synthetic
+2024-06-08,,,,92.22,,Utilities,Expense,,,,,,synthetic
+2024-06-08,,,,110.17,,Food,Expense,,,,,,synthetic
+2024-06-09,,,,4814.26,,Bonus,Income,,,,,,synthetic
+2024-06-10,,,,102.09,,Groceries,Expense,,,,,,synthetic
+2024-06-10,,,,93.06,,Medical,Expense,,,,,,synthetic
+2024-06-11,,,,1917.11,,Salary,Income,,,,,,synthetic
+2024-06-11,,,,51.74,,Entertainment,Expense,,,,,,synthetic
+2024-06-12,,,,201.46,,Utilities,Expense,,,,,,synthetic
+2024-06-12,,,,74.9,,Entertainment,Expense,,,,,,synthetic
+2024-06-14,,,,1527.32,,Bonus,Income,,,,,,synthetic
+2024-06-14,,,,482.67,,Utilities,Expense,,,,,,synthetic
+2024-06-15,,,,200.17,,Utilities,Expense,,,,,,synthetic
+2024-06-16,,,,257.73,,Rent,Expense,,,,,,synthetic
+2024-06-19,,,,74.76,,Transport,Expense,,,,,,synthetic
+2024-06-21,,,,55.57,,Entertainment,Expense,,,,,,synthetic
+2024-06-21,,,,381.16,,Transport,Expense,,,,,,synthetic
+2024-06-22,,,,2398.69,,Salary,Income,,,,,,synthetic
+2024-06-23,,,,66.83,,Medical,Expense,,,,,,synthetic
+2024-06-24,,,,336.8,,Transport,Expense,,,,,,synthetic
+2024-06-24,,,,1466.09,,Salary,Income,,,,,,synthetic
+2024-06-24,,,,448.45,,Groceries,Expense,,,,,,synthetic
+2024-06-25,,,,319.07,,Transport,Expense,,,,,,synthetic
+2024-06-25,,,,244.9,,Transport,Expense,,,,,,synthetic
+2024-06-26,,,,5387.95,,Salary,Income,,,,,,synthetic
+2024-06-26,,,,356.15,,Rent,Expense,,,,,,synthetic
+2024-06-27,,,,176.89,,Groceries,Expense,,,,,,synthetic
+2024-06-29,,,,234.91,,Utilities,Expense,,,,,,synthetic
+2024-06-30,,,,144.03,,Insurance,Expense,,,,,,synthetic
+2024-06-30,,,,457.64,,Medical,Expense,,,,,,synthetic
+2024-07-02,,,,7856.74,,Salary,Income,,,,,,synthetic
+2024-07-03,,,,133.19,,Entertainment,Expense,,,,,,synthetic
+2024-07-03,,,,401.68,,Groceries,Expense,,,,,,synthetic
+2024-07-03,,,,256.26,,Groceries,Expense,,,,,,synthetic
+2024-07-04,,,,146.71,,Transport,Expense,,,,,,synthetic
+2024-07-04,,,,290.26,,Transport,Expense,,,,,,synthetic
+2024-07-04,,,,7176.57,,Bonus,Income,,,,,,synthetic
+2024-07-06,,,,3913.94,,Investment,Income,,,,,,synthetic
+2024-07-07,,,,5323.33,,Investment,Income,,,,,,synthetic
+2024-07-08,,,,4971.57,,Salary,Income,,,,,,synthetic
+2024-07-09,,,,330.41,,Insurance,Expense,,,,,,synthetic
+2024-07-09,,,,362.11,,Entertainment,Expense,,,,,,synthetic
+2024-07-12,,,,1463.83,,Salary,Income,,,,,,synthetic
+2024-07-12,,,,170.37,,Insurance,Expense,,,,,,synthetic
+2024-07-14,,,,4778.16,,Investment,Income,,,,,,synthetic
+2024-07-14,,,,114.19,,Utilities,Expense,,,,,,synthetic
+2024-07-15,,,,4285.14,,Bonus,Income,,,,,,synthetic
+2024-07-15,,,,34.67,,Entertainment,Expense,,,,,,synthetic
+2024-07-18,,,,82.2,,Transport,Expense,,,,,,synthetic
+2024-07-19,,,,396.42,,Entertainment,Expense,,,,,,synthetic
+2024-07-19,,,,115.63,,Entertainment,Expense,,,,,,synthetic
+2024-07-20,,,,196.52,,Entertainment,Expense,,,,,,synthetic
+2024-07-22,,,,197.96,,Rent,Expense,,,,,,synthetic
+2024-07-24,,,,261.49,,Utilities,Expense,,,,,,synthetic
+2024-07-24,,,,1275.07,,Investment,Income,,,,,,synthetic
+2024-07-24,,,,64.32,,Groceries,Expense,,,,,,synthetic
+2024-07-24,,,,368.91,,Transport,Expense,,,,,,synthetic
+2024-07-25,,,,204.01,,Food,Expense,,,,,,synthetic
+2024-07-27,,,,230.3,,Entertainment,Expense,,,,,,synthetic
+2024-07-27,,,,7348.7,,Investment,Income,,,,,,synthetic
+2024-07-29,,,,126.2,,Entertainment,Expense,,,,,,synthetic
+2024-07-30,,,,9262.44,,Salary,Income,,,,,,synthetic
+2024-08-01,,,,403.44,,Groceries,Expense,,,,,,synthetic
+2024-08-03,,,,270.12,,Utilities,Expense,,,,,,synthetic
+2024-08-03,,,,384.48,,Food,Expense,,,,,,synthetic
+2024-08-06,,,,440.84,,Groceries,Expense,,,,,,synthetic
+2024-08-08,,,,227.65,,Insurance,Expense,,,,,,synthetic
+2024-08-08,,,,2527.22,,Investment,Income,,,,,,synthetic
+2024-08-08,,,,162.7,,Utilities,Expense,,,,,,synthetic
+2024-08-09,,,,1693.63,,Investment,Income,,,,,,synthetic
+2024-08-09,,,,155.39,,Transport,Expense,,,,,,synthetic
+2024-08-10,,,,263.15,,Rent,Expense,,,,,,synthetic
+2024-08-11,,,,6308.11,,Investment,Income,,,,,,synthetic
+2024-08-11,,,,438.32,,Insurance,Expense,,,,,,synthetic
+2024-08-11,,,,2141.99,,Investment,Income,,,,,,synthetic
+2024-08-13,,,,266.27,,Utilities,Expense,,,,,,synthetic
+2024-08-13,,,,9506.69,,Salary,Income,,,,,,synthetic
+2024-08-13,,,,334.6,,Medical,Expense,,,,,,synthetic
+2024-08-15,,,,477.48,,Entertainment,Expense,,,,,,synthetic
+2024-08-16,,,,2666.35,,Investment,Income,,,,,,synthetic
+2024-08-16,,,,2239.26,,Investment,Income,,,,,,synthetic
+2024-08-17,,,,461.55,,Entertainment,Expense,,,,,,synthetic
+2024-08-18,,,,356.58,,Insurance,Expense,,,,,,synthetic
+2024-08-20,,,,8239.32,,Salary,Income,,,,,,synthetic
+2024-08-20,,,,1933.42,,Salary,Income,,,,,,synthetic
+2024-08-21,,,,163.57,,Rent,Expense,,,,,,synthetic
+2024-08-23,,,,36.0,,Rent,Expense,,,,,,synthetic
+2024-08-23,,,,166.37,,Groceries,Expense,,,,,,synthetic
+2024-08-23,,,,494.66,,Insurance,Expense,,,,,,synthetic
+2024-08-25,,,,278.37,,Entertainment,Expense,,,,,,synthetic
+2024-08-28,,,,490.6,,Insurance,Expense,,,,,,synthetic
+2024-08-29,,,,2960.47,,Bonus,Income,,,,,,synthetic
+2024-08-29,,,,9706.46,,Bonus,Income,,,,,,synthetic
+2024-08-31,,,,381.1,,Insurance,Expense,,,,,,synthetic
+2024-08-31,,,,9987.28,,Salary,Income,,,,,,synthetic
+2024-09-01,,,,462.72,,Transport,Expense,,,,,,synthetic
+2024-09-01,,,,1312.56,,Investment,Income,,,,,,synthetic
+2024-09-01,,,,8384.95,,Bonus,Income,,,,,,synthetic
+2024-09-02,,,,486.52,,Groceries,Expense,,,,,,synthetic
+2024-09-03,,,,233.67,,Groceries,Expense,,,,,,synthetic
+2024-09-03,,,,233.12,,Medical,Expense,,,,,,synthetic
+2024-09-04,,,,322.66,,Insurance,Expense,,,,,,synthetic
+2024-09-04,,,,365.17,,Groceries,Expense,,,,,,synthetic
+2024-09-05,,,,3710.36,,Salary,Income,,,,,,synthetic
+2024-09-07,,,,341.42,,Utilities,Expense,,,,,,synthetic
+2024-09-07,,,,167.37,,Entertainment,Expense,,,,,,synthetic
+2024-09-08,,,,2566.82,,Investment,Income,,,,,,synthetic
+2024-09-09,,,,182.26,,Insurance,Expense,,,,,,synthetic
+2024-09-09,,,,170.68,,Groceries,Expense,,,,,,synthetic
+2024-09-09,,,,3253.31,,Investment,Income,,,,,,synthetic
+2024-09-10,,,,424.13,,Medical,Expense,,,,,,synthetic
+2024-09-11,,,,212.35,,Rent,Expense,,,,,,synthetic
+2024-09-12,,,,1923.79,,Salary,Income,,,,,,synthetic
+2024-09-12,,,,385.26,,Rent,Expense,,,,,,synthetic
+2024-09-13,,,,190.77,,Food,Expense,,,,,,synthetic
+2024-09-14,,,,308.41,,Food,Expense,,,,,,synthetic
+2024-09-14,,,,428.7,,Utilities,Expense,,,,,,synthetic
+2024-09-15,,,,83.78,,Transport,Expense,,,,,,synthetic
+2024-09-15,,,,174.16,,Food,Expense,,,,,,synthetic
+2024-09-16,,,,222.5,,Utilities,Expense,,,,,,synthetic
+2024-09-17,,,,258.24,,Medical,Expense,,,,,,synthetic
+2024-09-19,,,,8613.4,,Bonus,Income,,,,,,synthetic
+2024-09-20,,,,1083.84,,Salary,Income,,,,,,synthetic
+2024-09-20,,,,4809.29,,Investment,Income,,,,,,synthetic
+2024-09-21,,,,293.21,,Food,Expense,,,,,,synthetic
+2024-09-21,,,,99.22,,Food,Expense,,,,,,synthetic
+2024-09-21,,,,3315.94,,Bonus,Income,,,,,,synthetic
+2024-09-22,,,,435.37,,Medical,Expense,,,,,,synthetic
+2024-09-24,,,,340.38,,Medical,Expense,,,,,,synthetic
+2024-09-25,,,,90.68,,Entertainment,Expense,,,,,,synthetic
+2024-09-26,,,,179.03,,Rent,Expense,,,,,,synthetic
+2024-09-26,,,,224.71,,Rent,Expense,,,,,,synthetic
+2024-09-28,,,,457.48,,Food,Expense,,,,,,synthetic
+2024-09-29,,,,8853.21,,Investment,Income,,,,,,synthetic
+2024-10-01,,,,70.35,,Rent,Expense,,,,,,synthetic
+2024-10-01,,,,192.2,,Groceries,Expense,,,,,,synthetic
+2024-10-01,,,,402.42,,Utilities,Expense,,,,,,synthetic
+2024-10-01,,,,287.68,,Transport,Expense,,,,,,synthetic
+2024-10-02,,,,221.98,,Rent,Expense,,,,,,synthetic
+2024-10-03,,,,3679.38,,Salary,Income,,,,,,synthetic
+2024-10-04,,,,4040.79,,Salary,Income,,,,,,synthetic
+2024-10-05,,,,42.15,,Rent,Expense,,,,,,synthetic
+2024-10-05,,,,27.05,,Insurance,Expense,,,,,,synthetic
+2024-10-07,,,,490.45,,Entertainment,Expense,,,,,,synthetic
+2024-10-07,,,,363.43,,Rent,Expense,,,,,,synthetic
+2024-10-08,,,,440.47,,Food,Expense,,,,,,synthetic
+2024-10-09,,,,400.42,,Medical,Expense,,,,,,synthetic
+2024-10-10,,,,225.94,,Medical,Expense,,,,,,synthetic
+2024-10-10,,,,8792.18,,Salary,Income,,,,,,synthetic
+2024-10-11,,,,5113.41,,Salary,Income,,,,,,synthetic
+2024-10-12,,,,187.45,,Utilities,Expense,,,,,,synthetic
+2024-10-12,,,,4376.73,,Salary,Income,,,,,,synthetic
+2024-10-14,,,,428.95,,Rent,Expense,,,,,,synthetic
+2024-10-16,,,,163.74,,Medical,Expense,,,,,,synthetic
+2024-10-17,,,,8335.06,,Investment,Income,,,,,,synthetic
+2024-10-18,,,,477.5,,Food,Expense,,,,,,synthetic
+2024-10-18,,,,475.77,,Insurance,Expense,,,,,,synthetic
+2024-10-18,,,,5337.73,,Salary,Income,,,,,,synthetic
+2024-10-18,,,,6330.04,,Salary,Income,,,,,,synthetic
+2024-10-19,,,,5015.98,,Salary,Income,,,,,,synthetic
+2024-10-20,,,,337.61,,Food,Expense,,,,,,synthetic
+2024-10-21,,,,3573.35,,Investment,Income,,,,,,synthetic
+2024-10-22,,,,4921.09,,Salary,Income,,,,,,synthetic
+2024-10-22,,,,1545.51,,Salary,Income,,,,,,synthetic
+2024-10-27,,,,38.01,,Utilities,Expense,,,,,,synthetic
+2024-10-27,,,,139.07,,Insurance,Expense,,,,,,synthetic
+2024-10-27,,,,330.33,,Groceries,Expense,,,,,,synthetic
+2024-10-27,,,,294.36,,Insurance,Expense,,,,,,synthetic
+2024-10-27,,,,447.4,,Food,Expense,,,,,,synthetic
+2024-10-28,,,,302.65,,Rent,Expense,,,,,,synthetic
+2024-10-30,,,,260.35,,Transport,Expense,,,,,,synthetic
+2024-10-31,,,,54.94,,Medical,Expense,,,,,,synthetic
+2024-10-31,,,,334.67,,Entertainment,Expense,,,,,,synthetic
+2024-11-02,,,,2682.64,,Investment,Income,,,,,,synthetic
+2024-11-03,,,,479.28,,Rent,Expense,,,,,,synthetic
+2024-11-04,,,,225.65,,Rent,Expense,,,,,,synthetic
+2024-11-04,,,,7264.65,,Bonus,Income,,,,,,synthetic
+2024-11-05,,,,2846.75,,Salary,Income,,,,,,synthetic
+2024-11-06,,,,8475.12,,Bonus,Income,,,,,,synthetic
+2024-11-07,,,,8714.48,,Investment,Income,,,,,,synthetic
+2024-11-08,,,,154.51,,Food,Expense,,,,,,synthetic
+2024-11-08,,,,297.8,,Medical,Expense,,,,,,synthetic
+2024-11-08,,,,6849.65,,Investment,Income,,,,,,synthetic
+2024-11-09,,,,132.41,,Insurance,Expense,,,,,,synthetic
+2024-11-10,,,,99.05,,Insurance,Expense,,,,,,synthetic
+2024-11-10,,,,9690.65,,Bonus,Income,,,,,,synthetic
+2024-11-11,,,,111.41,,Food,Expense,,,,,,synthetic
+2024-11-12,,,,30.5,,Rent,Expense,,,,,,synthetic
+2024-11-12,,,,5043.87,,Bonus,Income,,,,,,synthetic
+2024-11-12,,,,9568.87,,Salary,Income,,,,,,synthetic
+2024-11-16,,,,228.43,,Transport,Expense,,,,,,synthetic
+2024-11-17,,,,84.89,,Transport,Expense,,,,,,synthetic
+2024-11-17,,,,484.2,,Insurance,Expense,,,,,,synthetic
+2024-11-18,,,,5642.32,,Investment,Income,,,,,,synthetic
+2024-11-20,,,,1344.31,,Bonus,Income,,,,,,synthetic
+2024-11-20,,,,125.77,,Rent,Expense,,,,,,synthetic
+2024-11-20,,,,326.81,,Medical,Expense,,,,,,synthetic
+2024-11-21,,,,202.92,,Utilities,Expense,,,,,,synthetic
+2024-11-22,,,,380.53,,Food,Expense,,,,,,synthetic
+2024-11-22,,,,359.42,,Transport,Expense,,,,,,synthetic
+2024-11-24,,,,374.4,,Food,Expense,,,,,,synthetic
+2024-11-24,,,,171.6,,Rent,Expense,,,,,,synthetic
+2024-11-24,,,,248.56,,Utilities,Expense,,,,,,synthetic
+2024-11-26,,,,352.09,,Rent,Expense,,,,,,synthetic
+2024-11-26,,,,498.66,,Transport,Expense,,,,,,synthetic
+2024-11-27,,,,452.67,,Groceries,Expense,,,,,,synthetic
+2024-11-30,,,,5879.54,,Investment,Income,,,,,,synthetic
+2024-11-30,,,,1043.49,,Salary,Income,,,,,,synthetic
+2024-12-02,,,,2979.66,,Investment,Income,,,,,,synthetic
+2024-12-02,,,,282.37,,Medical,Expense,,,,,,synthetic
+2024-12-02,,,,144.25,,Transport,Expense,,,,,,synthetic
+2024-12-03,,,,1487.33,,Salary,Income,,,,,,synthetic
+2024-12-03,,,,3008.67,,Salary,Income,,,,,,synthetic
+2024-12-05,,,,373.21,,Transport,Expense,,,,,,synthetic
+2024-12-05,,,,68.94,,Rent,Expense,,,,,,synthetic
+2024-12-05,,,,7208.81,,Investment,Income,,,,,,synthetic
+2024-12-07,,,,430.77,,Entertainment,Expense,,,,,,synthetic
+2024-12-07,,,,268.2,,Insurance,Expense,,,,,,synthetic
+2024-12-07,,,,196.87,,Utilities,Expense,,,,,,synthetic
+2024-12-08,,,,150.19,,Transport,Expense,,,,,,synthetic
+2024-12-10,,,,39.18,,Utilities,Expense,,,,,,synthetic
+2024-12-10,,,,19.76,,Transport,Expense,,,,,,synthetic
+2024-12-10,,,,243.95,,Rent,Expense,,,,,,synthetic
+2024-12-13,,,,496.49,,Rent,Expense,,,,,,synthetic
+2024-12-13,,,,322.59,,Transport,Expense,,,,,,synthetic
+2024-12-13,,,,13.79,,Groceries,Expense,,,,,,synthetic
+2024-12-14,,,,459.77,,Utilities,Expense,,,,,,synthetic
+2024-12-14,,,,2890.48,,Bonus,Income,,,,,,synthetic
+2024-12-14,,,,5039.33,,Bonus,Income,,,,,,synthetic
+2024-12-15,,,,366.65,,Rent,Expense,,,,,,synthetic
+2024-12-15,,,,75.37,,Utilities,Expense,,,,,,synthetic
+2024-12-16,,,,6774.19,,Salary,Income,,,,,,synthetic
+2024-12-18,,,,39.87,,Entertainment,Expense,,,,,,synthetic
+2024-12-19,,,,490.55,,Rent,Expense,,,,,,synthetic
+2024-12-19,,,,445.74,,Insurance,Expense,,,,,,synthetic
+2024-12-19,,,,198.88,,Medical,Expense,,,,,,synthetic
+2024-12-19,,,,29.52,,Transport,Expense,,,,,,synthetic
+2024-12-20,,,,7242.04,,Investment,Income,,,,,,synthetic
+2024-12-20,,,,9805.04,,Bonus,Income,,,,,,synthetic
+2024-12-20,,,,2462.45,,Bonus,Income,,,,,,synthetic
+2024-12-22,,,,493.72,,Medical,Expense,,,,,,synthetic
+2024-12-23,,,,195.41,,Rent,Expense,,,,,,synthetic
+2024-12-23,,,,6186.51,,Salary,Income,,,,,,synthetic
+2024-12-24,,,,17.98,,Insurance,Expense,,,,,,synthetic
+2024-12-25,,,,190.11,,Utilities,Expense,,,,,,synthetic
+2024-12-25,,,,7330.93,,Bonus,Income,,,,,,synthetic
+2024-12-26,,,,412.7,,Rent,Expense,,,,,,synthetic
+2024-12-26,,,,289.23,,Insurance,Expense,,,,,,synthetic
+2024-12-26,,,,330.23,,Rent,Expense,,,,,,synthetic
+2024-12-26,,,,345.46,,Transport,Expense,,,,,,synthetic
+2024-12-27,,,,357.28,,Insurance,Expense,,,,,,synthetic
+2024-12-29,,,,257.67,,Medical,Expense,,,,,,synthetic
+2024-12-30,,,,376.04,,Entertainment,Expense,,,,,,synthetic
+2024-12-31,,,,330.25,,Groceries,Expense,,,,,,synthetic
+2024-12-31,,,,4875.46,,Salary,Income,,,,,,synthetic
+2024-12-31,,,,7406.87,,Bonus,Income,,,,,,synthetic
+2025-01-01,,,,8005.78,,Salary,Income,,,,,,synthetic
+2025-01-01,,,,8781.45,,Salary,Income,,,,,,synthetic
+2025-01-02,,,,90.07,,Transport,Expense,,,,,,synthetic
+2025-01-02,,,,3215.94,,Investment,Income,,,,,,synthetic
+2025-01-03,,,,4239.26,,Bonus,Income,,,,,,synthetic
+2025-01-04,,,,10.53,,Groceries,Expense,,,,,,synthetic
+2025-01-05,,,,4472.88,,Salary,Income,,,,,,synthetic
+2025-01-06,,,,6758.15,,Investment,Income,,,,,,synthetic
+2025-01-06,,,,213.97,,Transport,Expense,,,,,,synthetic
+2025-01-06,,,,220.32,,Transport,Expense,,,,,,synthetic
+2025-01-08,,,,1111.07,,Bonus,Income,,,,,,synthetic
+2025-01-08,,,,423.72,,Transport,Expense,,,,,,synthetic
+2025-01-09,,,,260.48,,Transport,Expense,,,,,,synthetic
+2025-01-10,,,,229.81,,Insurance,Expense,,,,,,synthetic
+2025-01-10,,,,463.21,,Groceries,Expense,,,,,,synthetic
+2025-01-12,,,,3132.14,,Bonus,Income,,,,,,synthetic
+2025-01-12,,,,337.75,,Utilities,Expense,,,,,,synthetic
+2025-01-12,,,,79.66,,Insurance,Expense,,,,,,synthetic
+2025-01-12,,,,175.5,,Entertainment,Expense,,,,,,synthetic
+2025-01-12,,,,462.94,,Insurance,Expense,,,,,,synthetic
+2025-01-12,,,,383.68,,Groceries,Expense,,,,,,synthetic
+2025-01-13,,,,175.6,,Groceries,Expense,,,,,,synthetic
+2025-01-13,,,,97.02,,Insurance,Expense,,,,,,synthetic
+2025-01-13,,,,43.79,,Utilities,Expense,,,,,,synthetic
+2025-01-13,,,,96.8,,Groceries,Expense,,,,,,synthetic
+2025-01-13,,,,275.6,,Utilities,Expense,,,,,,synthetic
+2025-01-14,,,,417.43,,Entertainment,Expense,,,,,,synthetic
+2025-01-14,,,,124.83,,Insurance,Expense,,,,,,synthetic
+2025-01-15,,,,7212.53,,Salary,Income,,,,,,synthetic
+2025-01-15,,,,32.43,,Groceries,Expense,,,,,,synthetic
+2025-01-17,,,,344.86,,Entertainment,Expense,,,,,,synthetic
+2025-01-17,,,,187.64,,Transport,Expense,,,,,,synthetic
+2025-01-18,,,,224.84,,Transport,Expense,,,,,,synthetic
+2025-01-18,,,,34.78,,Food,Expense,,,,,,synthetic
+2025-01-18,,,,5716.62,,Bonus,Income,,,,,,synthetic
+2025-01-20,,,,480.06,,Utilities,Expense,,,,,,synthetic
+2025-01-21,,,,4121.29,,Salary,Income,,,,,,synthetic
+2025-01-21,,,,37.87,,Rent,Expense,,,,,,synthetic
+2025-01-21,,,,2715.19,,Investment,Income,,,,,,synthetic
+2025-01-24,,,,2861.66,,Investment,Income,,,,,,synthetic
+2025-01-24,,,,167.11,,Insurance,Expense,,,,,,synthetic
+2025-01-25,,,,71.85,,Transport,Expense,,,,,,synthetic
+2025-01-26,,,,3347.07,,Salary,Income,,,,,,synthetic
+2025-01-26,,,,450.81,,Insurance,Expense,,,,,,synthetic
+2025-01-28,,,,358.98,,Transport,Expense,,,,,,synthetic
+2025-01-28,,,,8854.48,,Salary,Income,,,,,,synthetic
+2025-01-29,,,,242.05,,Groceries,Expense,,,,,,synthetic
+2025-01-29,,,,3461.12,,Investment,Income,,,,,,synthetic
+2025-01-30,,,,434.98,,Insurance,Expense,,,,,,synthetic
+2025-01-30,,,,2787.82,,Bonus,Income,,,,,,synthetic
+2025-01-31,,,,494.2,,Groceries,Expense,,,,,,synthetic
+2025-01-31,,,,335.9,,Utilities,Expense,,,,,,synthetic
+2025-02-04,,,,419.26,,Groceries,Expense,,,,,,synthetic
+2025-02-04,,,,7314.71,,Bonus,Income,,,,,,synthetic
+2025-02-05,,,,455.12,,Rent,Expense,,,,,,synthetic
+2025-02-05,,,,419.09,,Entertainment,Expense,,,,,,synthetic
+2025-02-05,,,,46.36,,Groceries,Expense,,,,,,synthetic
+2025-02-08,,,,167.55,,Transport,Expense,,,,,,synthetic
+2025-02-08,,,,470.23,,Utilities,Expense,,,,,,synthetic
+2025-02-09,,,,5225.41,,Investment,Income,,,,,,synthetic
+2025-02-10,,,,422.84,,Utilities,Expense,,,,,,synthetic
+2025-02-10,,,,1536.74,,Salary,Income,,,,,,synthetic
+2025-02-11,,,,354.83,,Groceries,Expense,,,,,,synthetic
+2025-02-12,,,,483.37,,Insurance,Expense,,,,,,synthetic
+2025-02-12,,,,225.19,,Entertainment,Expense,,,,,,synthetic
+2025-02-14,,,,374.22,,Medical,Expense,,,,,,synthetic
+2025-02-17,,,,50.52,,Rent,Expense,,,,,,synthetic
+2025-02-19,,,,474.32,,Groceries,Expense,,,,,,synthetic
+2025-02-20,,,,179.11,,Insurance,Expense,,,,,,synthetic
+2025-02-22,,,,252.5,,Entertainment,Expense,,,,,,synthetic
+2025-02-22,,,,1170.44,,Salary,Income,,,,,,synthetic
+2025-02-22,,,,1503.18,,Investment,Income,,,,,,synthetic
+2025-02-22,,,,138.16,,Food,Expense,,,,,,synthetic
+2025-02-24,,,,2160.38,,Bonus,Income,,,,,,synthetic
+2025-02-27,,,,3855.55,,Investment,Income,,,,,,synthetic
+2025-02-28,,,,255.04,,Medical,Expense,,,,,,synthetic
+2025-03-01,,,,60.74,,Rent,Expense,,,,,,synthetic
+2025-03-01,,,,473.99,,Rent,Expense,,,,,,synthetic
+2025-03-03,,,,221.61,,Medical,Expense,,,,,,synthetic
+2025-03-04,,,,434.36,,Insurance,Expense,,,,,,synthetic
+2025-03-05,,,,324.3,,Food,Expense,,,,,,synthetic
+2025-03-06,,,,354.98,,Entertainment,Expense,,,,,,synthetic
+2025-03-09,,,,4216.9,,Investment,Income,,,,,,synthetic
+2025-03-10,,,,499.79,,Food,Expense,,,,,,synthetic
+2025-03-10,,,,113.24,,Insurance,Expense,,,,,,synthetic
+2025-03-11,,,,45.71,,Utilities,Expense,,,,,,synthetic
+2025-03-12,,,,89.7,,Transport,Expense,,,,,,synthetic
+2025-03-13,,,,205.1,,Entertainment,Expense,,,,,,synthetic
+2025-03-13,,,,31.6,,Entertainment,Expense,,,,,,synthetic
+2025-03-13,,,,406.62,,Entertainment,Expense,,,,,,synthetic
+2025-03-14,,,,9236.14,,Bonus,Income,,,,,,synthetic
+2025-03-16,,,,7721.91,,Salary,Income,,,,,,synthetic
+2025-03-16,,,,120.88,,Entertainment,Expense,,,,,,synthetic
+2025-03-16,,,,176.77,,Entertainment,Expense,,,,,,synthetic
+2025-03-17,,,,91.84,,Entertainment,Expense,,,,,,synthetic
+2025-03-17,,,,95.99,,Transport,Expense,,,,,,synthetic
+2025-03-17,,,,8318.33,,Investment,Income,,,,,,synthetic
+2025-03-18,,,,6403.69,,Bonus,Income,,,,,,synthetic
+2025-03-18,,,,6949.52,,Salary,Income,,,,,,synthetic
+2025-03-19,,,,368.97,,Insurance,Expense,,,,,,synthetic
+2025-03-19,,,,379.94,,Medical,Expense,,,,,,synthetic
+2025-03-20,,,,166.68,,Entertainment,Expense,,,,,,synthetic
+2025-03-20,,,,425.53,,Food,Expense,,,,,,synthetic
+2025-03-20,,,,4094.66,,Investment,Income,,,,,,synthetic
+2025-03-21,,,,9720.97,,Salary,Income,,,,,,synthetic
+2025-03-21,,,,6894.3,,Bonus,Income,,,,,,synthetic
+2025-03-21,,,,2103.74,,Salary,Income,,,,,,synthetic
+2025-03-21,,,,144.68,,Food,Expense,,,,,,synthetic
+2025-03-21,,,,361.99,,Transport,Expense,,,,,,synthetic
+2025-03-22,,,,392.04,,Entertainment,Expense,,,,,,synthetic
+2025-03-22,,,,22.11,,Entertainment,Expense,,,,,,synthetic
+2025-03-23,,,,7010.56,,Bonus,Income,,,,,,synthetic
+2025-03-23,,,,212.07,,Food,Expense,,,,,,synthetic
+2025-03-23,,,,69.5,,Insurance,Expense,,,,,,synthetic
+2025-03-23,,,,178.15,,Transport,Expense,,,,,,synthetic
+2025-03-25,,,,158.9,,Food,Expense,,,,,,synthetic
+2025-03-26,,,,7546.83,,Salary,Income,,,,,,synthetic
+2025-03-26,,,,5415.43,,Bonus,Income,,,,,,synthetic
+2025-03-27,,,,80.01,,Insurance,Expense,,,,,,synthetic
+2025-03-27,,,,445.82,,Food,Expense,,,,,,synthetic
+2025-03-28,,,,6684.64,,Investment,Income,,,,,,synthetic
+2025-03-29,,,,363.49,,Transport,Expense,,,,,,synthetic
+2025-03-30,,,,3333.22,,Investment,Income,,,,,,synthetic
+2025-03-30,,,,3006.31,,Salary,Income,,,,,,synthetic
+2025-03-30,,,,368.07,,Groceries,Expense,,,,,,synthetic
+2025-04-01,,,,349.79,,Entertainment,Expense,,,,,,synthetic
+2025-04-01,,,,99.56,,Entertainment,Expense,,,,,,synthetic
+2025-04-01,,,,208.47,,Groceries,Expense,,,,,,synthetic
+2025-04-02,,,,4157.34,,Investment,Income,,,,,,synthetic
+2025-04-05,,,,437.47,,Insurance,Expense,,,,,,synthetic
+2025-04-06,,,,4410.76,,Salary,Income,,,,,,synthetic
+2025-04-06,,,,173.32,,Medical,Expense,,,,,,synthetic
+2025-04-06,,,,96.94,,Groceries,Expense,,,,,,synthetic
+2025-04-07,,,,95.17,,Transport,Expense,,,,,,synthetic
+2025-04-08,,,,140.11,,Insurance,Expense,,,,,,synthetic
+2025-04-09,,,,3096.98,,Salary,Income,,,,,,synthetic
+2025-04-09,,,,240.76,,Medical,Expense,,,,,,synthetic
+2025-04-10,,,,37.17,,Utilities,Expense,,,,,,synthetic
+2025-04-12,,,,2020.05,,Investment,Income,,,,,,synthetic
+2025-04-12,,,,485.65,,Medical,Expense,,,,,,synthetic
+2025-04-13,,,,199.9,,Medical,Expense,,,,,,synthetic
+2025-04-13,,,,209.38,,Rent,Expense,,,,,,synthetic
+2025-04-15,,,,429.98,,Transport,Expense,,,,,,synthetic
+2025-04-16,,,,7174.88,,Bonus,Income,,,,,,synthetic
+2025-04-16,,,,5317.16,,Bonus,Income,,,,,,synthetic
+2025-04-17,,,,177.45,,Transport,Expense,,,,,,synthetic
+2025-04-18,,,,164.67,,Insurance,Expense,,,,,,synthetic
+2025-04-18,,,,5428.26,,Bonus,Income,,,,,,synthetic
+2025-04-19,,,,21.07,,Groceries,Expense,,,,,,synthetic
+2025-04-20,,,,237.84,,Utilities,Expense,,,,,,synthetic
+2025-04-20,,,,325.86,,Entertainment,Expense,,,,,,synthetic
+2025-04-21,,,,5151.39,,Investment,Income,,,,,,synthetic
+2025-04-21,,,,48.27,,Utilities,Expense,,,,,,synthetic
+2025-04-21,,,,1565.75,,Salary,Income,,,,,,synthetic
+2025-04-21,,,,46.01,,Insurance,Expense,,,,,,synthetic
+2025-04-22,,,,370.6,,Rent,Expense,,,,,,synthetic
+2025-04-22,,,,273.2,,Medical,Expense,,,,,,synthetic
+2025-04-22,,,,195.92,,Transport,Expense,,,,,,synthetic
+2025-04-22,,,,183.61,,Medical,Expense,,,,,,synthetic
+2025-04-22,,,,389.44,,Rent,Expense,,,,,,synthetic
+2025-04-23,,,,1860.19,,Investment,Income,,,,,,synthetic
+2025-04-24,,,,89.7,,Utilities,Expense,,,,,,synthetic
+2025-04-25,,,,65.84,,Insurance,Expense,,,,,,synthetic
+2025-04-26,,,,3510.35,,Salary,Income,,,,,,synthetic
+2025-04-26,,,,397.48,,Utilities,Expense,,,,,,synthetic
+2025-04-28,,,,278.59,,Food,Expense,,,,,,synthetic

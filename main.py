@@ -12,13 +12,33 @@ def run_command(desc, command):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="savings prediction pipeline.")
     
+    # === OLD FLAGS ===
     parser.add_argument("--train", action="store_true", help="Train models on Dataset2")
     parser.add_argument("--blindtest", action="store_true", help="Evaluate models on Dataset1 (blindtest)")
     parser.add_argument("--benchmarks", action="store_true", help="Generate benchmark summary charts")
     parser.add_argument("--growth", action="store_true", help="Run user growth tracker for Dataset2")
     parser.add_argument("--summary", action="store_true", help="Compare metrics and create visual charts")
 
+    # === NEW FLAGS ===
+    parser.add_argument("--clean", action="store_true", help="Clean raw datasets (Dataset1 and Dataset2)")
+    parser.add_argument("--synthesize", action="store_true", help="Add synthetic records to Dataset1")
+    parser.add_argument("--feature", action="store_true", help="Run Feature Engineering and EDA for both datasets")
+    parser.add_argument("--hypothesis", action="store_true", help="Run Pearson/Spearman Hypothesis Testing")
+    parser.add_argument("--dashboard", action="store_true", help="Launch Streamlit Interactive Dashboard")
+
     args = parser.parse_args()
+
+    # === CLEANING RAW DATA ===
+    if args.clean:
+        run_command("Cleaning Raw Datasets", ["python", "scripts/clean_data.py"])
+
+    # === SYNTHESIZING RECORDS ===
+    if args.synthesize:
+        run_command("Adding Synthetic Records to Dataset1", ["python", "scripts/add_records_dataset1.py"])
+
+    # === FEATURE ENGINEERING + EDA ===
+    if args.feature:
+        run_command("Running Feature Engineering and EDA", ["python", "scripts/dataset1_2_feature_engineering_EDA.py"])
 
     # === TRAINING MODELS ===
     if args.train:
@@ -46,6 +66,14 @@ if __name__ == "__main__":
         run_command("Generating Model Comparison Summary", ["python", "scripts/compare_metrics.py"])
         run_command("Creating Metric Comparison Charts", ["python", "scripts/metric_chart_creation.py"])
 
+    # === HYPOTHESIS TESTING ===
+    if args.hypothesis:
+        run_command("Running Hypothesis Testing", ["python", "scripts/pearson_spearman_testing.py"])
+
+    # === STREAMLIT DASHBOARD ===
+    if args.dashboard:
+        run_command("Launching Streamlit Dashboard", ["streamlit", "run", "app_dashboard.py"])
+
     # === DEFAULT MESSAGE ===
     if not any(vars(args).values()):
-        print("\nNo actions specified. Use one or more flags: --train, --blindtest, --benchmarks, --growth, --summary")
+        print("\nNo actions specified. Use flags like --clean, --synthesize, --feature, --train, --hypothesis, --dashboard etc.")

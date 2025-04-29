@@ -1,8 +1,8 @@
 import pandas as pd
 import numpy as np
 import os
-from faker import Faker
 import random
+from faker import Faker
 
 # Init faker and random seed for reproducibility
 fake = Faker()
@@ -30,24 +30,23 @@ if records_to_add <= 0:
 else:
     print(f"Adding {records_to_add} synthetic records to reach {target_rows} total...")
 
-    # Prepare category lists
-    categories = df['Category'].dropna().unique().tolist()
-    category_types = df['Category Type'].dropna().unique().tolist()
+    # Prepare custom categories
+    expense_categories = ["Food", "Groceries", "Rent", "Transport", "Entertainment", "Utilities", "Medical", "Insurance"]
+    income_categories = ["Salary", "Bonus", "Investment"]
 
     additional_data = []
 
     for _ in range(records_to_add):
         date = fake.date_between(start_date='-3y', end_date='today')
 
-        # Randomly assign category and type
-        category = random.choice(categories)
-        category_type = random.choice(category_types)
-
-        # Generate amount based on category type
-        if category_type == 'Income':
-            amount = round(random.uniform(200, 5000), 2)  # realistic income
-        else:
-            amount = -round(random.uniform(20, 3000), 2)   # realistic expenses (negative)
+        if random.random() < 0.7:  # 70% chance to generate Expense
+            category_type = "Expense"
+            category = random.choice(expense_categories)
+            amount = round(random.uniform(10, 500), 2)  # small realistic expenses
+        else:  # 30% chance to generate Income
+            category_type = "Income"
+            category = random.choice(income_categories)
+            amount = round(random.uniform(1000, 10000), 2)  # bigger incomes
 
         record = {
             'Date': date,
@@ -58,7 +57,7 @@ else:
         }
         additional_data.append(record)
 
-    # Create DataFrame and merge
+    # Create synthetic DataFrame and merge
     df_synthetic = pd.DataFrame(additional_data)
     df = pd.concat([df, df_synthetic], ignore_index=True)
 

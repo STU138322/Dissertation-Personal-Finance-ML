@@ -1,0 +1,28 @@
+
+=== Correlation Tests for Dataset2 (Training Set) ===
+
+Testing Income vs Net_Savings:
+Pearson Correlation: r = 0.7617, p-value = 3.48e-105
+Spearman Correlation: r = 0.6690, p-value = 1.717e-72
+
+Testing Expense vs Net_Savings:
+Pearson Correlation: r = 0.5870, p-value = 3.876e-52
+Spearman Correlation: r = 0.6131, p-value = 5.644e-58
+
+Testing Income vs Expense:
+Pearson Correlation: r = -0.0774, p-value = 0.0699
+Spearman Correlation: r = -0.1017, p-value = 0.01719
+
+=== Correlation Tests for Dataset1 (Blindtest Set) ===
+
+Testing Income vs Net_Savings:
+Pearson Correlation: r = 0.9986, p-value = 0
+Spearman Correlation: r = 0.9882, p-value = 4.258e-297
+
+Testing Expense vs Net_Savings:
+Pearson Correlation: r = -0.0668, p-value = 0.2038
+Spearman Correlation: r = 0.0281, p-value = 0.5925
+
+Testing Income vs Expense:
+Pearson Correlation: r = -0.1196, p-value = 0.0225
+Spearman Correlation: r = -0.0867, p-value = 0.09872

@@ -1,11 +1,12 @@
 import pandas as pd
 import os
 
+# Paths
 RAW_DIR = 'data/raw'
 PROCESSED_DIR = 'data/processed'
 os.makedirs(PROCESSED_DIR, exist_ok=True)
 
-# Mapping files
+# List of raw input files
 files = [
     ('Personal_Finance_Dataset1.csv', 'cleaned_dataset1.csv'),
     ('Personal_Finance_Dataset2.csv', 'cleaned_dataset2.csv')
@@ -24,25 +25,21 @@ def CleaningFunction(df, dataset_name):
         df['Amount'] = pd.to_numeric(df['Amount'], errors='coerce')
         df = df.dropna(subset=['Amount'])
 
-    # Set Category properly
+    # --- Correct Category Handling ---
     if dataset_name == 'Personal_Finance_Dataset1.csv':
-        if df.shape[1] >= 7:
-            df['Category'] = df.iloc[:, 6].astype(str).str.strip().str.title()
+        if df.shape[1] >= 6:
+            df['Category'] = df.iloc[:, 5].astype(str).str.strip().str.title()  # Column 6 = Sub Category
         else:
-            print(f"[Warning] Column 7 not found in {dataset_name}. Setting Category to 'Unknown'.")
             df['Category'] = 'Unknown'
-    else:
-        # For Dataset2, just clean existing Category
+    elif dataset_name == 'Personal_Finance_Dataset2.csv':
         if 'Category' in df.columns:
             df['Category'] = df['Category'].astype(str).str.strip().str.title()
         else:
-            print(f"[Warning] 'Category' column not found in {dataset_name}. Setting to 'Unknown'.")
             df['Category'] = 'Unknown'
 
-    # Special handling for Dataset2 to rename 'Type' → 'Category Type'
-    if dataset_name == 'Personal_Finance_Dataset2.csv':
-        if 'Type' in df.columns:
-            df.rename(columns={'Type': 'Category Type'}, inplace=True)
+    # Rename 'Type' to 'Category Type' for Dataset2
+    if dataset_name == 'Personal_Finance_Dataset2.csv' and 'Type' in df.columns:
+        df.rename(columns={'Type': 'Category Type'}, inplace=True)
 
     # Clean Category Type
     if 'Category Type' in df.columns:
@@ -52,8 +49,7 @@ def CleaningFunction(df, dataset_name):
 
     return df
 
-
-# Run cleaning
+# --- MAIN EXECUTION ---
 for raw_file, output_file in files:
     print(f"\nProcessing: {raw_file}")
     raw_path = os.path.join(RAW_DIR, raw_file)
