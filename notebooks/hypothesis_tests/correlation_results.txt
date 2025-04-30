@@ -1,28 +1,44 @@
 
 === Correlation Tests for Dataset2 (Training Set) ===
 
-Testing Income vs Net_Savings:
-Pearson Correlation: r = 0.7617, p-value = 3.48e-105
-Spearman Correlation: r = 0.6690, p-value = 1.717e-72
+Testing Income vs Savings_Rate:
+Pearson Correlation: r = 0.4070, p-value = 8.664e-11
+Spearman Correlation: r = 0.3368, p-value = 1.215e-07
 
-Testing Expense vs Net_Savings:
-Pearson Correlation: r = 0.5870, p-value = 3.876e-52
-Spearman Correlation: r = 0.6131, p-value = 5.644e-58
+Testing Expense vs Savings_Rate:
+Pearson Correlation: r = 0.6785, p-value = 4.715e-33
+Spearman Correlation: r = 0.9164, p-value = 1.312e-94
+
+Testing Rolling_Income vs Savings_Rate:
+Pearson Correlation: r = 0.1184, p-value = 0.07006
+Spearman Correlation: r = 0.1525, p-value = 0.01937
+
+Testing Rolling_Expense vs Savings_Rate:
+Pearson Correlation: r = 0.4165, p-value = 2.813e-11
+Spearman Correlation: r = 0.4907, p-value = 1.217e-15
 
 Testing Income vs Expense:
-Pearson Correlation: r = -0.0774, p-value = 0.0699
-Spearman Correlation: r = -0.1017, p-value = 0.01719
+Pearson Correlation: r = 0.1734, p-value = 2.85e-06
+Spearman Correlation: r = 0.2171, p-value = 3.963e-09
 
 === Correlation Tests for Dataset1 (Blindtest Set) ===
 
-Testing Income vs Net_Savings:
-Pearson Correlation: r = 0.9986, p-value = 0
-Spearman Correlation: r = 0.9882, p-value = 4.258e-297
+Testing Income vs Savings_Rate:
+Pearson Correlation: r = 0.6258, p-value = 5.431e-07
+Spearman Correlation: r = 0.6931, p-value = 8.865e-09
 
-Testing Expense vs Net_Savings:
-Pearson Correlation: r = -0.0668, p-value = 0.2038
-Spearman Correlation: r = 0.0281, p-value = 0.5925
+Testing Expense vs Savings_Rate:
+Pearson Correlation: r = 0.5736, p-value = 7.146e-06
+Spearman Correlation: r = 0.7329, p-value = 4.399e-10
+
+Testing Rolling_Income vs Savings_Rate:
+Pearson Correlation: r = 0.2540, p-value = 0.06652
+Spearman Correlation: r = 0.3125, p-value = 0.02274
+
+Testing Rolling_Expense vs Savings_Rate:
+Pearson Correlation: r = 0.5005, p-value = 0.0001352
+Spearman Correlation: r = 0.6262, p-value = 5.296e-07
 
 Testing Income vs Expense:
-Pearson Correlation: r = -0.1196, p-value = 0.0225
-Spearman Correlation: r = -0.0867, p-value = 0.09872
+Pearson Correlation: r = -0.3366, p-value = 0.002584
+Spearman Correlation: r = -0.3433, p-value = 0.002094

@@ -1,0 +1,14 @@
+--- All Data ---
+MAE: 1.4414
+RMSE: 1.6344
+R2: -0.9948
+
+--- Original Only ---
+MAE: 2.0412
+RMSE: 2.1859
+R2: -11872.2265
+
+--- Synthetic Only ---
+MAE: 1.3187
+RMSE: 1.4968
+R2: -0.7913

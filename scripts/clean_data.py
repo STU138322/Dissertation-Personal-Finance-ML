@@ -47,6 +47,9 @@ def CleaningFunction(df, dataset_name):
     else:
         df['Category Type'] = 'Unknown'
 
+    # === Normalize all Amounts to positive to align Dataset1 and Dataset2 ===
+    df['Amount'] = df['Amount'].abs()
+
     return df
 
 # --- MAIN EXECUTION ---

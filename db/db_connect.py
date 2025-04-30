@@ -8,9 +8,9 @@ DB_PATH = 'db/finance_data.db'
 TABLE_TRAIN = 'savings_data_train'
 TABLE_BLINDTEST = 'savings_data_blindtest'
 
-# Common features and target column
-FEATURES = ['Income', 'Expense', 'Rolling_Income', 'Rolling_Expense', 'Rolling_Savings']
-TARGET = 'Net_Savings'
+# Targeted fields (now includes encoded category)
+FEATURES = ['Income', 'Expense', 'Rolling_Income', 'Rolling_Expense', 'Category_Encoded']
+TARGET = 'Savings_Rate'
 
 def load_data(table_name):
     """
