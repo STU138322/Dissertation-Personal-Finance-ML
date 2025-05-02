@@ -58,4 +58,4 @@ all_results += run_tests(blindtest_data, 'Dataset1 (Blindtest Set)')
 with open(output_file, 'w') as f:
     f.write(all_results)
 
-print(f"\n✅ Correlation test results saved to: {output_file}")
+print(f"\nCorrelation test results saved to: {output_file}")

@@ -12,11 +12,11 @@ random.seed(42)
 RAW_PATH = 'data/processed/cleaned_dataset1.csv'
 PROCESSED_PATH = 'data/processed/cleaned_dataset1.csv'
 
-print("\n=== Generating Enhanced Synthetic Records for Dataset1 ===")
+print("\n=== Generating Realistic Synthetic Dataset1 (1600 Total) ===")
 df = pd.read_csv(RAW_PATH, parse_dates=['Date'])
 
 print(f"Original record count: {df.shape[0]}")
-target_rows = 1500
+target_rows = 1600
 records_to_add = target_rows - df.shape[0]
 
 if records_to_add <= 0:
@@ -24,109 +24,74 @@ if records_to_add <= 0:
 else:
     print(f"Adding {records_to_add} synthetic records...")
 
-    # Expanded category coverage
+    income_categories = ["Salary", "Bonus", "Investment", "Gift", "Tax Return"]
     expense_categories = [
         "Food", "Groceries", "Rent", "Transport", "Entertainment",
         "Utilities", "Medical", "Insurance", "Subscriptions", "Education",
         "Pets", "Debt", "Health"
     ]
-    income_categories = ["Salary", "Bonus", "Investment", "Gift", "Tax Return"]
+
+    today = pd.Timestamp.today()
+    start_date = today - pd.Timedelta(days=120)
 
     additional_data = []
+    half = records_to_add // 2
 
-    # Date range
-    today = pd.Timestamp.today()
-    start_date = today - pd.Timedelta(days=90)
-    end_date = today
+    for i in range(half):
+        base_date = start_date + pd.Timedelta(days=random.randint(i * 3, i * 5))
 
-    # Target distribution buckets
-    n_expense = int(records_to_add * 0.75)
-    n_income = int(records_to_add * 0.20)
-    n_edge = int(records_to_add * 0.05)
+        income_date = base_date + pd.Timedelta(days=random.choice([0, 1, 2]))
+        expense_date = base_date + pd.Timedelta(days=random.choice([3, 4, 5]))
 
-    # Normal expenses
-    for _ in range(n_expense):
-        date = fake.date_between(start_date=start_date, end_date=end_date)
-        category = random.choice(expense_categories)
-        amount = round(random.triangular(14, 1800, 1000), 2)
-        amount += random.uniform(-20, 20)
-        amount = max(amount, 5)
+        # Strong minimums to avoid log(0) and flat savings
+        income_amt = max(round(abs(random.gauss(2900, 800)) + random.uniform(300, 800), 2), 500)
+        expense_amt = max(round(abs(random.gauss(1500, 600)) + random.uniform(300, 700), 2), 500)
+
+        # Every 5th record: income-only or expense-only to break rolling symmetry
+        if i % 5 == 0:
+            if random.random() < 0.5:
+                additional_data.append({
+                    'Date': income_date,
+                    'Category': random.choice(income_categories),
+                    'Category Type': "Income",
+                    'Amount': income_amt,
+                    'Source': 'synthetic'
+                })
+            else:
+                additional_data.append({
+                    'Date': expense_date,
+                    'Category': random.choice(expense_categories),
+                    'Category Type': "Expense",
+                    'Amount': expense_amt,
+                    'Source': 'synthetic'
+                })
+            continue
+
+        # Regular pair
         additional_data.append({
-            'Date': date,
-            'Category': category,
-            'Category Type': "Expense",
-            'Amount': amount,
-            'Source': 'synthetic'
-        })
-
-    # Normal incomes
-    for _ in range(n_income):
-        date = fake.date_between(start_date=start_date, end_date=end_date)
-        category = random.choice(income_categories)
-        amount = round(random.triangular(500, 6000, 2500), 2)
-        amount += random.uniform(-50, 50)
-        amount = max(amount, 100)
-        additional_data.append({
-            'Date': date,
-            'Category': category,
+            'Date': income_date,
+            'Category': random.choice(income_categories),
             'Category Type': "Income",
-            'Amount': amount,
+            'Amount': income_amt,
             'Source': 'synthetic'
         })
 
-    # Moderate positive savings periods (Savings_Rate ~ 1.5–4)
-    for _ in range(10):
-        date = fake.date_between(start_date=start_date, end_date=end_date)
-        additional_data.extend([
-            {
-                'Date': date,
-                'Category': 'Investment',
-                'Category Type': "Income",
-                'Amount': round(random.uniform(500, 800), 2),
-                'Source': 'synthetic'
-            },
-            {
-                'Date': date,
-                'Category': 'Subscription',
-                'Category Type': "Expense",
-                'Amount': round(random.uniform(50, 150), 2),
-                'Source': 'synthetic'
-            }
-        ])
+        additional_data.append({
+            'Date': expense_date,
+            'Category': random.choice(expense_categories),
+            'Category Type': "Expense",
+            'Amount': expense_amt,
+            'Source': 'synthetic'
+        })
 
-    # Bounded negative savings (Savings_Rate ~ –3 to –1)
-    for _ in range(10):
-        date = fake.date_between(start_date=start_date, end_date=end_date)
-        additional_data.extend([
-            {
-                'Date': date,
-                'Category': 'Salary',
-                'Category Type': "Income",
-                'Amount': round(random.uniform(300, 600), 2),
-                'Source': 'synthetic'
-            },
-            {
-                'Date': date,
-                'Category': 'Medical',
-                'Category Type': "Expense",
-                'Amount': round(random.uniform(900, 1800), 2),
-                'Source': 'synthetic'
-            }
-        ])
-
-    # Combine
+    # Finalize
     df_synthetic = pd.DataFrame(additional_data)
     df = pd.concat([df, df_synthetic], ignore_index=True)
-
-    # Final processing
     df['Date'] = pd.to_datetime(df['Date'], errors='coerce')
     df = df.dropna(subset=['Date']).sort_values('Date')
+    df['Amount'] = df['Amount'].abs()
     df['Source'] = df['Source'].fillna('original')
 
-    # Force all amounts positive to match convention
-    df['Amount'] = df['Amount'].abs()
-
-    # Save
     os.makedirs('data/processed', exist_ok=True)
     df.to_csv(PROCESSED_PATH, index=False)
 

@@ -5,6 +5,9 @@ import os
 
 # Load the summary data
 summary_path = "outputs/model_comparison_summary.csv"
+if not os.path.exists(summary_path):
+    raise FileNotFoundError(f"Summary file not found at {summary_path}")
+
 summary_df = pd.read_csv(summary_path)
 
 # Setup plot styling
@@ -23,6 +26,10 @@ def annotate_bars(ax):
 # Filter options
 def plot_metrics(segment='All Data'):
     df_filtered = summary_df[summary_df['Segment'] == segment]
+    if df_filtered.empty:
+        print(f"No data found for segment: {segment}")
+        return
+
     metrics = ['MAE', 'RMSE', 'R2']
 
     # Create output dir for segment
@@ -60,4 +67,4 @@ def plot_metrics(segment='All Data'):
 for segment in ['All Data', 'Original Only', 'Synthetic Only']:
     plot_metrics(segment)
 
-print("Charts generated in 'outputs/charts_all_data', 'charts_original_only', and 'charts_synthetic_only'")
+print("Charts generated for segments: All Data, Original Only, Synthetic Only")
