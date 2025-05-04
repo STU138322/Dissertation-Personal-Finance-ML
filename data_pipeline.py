@@ -26,8 +26,7 @@ if __name__ == "__main__":
         run_command("Generating synthetic records (Dataset1)", ["python", "scripts/add_records_dataset1.py"])
 
     if args.all or args.engineer:
-        run_command("Feature engineering: Dataset1", ["python", "scripts/dataset1_feature_engineering.py"])
-        run_command("Feature engineering: Dataset2", ["python", "scripts/dataset2_feature_engineering.py"])
+        run_command("Feature engineering: Dataset1&2", ["python", "scripts/dataset1_2_feature_engineering_EDA.py"])
 
     if args.all or args.load:
         run_command("Loading data into SQLite DB", ["python", "db/sqlite_db_integration.py"])

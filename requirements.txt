@@ -4,4 +4,6 @@ matplotlib
 seaborn
 scikit-learn
 faker
-jupyter
+streamlit
+openpyxl
+sqlite3
