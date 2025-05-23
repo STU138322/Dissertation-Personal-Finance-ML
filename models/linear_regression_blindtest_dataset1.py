@@ -45,7 +45,7 @@ metrics_all = evaluate(y_test, df['Predicted'])
 metrics_real = evaluate(real[TARGET], real['Predicted']) if len(real) > 0 else {}
 metrics_synth = evaluate(synthetic[TARGET], synthetic['Predicted']) if len(synthetic) > 0 else {}
 
-# === Save results ===
+# === Save outputs ===
 output_dir = 'outputs/linear_regression_blindtest'
 os.makedirs(output_dir, exist_ok=True)
 
@@ -63,16 +63,16 @@ with open(os.path.join(output_dir, 'metrics.txt'), 'w') as f:
         for k, v in metrics_synth.items():
             f.write(f"{k}: {v}\n")
 
-# Save predictions
-df[['Date', 'Source', TARGET, 'Predicted']].to_csv(
-    os.path.join(output_dir, 'predictions_segmented.csv'), index=False
-)
+# Save standardized prediction output
+df["Actual"] = df[TARGET]
+df_segment = df[["Date", "Source", "Actual", "Predicted"]]
+df_segment.to_csv(os.path.join(output_dir, 'predictions_segmented.csv'), index=False)
 
-# Save scatterplot
+# Save colored scatterplot
 plt.figure(figsize=(8, 5))
-sns.scatterplot(x=df[TARGET], y=df['Predicted'], hue=df['Source'])
-plt.xlabel("Actual Savings Rate")
-plt.ylabel("Predicted Savings Rate")
+sns.scatterplot(x=df["Actual"], y=df["Predicted"], hue=df['Source'])
+plt.xlabel("Actual")
+plt.ylabel("Predicted")
 plt.title("Linear Regression - Blind Test (Dataset1)")
 plt.tight_layout()
 plt.savefig(os.path.join(output_dir, 'actual_vs_predicted_colored.png'))

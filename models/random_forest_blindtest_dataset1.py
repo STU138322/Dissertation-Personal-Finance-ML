@@ -9,7 +9,6 @@ import sys
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from db.db_connect import load_data, FEATURES, TARGET, TABLE_BLINDTEST
-from scripts.benchmark_summary import summarize_thresholds
 
 sns.set_theme(style="whitegrid")
 
@@ -62,25 +61,19 @@ with open(os.path.join(output_dir, 'metrics.txt'), 'w') as f:
         for k, v in metrics_synth.items():
             f.write(f"{k}: {v}\n")
 
-# Save predictions
-df[['Date', 'Source', TARGET, 'Predicted']].to_csv(
-    os.path.join(output_dir, 'predictions_segmented.csv'), index=False
-)
+# Save standardized predictions
+df["Actual"] = df[TARGET]
+df_segment = df[["Date", "Source", "Actual", "Predicted"]]
+df_segment.to_csv(os.path.join(output_dir, 'predictions_segmented.csv'), index=False)
 
-# Scatterplot
+# Save scatter plot
 plt.figure(figsize=(8, 5))
-sns.scatterplot(x=df[TARGET], y=df['Predicted'], hue=df['Source'])
-plt.xlabel("Actual Savings Rate")
-plt.ylabel("Predicted Savings Rate")
+sns.scatterplot(x=df["Actual"], y=df["Predicted"], hue=df['Source'])
+plt.xlabel("Actual")
+plt.ylabel("Predicted")
 plt.title("Random Forest - Blind Test (Dataset1)")
 plt.tight_layout()
 plt.savefig(os.path.join(output_dir, 'actual_vs_predicted_colored.png'))
 plt.close()
-
-# Benchmarking
-df['Threshold_50'] = df['Predicted'] >= (df[TARGET] * 0.5)
-df['Threshold_100'] = df['Predicted'] >= df[TARGET]
-df['Threshold_150'] = df['Predicted'] >= (df[TARGET] * 1.5)
-summarize_thresholds(df, model_name='random_forest')
 
 print(f"Random Forest blind test complete. Results saved to {output_dir}/")

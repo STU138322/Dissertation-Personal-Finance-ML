@@ -11,14 +11,13 @@ import sys
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from db.db_connect import load_data, FEATURES, TARGET, TABLE_TRAIN
-from scripts.benchmark_summary import summarize_thresholds
 
 sns.set_theme(style="whitegrid")
 
 # === Load and prepare data ===
 df = load_data(TABLE_TRAIN).dropna().sort_values("Date")
 X = df[FEATURES]
-y = df[TARGET]  # Now using 'Savings_Rate'
+y = df[TARGET]
 
 # === Time-based split (80/20) ===
 split_index = int(len(df) * 0.8)
@@ -71,51 +70,44 @@ for name, scorer in scorers.items():
 output_dir = 'outputs/random_forest'
 os.makedirs(output_dir, exist_ok=True)
 
-# Scatterplot
+# === Save scatter plot (Actual vs Predicted)
 plt.figure(figsize=(8, 5))
 sns.scatterplot(x=y_test, y=y_pred)
-plt.xlabel('Actual Savings Rate')
-plt.ylabel('Predicted Savings Rate')
-plt.title('Actual vs Predicted Savings Rate (Random Forest - Dataset 2)')
+plt.xlabel('Actual')
+plt.ylabel('Predicted')
+plt.title('Actual vs Predicted (Random Forest - Dataset 2)')
 plt.tight_layout()
 plt.savefig(os.path.join(output_dir, 'actual_vs_predicted.png'))
 plt.close()
 
-# Feature importance
+# === Save feature importances
 importances = model.feature_importances_
 plt.figure(figsize=(8, 4))
 sns.barplot(x=importances, y=FEATURES)
-plt.title("Feature Influence on Savings Rate Prediction")
-plt.xlabel("Importance Score")
+plt.title("Feature Influence on Prediction")
+plt.xlabel("Importance")
 plt.ylabel("Feature")
 plt.tight_layout()
 plt.savefig(os.path.join(output_dir, "feature_importance.png"))
 plt.close()
 
-# Save predictions
-results = pd.DataFrame({'Actual': y_test, 'Predicted': y_pred})
+# === Save predictions CSV in standardized format
+results = pd.DataFrame({'Actual': y_test.values, 'Predicted': y_pred})
 results.to_csv(os.path.join(output_dir, 'predictions.csv'), index=False)
 
-# Benchmarking
-results['Threshold_50'] = results['Predicted'] >= (results['Actual'] * 0.5)
-results['Threshold_100'] = results['Predicted'] >= results['Actual']
-results['Threshold_150'] = results['Predicted'] >= (results['Actual'] * 1.5)
-results['Source'] = 'original'
-summarize_thresholds(results, model_name='random_forest')
-
-# Save metrics
+# === Save metrics summary
 with open(os.path.join(output_dir, "metrics.txt"), "w") as f:
     f.write("--- Test Set Performance ---\n")
     f.write(f"MAE: {mae:.2f}\n")
     f.write(f"RMSE: {rmse:.2f}\n")
     f.write(f"R2: {r2:.2f}\n")
 
-# Save CV metrics
+# === Save cross-validation metrics for dashboard
 with open(os.path.join(output_dir, "cv_metrics.txt"), "w") as f:
-    f.write("=== 5-Fold Cross-Validation Results (Random Forest) ===\n")
-    for metric, stats in cv_results.items():
-        f.write(f"\n{metric}:\n")
-        f.write("  Individual Scores: " + ", ".join(map(str, stats['folds'])) + "\n")
-        f.write(f"  Mean = {stats['mean']} | Std = {stats['std']}\n")
+    for i in range(5):  # Assuming 5 folds
+        mae = cv_results["MAE"]["folds"][i]
+        rmse = cv_results["RMSE"]["folds"][i]
+        r2 = cv_results["R2"]["folds"][i]
+        f.write(f"{mae},{rmse},{r2}\n")
 
 print(f"Random Forest training complete. Outputs saved to {output_dir}/")

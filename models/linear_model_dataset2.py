@@ -36,13 +36,13 @@ y_pred = model.predict(X_test)
 
 # === Prepare Predictions with Date and Category ===
 test_results = df.loc[X_test.index, ["Date", "Category"]].copy()
-test_results["Actual_Net_Savings"] = y_test.values
-test_results["Predicted_Net_Savings"] = y_pred
+test_results["Actual"] = y_test.values
+test_results["Predicted"] = y_pred
 
 # === Evaluate Model ===
-mae = mean_absolute_error(test_results["Actual_Net_Savings"], test_results["Predicted_Net_Savings"])
-rmse = np.sqrt(mean_squared_error(test_results["Actual_Net_Savings"], test_results["Predicted_Net_Savings"]))
-r2 = r2_score(test_results["Actual_Net_Savings"], test_results["Predicted_Net_Savings"])
+mae = mean_absolute_error(test_results["Actual"], test_results["Predicted"])
+rmse = np.sqrt(mean_squared_error(test_results["Actual"], test_results["Predicted"]))
+r2 = r2_score(test_results["Actual"], test_results["Predicted"])
 
 print("\n--- Linear Regression Evaluation on Dataset 2 ---")
 print(f"MAE: {mae:.2f}, RMSE: {rmse:.2f}, R²: {r2:.2f}")
@@ -75,16 +75,17 @@ os.makedirs(output_dir, exist_ok=True)
 
 # Save Actual vs Predicted Scatter Plot
 plt.figure(figsize=(8, 5))
-sns.scatterplot(x=test_results["Actual_Net_Savings"], y=test_results["Predicted_Net_Savings"])
-plt.xlabel('Actual Net Savings')
-plt.ylabel('Predicted Net Savings')
-plt.title('Actual vs Predicted Net Savings (Linear Regression - Dataset 2)')
+sns.scatterplot(x=test_results["Actual"], y=test_results["Predicted"])
+plt.xlabel('Actual')
+plt.ylabel('Predicted')
+plt.title('Actual vs Predicted (Linear Regression - Dataset 2)')
 plt.tight_layout()
 plt.savefig(os.path.join(output_dir, 'actual_vs_predicted.png'))
 plt.close()
 
 # Save Test Predictions CSV
-test_results.to_csv(os.path.join(output_dir, 'predictions.csv'), index=False)
+cols_to_save = ["Date", "Category", "Actual", "Predicted"]
+test_results[cols_to_save].to_csv(os.path.join(output_dir, 'predictions.csv'), index=False)
 
 # Save Test Metrics
 with open(os.path.join(output_dir, "metrics.txt"), "w") as f:
@@ -95,10 +96,10 @@ with open(os.path.join(output_dir, "metrics.txt"), "w") as f:
 
 # Save Cross-Validation Metrics
 with open(os.path.join(output_dir, "cv_metrics.txt"), "w") as f:
-    f.write("=== 5-Fold Cross-Validation Results (Linear Regression) ===\n")
-    for metric, stats in cv_results.items():
-        f.write(f"\n{metric}:\n")
-        f.write("  Individual Scores: " + ", ".join(map(str, stats['folds'])) + "\n")
-        f.write(f"  Mean = {stats['mean']} | Std = {stats['std']}\n")
+    for i in range(5):  # Assuming 5 folds
+        mae = cv_results["MAE"]["folds"][i]
+        rmse = cv_results["RMSE"]["folds"][i]
+        r2 = cv_results["R2"]["folds"][i]
+        f.write(f"{mae},{rmse},{r2}\n")
 
 print(f"\nLinear Regression model training complete. Outputs saved to {output_dir}/")

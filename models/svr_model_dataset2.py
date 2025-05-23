@@ -17,12 +17,12 @@ sns.set_theme(style="whitegrid")
 # === Load Data ===
 df = load_data(TABLE_TRAIN).dropna().sort_values('Date')
 X = df[FEATURES]
-y = df[TARGET]  # Now 'Savings_Rate'
+y = df[TARGET]  # 'Savings_Rate'
 
 # === 70:30 Train-Test Split ===
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
-# === Train Model ===
+# === Train SVR Model ===
 model = SVR(kernel='rbf', C=100, epsilon=0.1)
 model.fit(X_train, y_train)
 
@@ -31,7 +31,7 @@ model_dir = 'models/svr'
 os.makedirs(model_dir, exist_ok=True)
 dump(model, os.path.join(model_dir, 'model.pkl'))
 
-# === Predict ===
+# === Predict on Test Set ===
 y_pred = model.predict(X_test)
 
 # === Evaluate on Test Set ===
@@ -45,7 +45,8 @@ print(f"MAE: {mae:.2f}, RMSE: {rmse:.2f}, R²: {r2:.2f}")
 # === Cross-Validation ===
 cv = KFold(n_splits=5, shuffle=True, random_state=42)
 
-def rmse_score(y_true, y_pred): return np.sqrt(mean_squared_error(y_true, y_pred))
+def rmse_score(y_true, y_pred):
+    return np.sqrt(mean_squared_error(y_true, y_pred))
 
 scorers = {
     'MAE': make_scorer(mean_absolute_error),
@@ -56,9 +57,8 @@ scorers = {
 cv_results = {}
 for name, scorer in scorers.items():
     scores = cross_val_score(model, X, y, cv=cv, scoring=scorer)
-    rounded_scores = [round(s, 2) for s in scores]
     cv_results[name] = {
-        'folds': rounded_scores,
+        'folds': [round(s, 2) for s in scores],
         'mean': round(np.mean(scores), 2),
         'std': round(np.std(scores), 2)
     }
@@ -67,28 +67,31 @@ for name, scorer in scorers.items():
 output_dir = 'outputs/svr'
 os.makedirs(output_dir, exist_ok=True)
 
+# Save Actual vs Predicted Scatter Plot
 plt.figure(figsize=(8, 5))
 sns.scatterplot(x=y_test, y=y_pred)
-plt.xlabel('Actual Savings Rate')
-plt.ylabel('Predicted Savings Rate')
-plt.title('Actual vs Predicted Savings Rate (SVR - Dataset 2)')
+plt.xlabel('Actual')
+plt.ylabel('Predicted')
+plt.title('Actual vs Predicted (SVR - Dataset 2)')
 plt.tight_layout()
 plt.savefig(os.path.join(output_dir, 'actual_vs_predicted.png'))
 plt.close()
 
-pd.DataFrame({'Actual': y_test, 'Predicted': y_pred}).to_csv(
-    os.path.join(output_dir, 'predictions.csv'), index=False
-)
+# Save predictions CSV (standardized)
+results = pd.DataFrame({'Actual': y_test.values, 'Predicted': y_pred})
+results.to_csv(os.path.join(output_dir, 'predictions.csv'), index=False)
 
+# Save test set metrics
 with open(os.path.join(output_dir, "metrics.txt"), "w") as f:
     f.write("--- Test Set Performance ---\n")
     f.write(f"MAE: {mae:.2f}\nRMSE: {rmse:.2f}\nR2: {r2:.2f}\n")
 
+# Save K-Fold CV scores
 with open(os.path.join(output_dir, "cv_metrics.txt"), "w") as f:
-    f.write("=== 5-Fold Cross-Validation Results (SVR) ===\n")
-    for metric, stats in cv_results.items():
-        f.write(f"\n{metric}:\n")
-        f.write("  Individual Scores: " + ", ".join(map(str, stats['folds'])) + "\n")
-        f.write(f"  Mean = {stats['mean']} | Std = {stats['std']}\n")
+    for i in range(5):  # Assuming 5 folds
+        mae = cv_results["MAE"]["folds"][i]
+        rmse = cv_results["RMSE"]["folds"][i]
+        r2 = cv_results["R2"]["folds"][i]
+        f.write(f"{mae},{rmse},{r2}\n")
 
 print(f"SVR model training complete. Outputs saved to {output_dir}/")

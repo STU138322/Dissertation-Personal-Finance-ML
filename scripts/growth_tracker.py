@@ -7,20 +7,18 @@ from joblib import load
 import sys
 import argparse
 
-# --- Project Config ---
+# Project config
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from db.db_connect import load_data, FEATURES, TARGET, TABLE_TRAIN
 
 sns.set_theme(style="whitegrid")
 
-# === Available Models ===
 MODELS = {
     "linear_regression": "models/linear_regression/model.pkl",
     "random_forest": "models/random_forest/model.pkl",
     "svr": "models/svr/model.pkl"
 }
 
-# === Growth Tracking Function Dataset2 ===
 def run_growth_tracking(model_name, model_path):
     print(f"\nRunning growth tracker for: {model_name}")
 
@@ -28,26 +26,24 @@ def run_growth_tracking(model_name, model_path):
     df = load_data(TABLE_TRAIN).sort_values("Date")
     df["Predicted_Savings_Rate"] = model.predict(df[FEATURES])
 
-    thresholds = [0.5, 1.0, 1.5]
-    for t in thresholds:
-        label = f"Threshold_{int(t * 100)}"
-        df[label] = df["Predicted_Savings_Rate"] >= (df[TARGET] * t)
-
     output_dir = f"predicted_savings_tracking/{model_name}"
     os.makedirs(output_dir, exist_ok=True)
 
-    output_cols = ["Date", "Category", "Income", "Expense", TARGET, "Predicted_Savings_Rate"]
-    output_cols += [f"Threshold_{int(t * 100)}" for t in thresholds]
-
-    df[output_cols].to_csv(os.path.join(output_dir, "user_growth_tracking.csv"), index=False)
-
-    # Plot growth over time
     df_sorted = df.sort_values("Date").copy()
     df_sorted["Actual_Savings_Rate"] = df_sorted[TARGET].rolling(window=7, min_periods=1).mean()
     df_sorted["Predicted_Savings_Rate_Smoothed"] = df_sorted["Predicted_Savings_Rate"].rolling(window=7, min_periods=1).mean()
 
+    # Export raw and plot-ready CSVs
+    df[["Date", "Category", "Income", "Expense", TARGET, "Predicted_Savings_Rate"]].to_csv(
+        os.path.join(output_dir, "user_growth_tracking.csv"), index=False
+    )
+    df_sorted[["Date", "Actual_Savings_Rate", "Predicted_Savings_Rate_Smoothed"]].to_csv(
+        os.path.join(output_dir, "plot_ready.csv"), index=False
+    )
+
+    # Plot and save
     plt.figure(figsize=(12, 6))
-    plt.plot(df_sorted["Date"], df_sorted["Actual_Savings_Rate"], label="Smoothed Actual", color="blue", linestyle="-")
+    plt.plot(df_sorted["Date"], df_sorted["Actual_Savings_Rate"], label="Smoothed Actual", color="blue")
     plt.plot(df_sorted["Date"], df_sorted["Predicted_Savings_Rate_Smoothed"], label="Smoothed Predicted", color="orange", linestyle="--")
 
     tick_interval = max(len(df_sorted) // 10, 1)
@@ -66,8 +62,6 @@ def run_growth_tracking(model_name, model_path):
 
     print(f"{model_name} growth tracking complete → {output_dir}/")
 
-
-# === Growth Tracking Function Dataset1 ===
 def run_blindtest_growth_tracking():
     print("\nRunning blindtest growth tracking for Dataset1...")
     dataset1_path = "data/engineered/engineered_dataset1.csv"
@@ -92,8 +86,15 @@ def run_blindtest_growth_tracking():
         output_dir = f"predicted_savings_tracking_blindtest/{name}"
         os.makedirs(output_dir, exist_ok=True)
 
+        df[["Date", "Category", TARGET, "Predicted_Savings_Rate"]].to_csv(
+            os.path.join(output_dir, "user_growth_tracking.csv"), index=False
+        )
+        df_sorted[["Date", "Actual_Savings_Rate", "Predicted_Savings_Rate_Smoothed"]].to_csv(
+            os.path.join(output_dir, "plot_ready.csv"), index=False
+        )
+
         plt.figure(figsize=(12, 6))
-        plt.plot(df_sorted["Date"], df_sorted["Actual_Savings_Rate"], label="Smoothed Actual", color="green", linestyle="-")
+        plt.plot(df_sorted["Date"], df_sorted["Actual_Savings_Rate"], label="Smoothed Actual", color="green")
         plt.plot(df_sorted["Date"], df_sorted["Predicted_Savings_Rate_Smoothed"], label="Smoothed Predicted", color="red", linestyle="--")
 
         tick_interval = max(len(df_sorted) // 10, 1)
@@ -110,14 +111,9 @@ def run_blindtest_growth_tracking():
         plt.savefig(os.path.join(output_dir, "growth_over_time.png"))
         plt.close()
 
-        df[["Date", "Category", TARGET, "Predicted_Savings_Rate"]].to_csv(
-            os.path.join(output_dir, "user_growth_tracking.csv"), index=False
-        )
-
         print(f"{name} complete → {output_dir}/")
 
-
-# === Optional CLI Usage ===
+# CLI entry point
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--all", action="store_true", help="Run growth tracker for all models (Dataset2)")

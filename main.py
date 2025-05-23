@@ -26,6 +26,8 @@ if __name__ == "__main__":
     parser.add_argument("--hypothesis", action="store_true", help="Run Pearson/Spearman Hypothesis Testing")
     parser.add_argument("--dashboard-datasets", action="store_true", help="Launch Streamlit Interactive Dashboard")
     parser.add_argument("--dashboard-models", action="store_true", help="Launch Streamlit Model Charts Dashboard")
+    parser.add_argument("--dashboard", action="store_true", help="Launch Combined Streamlit Dashboard")
+
 
     args = parser.parse_args()
 
@@ -53,12 +55,6 @@ if __name__ == "__main__":
         run_command("Running Random Forest Blindtest", ["python", "models/random_forest_blindtest_dataset1.py"])
         run_command("Running SVR Blindtest", ["python", "models/svr_blindtest_dataset1.py"])
 
-    # === GENERATE BENCHMARK THRESHOLD CHARTS ===
-    if args.benchmarks:
-        run_command("Generating Benchmark Summaries", ["python", "scripts/benchmark_summary.py"])
-        run_command("Generating Blindtest Benchmark Chart", ["python", "scripts/benchmark_blindtest_chart_generation.py"])
-        run_command("Generating Dataset2 Benchmark Chart", ["python", "scripts/benchmark_dataset2_chart_generation.py"])
-
     # === TRACK GROWTH OVER TIME (Dataset1 + Dataset2) ===
     if args.growth:
         run_command("Running Growth Tracker on Dataset2", ["python", "scripts/growth_tracker.py", "--all"])
@@ -78,6 +74,8 @@ if __name__ == "__main__":
         run_command("Launching datasets Dashboard", ["streamlit", "run", "dataset_dashboard.py"])
     if args.dashboard_models:
         run_command("Launching Model Charts Dashboard", ["streamlit", "run", "models_dashboard.py"])
+    if args.dashboard:
+        run_command("Launching Combined Dashboard", ["streamlit", "run", "dashboard.py"])        
 
     # === DEFAULT MESSAGE ===
     if not any(vars(args).values()):
