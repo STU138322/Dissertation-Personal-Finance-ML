@@ -1,10 +1,11 @@
 import os
 import pandas as pd
+import matplotlib.pyplot as plt
 
-base_dir = 'outputs/'  # relative to project root
+base_dir = 'outputs/'
 records = []
 
-# Include additional model folders
+# Step 1: Parse all metrics.txt files
 for folder in os.listdir(base_dir):
     subdir = os.path.join(base_dir, folder)
     metrics_file = os.path.join(subdir, "metrics.txt")
@@ -40,7 +41,7 @@ for folder in os.listdir(base_dir):
         except Exception as e:
             print(f"Failed to read {metrics_file}: {e}")
 
-# Create summary DataFrame
+# Step 2: Create and save enhanced comparison summary
 if records:
     df = pd.DataFrame(records)
     summary = df.pivot_table(
@@ -49,9 +50,44 @@ if records:
         values="Value"
     ).reset_index()
 
-    # Save to CSV
-    summary_path = os.path.abspath(os.path.join(base_dir, "model_comparison_summary.csv"))
+    summary = summary.round(4)
+    summary = summary.sort_values(by=["Dataset", "Model", "Segment"])
+
+    # Step 3: Identify best performers
+    best_summary = summary[summary["Segment"] == "All Data"].copy()
+
+    best_mae_idx = best_summary["MAE"].idxmin()
+    best_rmse_idx = best_summary["RMSE"].idxmin()
+    best_r2_idx = best_summary["R2"].idxmax()
+
+    summary["Best MAE"] = summary.index == best_mae_idx
+    summary["Best RMSE"] = summary.index == best_rmse_idx
+    summary["Best R2"] = summary.index == best_r2_idx
+
+    # Step 4: Save to CSV
+    summary_path = os.path.join(base_dir, "model_comparison_summary.csv")
     summary.to_csv(summary_path, index=False)
-    print("Summary saved to model_comparison_summary.csv")
+
+    # Step 5: Save best results to TXT
+    with open(os.path.join(base_dir, "model_comparison_summary.txt"), "w") as f:
+        f.write("=== Best Performing Models (All Data Segment) ===\n")
+        f.write(f"Best MAE  : {summary.loc[best_mae_idx, 'Model']} on {summary.loc[best_mae_idx, 'Dataset']} (MAE: {summary.loc[best_mae_idx, 'MAE']})\n")
+        f.write(f"Best RMSE : {summary.loc[best_rmse_idx, 'Model']} on {summary.loc[best_rmse_idx, 'Dataset']} (RMSE: {summary.loc[best_rmse_idx, 'RMSE']})\n")
+        f.write(f"Best R²   : {summary.loc[best_r2_idx, 'Model']} on {summary.loc[best_r2_idx, 'Dataset']} (R²: {summary.loc[best_r2_idx, 'R2']})\n")
+
+    # Step 6: Plot bar chart for visual comparison (optional)
+    chart_data = best_summary[["Model", "Dataset", "MAE", "RMSE", "R2"]]
+    chart_data.set_index(["Model", "Dataset"]).plot(kind='bar', figsize=(10, 6))
+    plt.title("Model Performance (All Data Segment)")
+    plt.ylabel("Metric Value")
+    plt.xticks(rotation=45, ha="right")
+    plt.tight_layout()
+    plt.savefig(os.path.join(base_dir, "model_comparison_chart.png"))
+
+    print("Summary saved to:")
+    print(" - model_comparison_summary.csv")
+    print(" - model_comparison_summary.txt")
+    print(" - model_comparison_chart.png")
+
 else:
-    print("No metric records found to summarize.")
+    print("No metric records found.")

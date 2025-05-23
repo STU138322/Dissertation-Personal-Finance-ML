@@ -206,14 +206,37 @@ elif main_section == "Model Visualisation":
 
     elif view == "Model Metric Summary":
         st.subheader("Model Metric Comparison")
-        path = "outputs/model_comparison_summary.csv"
-        if os.path.exists(path):
-            df = pd.read_csv(path)
+
+        summary_csv = "outputs/model_comparison_summary.csv"
+        best_txt = "outputs/model_comparison_summary.txt"
+        chart_img = "outputs/model_comparison_chart.png"
+
+        if os.path.exists(summary_csv):
+            df = pd.read_csv(summary_csv)
+            st.markdown("Full Metric Summary (All Segments)")
             st.dataframe(df)
-            metric = st.selectbox("Select Metric", ["MAE", "RMSE", "R2"])
-            chart_df = df.pivot_table(index="Model", columns="Dataset", values=metric).reset_index().melt(id_vars="Model", var_name="Dataset", value_name=metric)
-            fig = px.bar(chart_df, x="Model", y=metric, color="Dataset", barmode="group", title=f"{metric} by Model and Dataset")
+
+            # Show best-performing summary from TXT
+            if os.path.exists(best_txt):
+                st.markdown("Best Performing Models")
+                with open(best_txt, "r") as f:
+                    st.code(f.read(), language="text")
+
+            # Let user pick a metric to visualize
+            metric = st.selectbox("Select Metric to Chart", ["MAE", "RMSE", "R2"])
+            filtered = df[df["Segment"] == "All Data"].copy()
+            chart_df = filtered[["Model", "Dataset", metric]]
+            chart_df = chart_df.pivot(index="Model", columns="Dataset", values=metric).reset_index()
+            melted = chart_df.melt(id_vars="Model", var_name="Dataset", value_name=metric)
+
+            fig = px.bar(melted, x="Model", y=metric, color="Dataset", barmode="group",
+                        title=f"{metric} by Model and Dataset (All Data Segment)")
             st.plotly_chart(fig, use_container_width=True)
+
+            # Show saved image chart
+            if os.path.exists(chart_img):
+                with st.expander("Open Saved Bar Chart (.png)"):
+                    st.image(chart_img)
         else:
             st.warning("model_comparison_summary.csv not found.")
 
