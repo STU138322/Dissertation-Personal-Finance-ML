@@ -9,7 +9,6 @@ venv/
 .vscode/
 .DS_Store
 Thumbs.db
-*.csv
 *.sqlite
 *.db
 *.h5
