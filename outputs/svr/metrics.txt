@@ -1,4 +1,0 @@
---- Test Set Performance ---
-MAE: 0.27
-RMSE: 0.85
-R2: 0.66
