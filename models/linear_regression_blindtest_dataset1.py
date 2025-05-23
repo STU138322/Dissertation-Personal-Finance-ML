@@ -13,7 +13,7 @@ from db.db_connect import load_data, FEATURES, TARGET, TABLE_BLINDTEST
 
 sns.set_theme(style="whitegrid")
 
-# === Load model ===
+# === Load model pipeline ===
 model = load('models/linear_regression/model.pkl')
 
 # === Load blind test data (Dataset1) ===

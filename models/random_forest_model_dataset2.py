@@ -1,6 +1,8 @@
 import pandas as pd
 import numpy as np
 from sklearn.ensemble import RandomForestRegressor
+from sklearn.pipeline import make_pipeline
+from sklearn.preprocessing import RobustScaler
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score, make_scorer
 from sklearn.model_selection import KFold, cross_val_score
 import matplotlib.pyplot as plt
@@ -24,24 +26,32 @@ split_index = int(len(df) * 0.8)
 X_train, X_test = X.iloc[:split_index], X.iloc[split_index:]
 y_train, y_test = y.iloc[:split_index], y.iloc[split_index:]
 
-# === Train model ===
-model = RandomForestRegressor(n_estimators=100, random_state=42)
-model.fit(X_train, y_train)
+# === Train model with RobustScaler + tuned hyperparameters ===
+pipeline = make_pipeline(
+    RobustScaler(),
+    RandomForestRegressor(
+        n_estimators=150,
+        max_depth=10,
+        min_samples_split=5,
+        random_state=42
+    )
+)
+pipeline.fit(X_train, y_train)
 
 # === Save model ===
 model_dir = 'models/random_forest'
 os.makedirs(model_dir, exist_ok=True)
-dump(model, os.path.join(model_dir, 'model.pkl'))
+dump(pipeline, os.path.join(model_dir, 'model.pkl'))
 
 # === Predict ===
-y_pred = model.predict(X_test)
+y_pred = pipeline.predict(X_test)
 
 # === Evaluate ===
 mae = mean_absolute_error(y_test, y_pred)
 rmse = np.sqrt(mean_squared_error(y_test, y_pred))
 r2 = r2_score(y_test, y_pred)
 
-print("--- Random Forest Evaluation on Dataset 2 ---")
+print("--- Random Forest Evaluation on Dataset 2 (RobustScaler + Tuned) ---")
 print(f"MAE: {mae:.2f}")
 print(f"RMSE: {rmse:.2f}")
 print(f"R²: {r2:.2f}")
@@ -59,7 +69,7 @@ cv = KFold(n_splits=5, shuffle=True, random_state=42)
 cv_results = {}
 
 for name, scorer in scorers.items():
-    scores = cross_val_score(model, X, y, cv=cv, scoring=scorer)
+    scores = cross_val_score(pipeline, X, y, cv=cv, scoring=scorer)
     cv_results[name] = {
         'folds': [round(s, 2) for s in scores],
         'mean': round(np.mean(scores), 2),
@@ -81,7 +91,7 @@ plt.savefig(os.path.join(output_dir, 'actual_vs_predicted.png'))
 plt.close()
 
 # === Save feature importances
-importances = model.feature_importances_
+importances = pipeline.named_steps['randomforestregressor'].feature_importances_
 plt.figure(figsize=(8, 4))
 sns.barplot(x=importances, y=FEATURES)
 plt.title("Feature Influence on Prediction")
@@ -104,7 +114,7 @@ with open(os.path.join(output_dir, "metrics.txt"), "w") as f:
 
 # === Save cross-validation metrics for dashboard
 with open(os.path.join(output_dir, "cv_metrics.txt"), "w") as f:
-    for i in range(5):  # Assuming 5 folds
+    for i in range(5):
         mae = cv_results["MAE"]["folds"][i]
         rmse = cv_results["RMSE"]["folds"][i]
         r2 = cv_results["R2"]["folds"][i]

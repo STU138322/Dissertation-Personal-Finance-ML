@@ -12,7 +12,7 @@ from db.db_connect import load_data, FEATURES, TARGET, TABLE_BLINDTEST
 
 sns.set_theme(style="whitegrid")
 
-# === Load model ===
+# === Load trained pipeline model ===
 model = load('models/random_forest/model.pkl')
 
 # === Load Dataset1 blind test data ===
@@ -20,7 +20,7 @@ df = load_data(TABLE_BLINDTEST).sort_values("Date")
 X_test = df[FEATURES]
 y_test = df[TARGET]
 
-# === Predict ===
+# === Predict using pipeline ===
 df['Predicted'] = model.predict(X_test)
 
 # === Remove NaNs in prediction or target ===

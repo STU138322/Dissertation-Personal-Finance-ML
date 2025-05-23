@@ -4,6 +4,8 @@ import os
 from sklearn.model_selection import train_test_split, cross_val_score, KFold
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score, make_scorer
+from sklearn.pipeline import make_pipeline
+from sklearn.preprocessing import RobustScaler
 import matplotlib.pyplot as plt
 import seaborn as sns
 from joblib import dump
@@ -22,17 +24,17 @@ y = df[TARGET]
 # === 70:30 Train-Test Split ===
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
-# === Train Linear Regression Model ===
-model = LinearRegression()
-model.fit(X_train, y_train)
+# === Train Linear Regression Model with RobustScaler ===
+pipeline = make_pipeline(RobustScaler(), LinearRegression())
+pipeline.fit(X_train, y_train)
 
-# === Save Model ===
+# === Save Model Pipeline ===
 model_dir = 'models/linear_regression'
 os.makedirs(model_dir, exist_ok=True)
-dump(model, os.path.join(model_dir, 'model.pkl'))
+dump(pipeline, os.path.join(model_dir, 'model.pkl'))
 
 # === Predict on Test Set ===
-y_pred = model.predict(X_test)
+y_pred = pipeline.predict(X_test)
 
 # === Prepare Predictions with Date and Category ===
 test_results = df.loc[X_test.index, ["Date", "Category"]].copy()
@@ -61,7 +63,7 @@ scorers = {
 
 cv_results = {}
 for name, scorer in scorers.items():
-    scores = cross_val_score(model, X, y, cv=cv, scoring=scorer)
+    scores = cross_val_score(pipeline, X, y, cv=cv, scoring=scorer)
     rounded_scores = [round(s, 2) for s in scores]
     cv_results[name] = {
         'folds': rounded_scores,
@@ -96,10 +98,10 @@ with open(os.path.join(output_dir, "metrics.txt"), "w") as f:
 
 # Save Cross-Validation Metrics
 with open(os.path.join(output_dir, "cv_metrics.txt"), "w") as f:
-    for i in range(5):  # Assuming 5 folds
-        mae = cv_results["MAE"]["folds"][i]
-        rmse = cv_results["RMSE"]["folds"][i]
-        r2 = cv_results["R2"]["folds"][i]
-        f.write(f"{mae},{rmse},{r2}\n")
+    for i in range(5):
+        mae_fold = cv_results["MAE"]["folds"][i]
+        rmse_fold = cv_results["RMSE"]["folds"][i]
+        r2_fold = cv_results["R2"]["folds"][i]
+        f.write(f"{mae_fold},{rmse_fold},{r2_fold}\n")
 
 print(f"\nLinear Regression model training complete. Outputs saved to {output_dir}/")

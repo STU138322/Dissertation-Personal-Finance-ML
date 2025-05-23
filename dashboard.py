@@ -20,7 +20,11 @@ from db.db_connect import load_data, FEATURES, TARGET
 st.set_page_config(page_title="Personal Finance Dashboard", layout="wide")
 
 # === MAIN SIDEBAR ===
-main_section = st.sidebar.radio("Select Dashboard Section", ["Dataset Explorer", "Model Visualisation"])
+main_section = st.sidebar.radio("Select Dashboard Section", [
+    "Dataset Explorer",
+    "Model Visualisation",
+    "User Upload (Placeholder)"
+])
 dataset_choice = st.sidebar.selectbox("Select Dataset", ["savings_data_train", "savings_data_blindtest"])
 friendly_name = {
     "savings_data_blindtest": "Dataset 1 (Blindtest)",
@@ -86,12 +90,15 @@ if main_section == "Dataset Explorer":
         with col1:
             if option == "Raw Category Count":
                 category_counts = df['Category'].value_counts().reset_index()
-                fig = px.bar(category_counts, x='index', y='Category', title="Raw Category Distribution")
+                category_counts.columns = ['Category', 'Count']
+                fig = px.bar(category_counts, x='Category', y='Count', title="Raw Category Distribution")
                 fig.update_layout(xaxis_tickangle=-45)
                 st.plotly_chart(fig, use_container_width=True)
             else:
                 encoded_counts = df['Category_Encoded'].value_counts().reset_index()
-                fig = px.bar(encoded_counts, x='index', y='Category_Encoded', title="Encoded Category Distribution")
+                encoded_counts.columns = ['Category_Encoded', 'Count']
+                fig = px.bar(encoded_counts, x='Category_Encoded', y='Count', title="Encoded Category Distribution")
+                fig.update_layout(xaxis_tickangle=-45)
                 st.plotly_chart(fig, use_container_width=True)
         with col2:
             if "Category" in df.columns and "Category_Encoded" in df.columns:
@@ -244,3 +251,23 @@ elif main_section == "Model Visualisation":
             st.image(Image.open(os.path.join(model_path, fallback_img)), caption="Fallback Chart")
         else:
             st.warning("No prediction data or fallback plot available.")
+
+# =============================
+# SECTION 3: USER UPLOAD PLACEHOLDER
+# =============================
+elif main_section == "User Upload (Placeholder)":
+    st.title("Upload Your Own Dataset")
+    st.markdown("You can upload a CSV file below for testing purposes. *(This is a placeholder feature only and is not integrated into the dashboard logic.)*")
+    
+    uploaded_file = st.file_uploader("Choose a CSV file", type="csv")
+    if uploaded_file is not None:
+        st.success(f"Uploaded file: `{uploaded_file.name}`")
+        try:
+            preview_df = pd.read_csv(uploaded_file)
+            st.markdown("### Preview of Uploaded File")
+            st.dataframe(preview_df.head(10))
+            st.info("This file is not used by any other part of the dashboard yet. Integration is planned in a future update.")
+        except Exception as e:
+            st.error(f"Error reading file: {e}")
+    else:
+        st.warning("No file uploaded.")

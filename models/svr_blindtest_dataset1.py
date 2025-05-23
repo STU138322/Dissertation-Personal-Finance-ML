@@ -12,7 +12,7 @@ from db.db_connect import load_data, FEATURES, TARGET, TABLE_BLINDTEST
 
 sns.set_theme(style="whitegrid")
 
-# === Load trained SVR model ===
+# === Load trained SVR pipeline model ===
 model = load('models/svr/model.pkl')
 
 # === Load blind test data ===
@@ -20,7 +20,7 @@ df = load_data(TABLE_BLINDTEST).sort_values('Date')
 X_test = df[FEATURES]
 y_test = df[TARGET]
 
-# === Predict ===
+# === Predict using the pipeline model ===
 df['Predicted'] = model.predict(X_test)
 
 # === Clean for evaluation ===
@@ -48,7 +48,7 @@ metrics_synth = evaluate(synthetic[TARGET], synthetic['Predicted']) if len(synth
 output_dir = 'outputs/svr_blindtest'
 os.makedirs(output_dir, exist_ok=True)
 
-# === Save metrics
+# === Save metrics ===
 with open(os.path.join(output_dir, "metrics.txt"), "w") as f:
     f.write("--- All Data ---\n")
     for k, v in metrics_all.items():
@@ -62,12 +62,12 @@ with open(os.path.join(output_dir, "metrics.txt"), "w") as f:
         for k, v in metrics_synth.items():
             f.write(f"{k}: {v}\n")
 
-# === Standardize predictions output
+# === Save predictions ===
 df["Actual"] = df[TARGET]
 df_segment = df[["Date", "Source", "Actual", "Predicted"]]
 df_segment.to_csv(os.path.join(output_dir, 'predictions_segmented.csv'), index=False)
 
-# === Save colored scatter plot
+# === Save colored scatter plot ===
 plt.figure(figsize=(8, 5))
 sns.scatterplot(x=df["Actual"], y=df["Predicted"], hue=df["Source"])
 plt.xlabel("Actual")

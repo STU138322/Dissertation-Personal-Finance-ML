@@ -3,6 +3,8 @@ import numpy as np
 import os
 from sklearn.model_selection import train_test_split, cross_val_score, KFold
 from sklearn.svm import SVR
+from sklearn.pipeline import make_pipeline
+from sklearn.preprocessing import RobustScaler
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score, make_scorer
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -17,22 +19,25 @@ sns.set_theme(style="whitegrid")
 # === Load Data ===
 df = load_data(TABLE_TRAIN).dropna().sort_values('Date')
 X = df[FEATURES]
-y = df[TARGET]  # 'Savings_Rate'
+y = df[TARGET]
 
 # === 70:30 Train-Test Split ===
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
-# === Train SVR Model ===
-model = SVR(kernel='rbf', C=100, epsilon=0.1)
-model.fit(X_train, y_train)
+# === Train SVR Model with RobustScaler and tuned hyperparameters ===
+pipeline = make_pipeline(
+    RobustScaler(),
+    SVR(kernel='rbf', C=1000, epsilon=0.01, gamma='auto')
+)
+pipeline.fit(X_train, y_train)
 
-# === Save Model ===
+# === Save Model Pipeline ===
 model_dir = 'models/svr'
 os.makedirs(model_dir, exist_ok=True)
-dump(model, os.path.join(model_dir, 'model.pkl'))
+dump(pipeline, os.path.join(model_dir, 'model.pkl'))
 
 # === Predict on Test Set ===
-y_pred = model.predict(X_test)
+y_pred = pipeline.predict(X_test)
 
 # === Evaluate on Test Set ===
 mae = mean_absolute_error(y_test, y_pred)
@@ -56,7 +61,7 @@ scorers = {
 
 cv_results = {}
 for name, scorer in scorers.items():
-    scores = cross_val_score(model, X, y, cv=cv, scoring=scorer)
+    scores = cross_val_score(pipeline, X, y, cv=cv, scoring=scorer)
     cv_results[name] = {
         'folds': [round(s, 2) for s in scores],
         'mean': round(np.mean(scores), 2),
@@ -88,10 +93,10 @@ with open(os.path.join(output_dir, "metrics.txt"), "w") as f:
 
 # Save K-Fold CV scores
 with open(os.path.join(output_dir, "cv_metrics.txt"), "w") as f:
-    for i in range(5):  # Assuming 5 folds
-        mae = cv_results["MAE"]["folds"][i]
-        rmse = cv_results["RMSE"]["folds"][i]
-        r2 = cv_results["R2"]["folds"][i]
-        f.write(f"{mae},{rmse},{r2}\n")
+    for i in range(5):
+        mae_fold = cv_results["MAE"]["folds"][i]
+        rmse_fold = cv_results["RMSE"]["folds"][i]
+        r2_fold = cv_results["R2"]["folds"][i]
+        f.write(f"{mae_fold},{rmse_fold},{r2_fold}\n")
 
 print(f"SVR model training complete. Outputs saved to {output_dir}/")
