@@ -184,6 +184,8 @@ elif main_section == "Model Visualisation":
 
     elif view == "Cross-Validation Metrics":
         st.subheader("K-Fold Validation Results")
+        if dataset_choice == "savings_data_blindtest":
+            st.warning("Cross-validation metrics are only available for Dataset2. Displayed results reflect only training data.")
         model = st.selectbox("Select Model", ["linear_regression", "random_forest", "svr"])
         cv_file = f"outputs/{model}/cv_metrics.txt"
         if os.path.exists(cv_file):
@@ -206,6 +208,10 @@ elif main_section == "Model Visualisation":
 
     elif view == "Model Metric Summary":
         st.subheader("Model Metric Comparison")
+
+        if dataset_choice == "savings_data_train":
+            st.warning("This chart displays model performance on Dataset1 (blindtest only). Dataset2 metrics are not included in this visual comparison.")
+
 
         summary_csv = "outputs/model_comparison_summary.csv"
         best_txt = "outputs/model_comparison_summary.txt"
