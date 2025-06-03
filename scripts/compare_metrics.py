@@ -5,7 +5,14 @@ import matplotlib.pyplot as plt
 base_dir = 'outputs/'
 records = []
 
-# Step 1: Parse all metrics.txt files
+segment_alias = {
+    "Test Set Performance": "All Data",
+    "All Data": "All Data",
+    "Original Only": "Original Only",
+    "Synthetic Only": "Synthetic Only"
+}
+
+# Parse all metrics.txt files
 for folder in os.listdir(base_dir):
     subdir = os.path.join(base_dir, folder)
     metrics_file = os.path.join(subdir, "metrics.txt")
@@ -21,7 +28,8 @@ for folder in os.listdir(base_dir):
             for line in lines:
                 line = line.strip()
                 if "---" in line:
-                    segment = line.replace("-", "").strip()
+                    raw_segment = line.replace("-", "").strip()
+                    segment = segment_alias.get(raw_segment, raw_segment)
                 elif ":" in line and segment:
                     key, val = line.split(":", 1)
                     key = key.strip()
@@ -41,7 +49,7 @@ for folder in os.listdir(base_dir):
         except Exception as e:
             print(f"Failed to read {metrics_file}: {e}")
 
-# Step 2: Create and save enhanced comparison summary
+# Create and save enhanced comparison summary
 if records:
     df = pd.DataFrame(records)
     summary = df.pivot_table(
@@ -53,7 +61,7 @@ if records:
     summary = summary.round(4)
     summary = summary.sort_values(by=["Dataset", "Model", "Segment"])
 
-    # Step 3: Identify best performers
+    # Identify best performers
     best_summary = summary[summary["Segment"] == "All Data"].copy()
 
     best_mae_idx = best_summary["MAE"].idxmin()
@@ -64,18 +72,18 @@ if records:
     summary["Best RMSE"] = summary.index == best_rmse_idx
     summary["Best R2"] = summary.index == best_r2_idx
 
-    # Step 4: Save to CSV
+    # Save to CSV
     summary_path = os.path.join(base_dir, "model_comparison_summary.csv")
     summary.to_csv(summary_path, index=False)
 
-    # Step 5: Save best results to TXT
+    # Save best results to TXT
     with open(os.path.join(base_dir, "model_comparison_summary.txt"), "w") as f:
         f.write("=== Best Performing Models (All Data Segment) ===\n")
         f.write(f"Best MAE  : {summary.loc[best_mae_idx, 'Model']} on {summary.loc[best_mae_idx, 'Dataset']} (MAE: {summary.loc[best_mae_idx, 'MAE']})\n")
         f.write(f"Best RMSE : {summary.loc[best_rmse_idx, 'Model']} on {summary.loc[best_rmse_idx, 'Dataset']} (RMSE: {summary.loc[best_rmse_idx, 'RMSE']})\n")
         f.write(f"Best R²   : {summary.loc[best_r2_idx, 'Model']} on {summary.loc[best_r2_idx, 'Dataset']} (R²: {summary.loc[best_r2_idx, 'R2']})\n")
 
-    # Step 6: Plot bar chart for visual comparison (optional)
+    # Plot bar chart for visual comparison
     chart_data = best_summary[["Model", "Dataset", "MAE", "RMSE", "R2"]]
     chart_data.set_index(["Model", "Dataset"]).plot(kind='bar', figsize=(10, 6))
     plt.title("Model Performance (All Data Segment)")
@@ -83,6 +91,30 @@ if records:
     plt.xticks(rotation=45, ha="right")
     plt.tight_layout()
     plt.savefig(os.path.join(base_dir, "model_comparison_chart.png"))
+
+    #Generate separate subplot figure per dataset
+    for dataset_name in summary["Dataset"].unique():
+        data_subset = best_summary[best_summary["Dataset"] == dataset_name]
+
+        fig, axs = plt.subplots(1, 3, figsize=(15, 5))
+        for idx, metric in enumerate(["MAE", "RMSE", "R2"]):
+            axs[idx].bar(data_subset["Model"], data_subset[metric], color='steelblue')
+            axs[idx].set_title(metric)
+            if metric == "R2":
+                axs[idx].set_ylim(-3.5, 1)
+            else:
+                max_val = data_subset[metric].max()
+                axs[idx].set_ylim(0, max_val * 1.1)
+            axs[idx].set_ylabel(metric)
+            axs[idx].set_xlabel("Model")
+
+        fig.suptitle(f"Model Performance Comparison ({dataset_name} - All Data Segment)", fontsize=14)
+        plt.tight_layout()
+        subplot_path = os.path.join(base_dir, f"model_comparison_subplots_{dataset_name.lower()}.png")
+        plt.savefig(subplot_path)
+        plt.close()
+
+        print(f" - Subplot saved: {subplot_path}")
 
     print("Summary saved to:")
     print(" - model_comparison_summary.csv")

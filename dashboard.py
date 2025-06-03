@@ -209,10 +209,6 @@ elif main_section == "Model Visualisation":
     elif view == "Model Metric Summary":
         st.subheader("Model Metric Comparison")
 
-        if dataset_choice == "savings_data_train":
-            st.warning("This chart displays model performance on Dataset1 (blindtest only). Dataset2 metrics are not included in this visual comparison.")
-
-
         summary_csv = "outputs/model_comparison_summary.csv"
         best_txt = "outputs/model_comparison_summary.txt"
         chart_img = "outputs/model_comparison_chart.png"
@@ -230,18 +226,22 @@ elif main_section == "Model Visualisation":
 
             # Let user pick a metric to visualize
             metric = st.selectbox("Select Metric to Chart", ["MAE", "RMSE", "R2"])
-            filtered = df[df["Segment"] == "All Data"].copy()
-            chart_df = filtered[["Model", "Dataset", metric]]
-            chart_df = chart_df.pivot(index="Model", columns="Dataset", values=metric).reset_index()
-            melted = chart_df.melt(id_vars="Model", var_name="Dataset", value_name=metric)
-
-            fig = px.bar(melted, x="Model", y=metric, color="Dataset", barmode="group",
-                        title=f"{metric} by Model and Dataset (All Data Segment)")
+            filtered = df[(df["Segment"] == "All Data")].copy()
+            dataset_label = "Dataset2" if dataset_choice == "savings_data_train" else "Dataset1"
+            filtered = filtered[filtered["Dataset"] == dataset_label]
+            fig = px.bar(filtered, x="Model", y=metric, color="Dataset", barmode="group",
+                        title=f"{metric} by Model - {dataset_label} (All Data Segment)")
             st.plotly_chart(fig, use_container_width=True)
 
             # Show saved image chart
+            subplot_img = f"outputs/model_comparison_subplots_dataset2.png" if dataset_choice == "savings_data_train" else "outputs/model_comparison_subplots_dataset1.png"
+
+            # Show selected dataset subplot
+            if os.path.exists(subplot_img):
+                with st.expander(f"Open Subplot for Selected Dataset ({os.path.basename(subplot_img)})"):
+                    st.image(subplot_img)
             if os.path.exists(chart_img):
-                with st.expander("Open Saved Bar Chart (.png)"):
+                with st.expander("Open Combined Bar Chart (All Datasets)"):
                     st.image(chart_img)
         else:
             st.warning("model_comparison_summary.csv not found.")
