@@ -84,7 +84,7 @@ for name, df in datasets.items():
     print(f"\nResampled {name} preview:")
     print(resampled[['Date', 'Income', 'Expense', 'Net_Savings', 'Savings_Rate']].head())
 
-    # === EDA Visuals ===
+    # EDA Visuals
     os.makedirs(f'{NOTEBOOKS_DIR}/{name}', exist_ok=True)
 
     # Correlation heatmap

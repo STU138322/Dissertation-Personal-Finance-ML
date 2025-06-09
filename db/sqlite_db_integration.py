@@ -30,7 +30,7 @@ df_blind = pd.read_csv(blind_csv_path, parse_dates=['Date'])
 df_blind.to_sql(table_blindtest, conn, if_exists='replace', index=False)
 print(f"Table '{table_blindtest}' created/updated in {db_path}")
 
-# Optional: preview 3 rows from each table
+# preview 3 rows from each table
 print("\nSample rows from training table:")
 print(pd.read_sql_query(f"SELECT * FROM {table_train} LIMIT 3", conn))
 

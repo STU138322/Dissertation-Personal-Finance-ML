@@ -7,31 +7,32 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 from joblib import load
 import sys
 
+# Load project modules
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from db.db_connect import load_data, FEATURES, TARGET, TABLE_BLINDTEST
 
 sns.set_theme(style="whitegrid")
 
-# === Load trained pipeline model ===
+# Load trained pipeline model
 model = load('models/random_forest/model.pkl')
 
-# === Load Dataset1 blind test data ===
+# Load Dataset1 blind test data
 df = load_data(TABLE_BLINDTEST).sort_values("Date")
 X_test = df[FEATURES]
 y_test = df[TARGET]
 
-# === Predict using pipeline ===
+# Predict using pipeline
 df['Predicted'] = model.predict(X_test)
 
-# === Remove NaNs in prediction or target ===
+# Remove NaNs in prediction or target
 df = df.dropna(subset=[TARGET, 'Predicted'])
 y_test = df[TARGET]
 
-# === Segment: Real vs Synthetic ===
+# Segment: Real vs Synthetic
 real = df[df['Source'] == 'original']
 synthetic = df[df['Source'] == 'synthetic']
 
-# === Evaluation ===
+# Evaluation
 def evaluate(y_true, y_pred):
     return {
         'MAE': round(mean_absolute_error(y_true, y_pred), 4),
@@ -43,7 +44,7 @@ metrics_all = evaluate(y_test, df['Predicted'])
 metrics_real = evaluate(real[TARGET], real['Predicted']) if len(real) > 0 else {}
 metrics_synth = evaluate(synthetic[TARGET], synthetic['Predicted']) if len(synthetic) > 0 else {}
 
-# === Save outputs ===
+# Save outputs
 output_dir = 'outputs/random_forest_blindtest'
 os.makedirs(output_dir, exist_ok=True)
 

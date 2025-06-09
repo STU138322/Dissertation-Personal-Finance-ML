@@ -13,26 +13,26 @@ from db.db_connect import load_data, FEATURES, TARGET, TABLE_BLINDTEST
 
 sns.set_theme(style="whitegrid")
 
-# === Load model pipeline ===
+# Load model pipeline
 model = load('models/linear_regression/model.pkl')
 
-# === Load blind test data (Dataset1) ===
+# Load blind test data (Dataset1)
 df = load_data(TABLE_BLINDTEST).sort_values("Date")
 X_test = df[FEATURES]
 y_test = df[TARGET]
 
-# === Predict ===
+# Predict
 df['Predicted'] = model.predict(X_test)
 
-# === Remove NaN targets (e.g., from Savings_Rate = Net_Savings / 0 Income) ===
+# Remove NaN targets (e.g., from Savings_Rate = Net_Savings / 0 Income)
 df = df.dropna(subset=[TARGET, 'Predicted'])
 y_test = df[TARGET]
 
-# === Segment: Real vs Synthetic ===
+# Segment: Real vs Synthetic
 real = df[df['Source'] == 'original']
 synthetic = df[df['Source'] == 'synthetic']
 
-# === Evaluation function ===
+# Evaluation function
 def evaluate(y_true, y_pred):
     return {
         'MAE': round(mean_absolute_error(y_true, y_pred), 4),
@@ -40,12 +40,12 @@ def evaluate(y_true, y_pred):
         'R2': round(r2_score(y_true, y_pred), 4)
     }
 
-# === Evaluate results ===
+# Evaluate results
 metrics_all = evaluate(y_test, df['Predicted'])
 metrics_real = evaluate(real[TARGET], real['Predicted']) if len(real) > 0 else {}
 metrics_synth = evaluate(synthetic[TARGET], synthetic['Predicted']) if len(synthetic) > 0 else {}
 
-# === Save outputs ===
+# Save outputs
 output_dir = 'outputs/linear_regression_blindtest'
 os.makedirs(output_dir, exist_ok=True)
 

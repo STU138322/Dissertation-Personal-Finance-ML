@@ -3,11 +3,11 @@ import sys
 import pandas as pd
 from scipy.stats import pearsonr, spearmanr
 
-# Fix import paths
+# Load project modules
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from db.db_connect import load_data, TABLE_TRAIN, TABLE_BLINDTEST
 
-# === Define feature pairs for correlation testing ===
+# Define feature pairs for correlation testing
 feature_pairs = [
     ('Income', 'Savings_Rate'),
     ('Expense', 'Savings_Rate'),
@@ -16,7 +16,7 @@ feature_pairs = [
     ('Income', 'Expense')
 ]
 
-# === Output directory ===
+# Output directory
 OUTPUT_DIR = 'notebooks/hypothesis_tests'
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 output_file = os.path.join(OUTPUT_DIR, 'correlation_results.txt')
@@ -46,11 +46,11 @@ def run_tests(df, dataset_name):
         result += f"Spearman Correlation: r = {spearman_corr:.4f}, p-value = {spearman_p:.4g}\n"
     return result
 
-# === Load datasets ===
+# Load datasets
 train_data = load_data(TABLE_TRAIN)
 blindtest_data = load_data(TABLE_BLINDTEST)
 
-# === Run and save results ===
+# Run and save results
 all_results = ""
 all_results += run_tests(train_data, 'Dataset2 (Training Set)')
 all_results += run_tests(blindtest_data, 'Dataset1 (Blindtest Set)')

@@ -7,7 +7,7 @@ from joblib import load
 import sys
 import argparse
 
-# Project config
+# Load Project Modules
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from db.db_connect import load_data, FEATURES, TARGET, TABLE_TRAIN
 

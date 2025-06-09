@@ -11,22 +11,23 @@ from joblib import dump
 import os
 import sys
 
+# Load project modules
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from db.db_connect import load_data, FEATURES, TARGET, TABLE_TRAIN
 
 sns.set_theme(style="whitegrid")
 
-# === Load and prepare data ===
+# Load and prepare data
 df = load_data(TABLE_TRAIN).dropna().sort_values("Date")
 X = df[FEATURES]
 y = df[TARGET]
 
-# === Time-based split (80/20) ===
-split_index = int(len(df) * 0.8)
+# Time-based split (70/30)
+split_index = int(len(df) * 0.7)
 X_train, X_test = X.iloc[:split_index], X.iloc[split_index:]
 y_train, y_test = y.iloc[:split_index], y.iloc[split_index:]
 
-# === Train model with RobustScaler + tuned hyperparameters ===
+# Train model with RobustScaler + tuned hyperparameters
 pipeline = make_pipeline(
     RobustScaler(),
     RandomForestRegressor(
@@ -38,15 +39,15 @@ pipeline = make_pipeline(
 )
 pipeline.fit(X_train, y_train)
 
-# === Save model ===
+# Save model
 model_dir = 'models/random_forest'
 os.makedirs(model_dir, exist_ok=True)
 dump(pipeline, os.path.join(model_dir, 'model.pkl'))
 
-# === Predict ===
+# Predict
 y_pred = pipeline.predict(X_test)
 
-# === Evaluate ===
+# Evaluate
 mae = mean_absolute_error(y_test, y_pred)
 rmse = np.sqrt(mean_squared_error(y_test, y_pred))
 r2 = r2_score(y_test, y_pred)
@@ -56,7 +57,7 @@ print(f"MAE: {mae:.2f}")
 print(f"RMSE: {rmse:.2f}")
 print(f"R²: {r2:.2f}")
 
-# === Cross-validation ===
+# Cross-validation
 def rmse_score(y_true, y_pred): return np.sqrt(mean_squared_error(y_true, y_pred))
 
 scorers = {
@@ -76,11 +77,11 @@ for name, scorer in scorers.items():
         'std': round(np.std(scores), 2)
     }
 
-# === Save Outputs ===
+# Save Outputs
 output_dir = 'outputs/random_forest'
 os.makedirs(output_dir, exist_ok=True)
 
-# === Save scatter plot (Actual vs Predicted)
+# Save scatter plot (Actual vs Predicted)
 plt.figure(figsize=(8, 5))
 sns.scatterplot(x=y_test, y=y_pred)
 plt.xlabel('Actual')
@@ -90,7 +91,7 @@ plt.tight_layout()
 plt.savefig(os.path.join(output_dir, 'actual_vs_predicted.png'))
 plt.close()
 
-# === Save feature importances
+# Save feature importances
 importances = pipeline.named_steps['randomforestregressor'].feature_importances_
 plt.figure(figsize=(8, 4))
 sns.barplot(x=importances, y=FEATURES)
@@ -101,18 +102,18 @@ plt.tight_layout()
 plt.savefig(os.path.join(output_dir, "feature_importance.png"))
 plt.close()
 
-# === Save predictions CSV in standardized format
+# Save predictions CSV in standardized format
 results = pd.DataFrame({'Actual': y_test.values, 'Predicted': y_pred})
 results.to_csv(os.path.join(output_dir, 'predictions.csv'), index=False)
 
-# === Save metrics summary
+# Save metrics summary
 with open(os.path.join(output_dir, "metrics.txt"), "w") as f:
     f.write("--- Test Set Performance ---\n")
     f.write(f"MAE: {mae:.2f}\n")
     f.write(f"RMSE: {rmse:.2f}\n")
     f.write(f"R2: {r2:.2f}\n")
 
-# === Save cross-validation metrics for dashboard
+# Save cross-validation metrics for dashboard
 with open(os.path.join(output_dir, "cv_metrics.txt"), "w") as f:
     for i in range(5):
         mae = cv_results["MAE"]["folds"][i]

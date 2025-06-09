@@ -25,7 +25,7 @@ def CleaningFunction(df, dataset_name):
         df['Amount'] = pd.to_numeric(df['Amount'], errors='coerce')
         df = df.dropna(subset=['Amount'])
 
-    # --- Correct Category Handling ---
+    # Correct Category Handling
     if dataset_name == 'Personal_Finance_Dataset1.csv':
         if df.shape[1] >= 6:
             df['Category'] = df.iloc[:, 5].astype(str).str.strip().str.title()  # Column 6 = Sub Category
@@ -47,12 +47,12 @@ def CleaningFunction(df, dataset_name):
     else:
         df['Category Type'] = 'Unknown'
 
-    # === Normalize all Amounts to positive to align Dataset1 and Dataset2 ===
+    # Normalize all Amounts to positive to align Dataset1 and Dataset2
     df['Amount'] = df['Amount'].abs()
 
     return df
 
-# --- MAIN EXECUTION ---
+# MAIN EXECUTION
 for raw_file, output_file in files:
     print(f"\nProcessing: {raw_file}")
     raw_path = os.path.join(RAW_DIR, raw_file)

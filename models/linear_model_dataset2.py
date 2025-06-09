@@ -11,37 +11,38 @@ import seaborn as sns
 from joblib import dump
 import sys
 
+# Load project modules
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from db.db_connect import load_data, FEATURES, TARGET, TABLE_TRAIN
 
 sns.set_theme(style="whitegrid")
 
-# === Load Data ===
+# Load Data
 df = load_data(TABLE_TRAIN).dropna().sort_values('Date')
 X = df[FEATURES]
 y = df[TARGET]
 
-# === 70:30 Train-Test Split ===
+# 70:30 Train-Test Split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
-# === Train Linear Regression Model with RobustScaler ===
+# Train Linear Regression Model with RobustScaler
 pipeline = make_pipeline(RobustScaler(), LinearRegression())
 pipeline.fit(X_train, y_train)
 
-# === Save Model Pipeline ===
+# Save Model Pipeline
 model_dir = 'models/linear_regression'
 os.makedirs(model_dir, exist_ok=True)
 dump(pipeline, os.path.join(model_dir, 'model.pkl'))
 
-# === Predict on Test Set ===
+# Predict on Test Set
 y_pred = pipeline.predict(X_test)
 
-# === Prepare Predictions with Date and Category ===
+# Prepare Predictions with Date and Category
 test_results = df.loc[X_test.index, ["Date", "Category"]].copy()
 test_results["Actual"] = y_test.values
 test_results["Predicted"] = y_pred
 
-# === Evaluate Model ===
+# Evaluate Model
 mae = mean_absolute_error(test_results["Actual"], test_results["Predicted"])
 rmse = np.sqrt(mean_squared_error(test_results["Actual"], test_results["Predicted"]))
 r2 = r2_score(test_results["Actual"], test_results["Predicted"])
@@ -49,7 +50,7 @@ r2 = r2_score(test_results["Actual"], test_results["Predicted"])
 print("\n--- Linear Regression Evaluation on Dataset 2 ---")
 print(f"MAE: {mae:.2f}, RMSE: {rmse:.2f}, R²: {r2:.2f}")
 
-# === Cross-Validation (5-Fold) ===
+# Cross-Validation (5-Fold)
 cv = KFold(n_splits=5, shuffle=True, random_state=42)
 
 def rmse_score(y_true, y_pred):
@@ -71,7 +72,7 @@ for name, scorer in scorers.items():
         'std': round(np.std(scores), 2)
     }
 
-# === Save Outputs ===
+# Save Outputs 
 output_dir = 'outputs/linear_regression'
 os.makedirs(output_dir, exist_ok=True)
 

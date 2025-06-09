@@ -16,10 +16,10 @@ from scipy.stats import shapiro
 # Project setup
 from db.db_connect import load_data, FEATURES, TARGET
 
-# === PAGE SETUP ===
+# PAGE SETUP
 st.set_page_config(page_title="Personal Finance Dashboard", layout="wide")
 
-# === MAIN SIDEBAR ===
+# MAIN SIDEBAR
 main_section = st.sidebar.radio("Select Dashboard Section", [
     "Dataset Explorer",
     "Model Visualisation",
